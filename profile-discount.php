@@ -17,7 +17,7 @@
 
 <body>
     <?php include './includes/header.php' ?>
-    <div class="container-fluid">
+    <div class="container-fluid first">
         <?php include './includes/profile-sidebar.php' ?>
     </div>
     <?php include './includes/footer.php' ?>

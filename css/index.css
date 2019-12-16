@@ -1,15 +1,7 @@
 /* INDEX STYLES */
 
-.main-title {
-    text-align: center;
-}
-
-.text-wrapper {
-    align-items: center;
-}
-
-.img-container {
-    
+.img-container img {
+    width: 100%;
 }
 
 .icon-wrapper {
@@ -24,22 +16,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem 0 !important;
 }
 
 .icon-container img {
     width: 10rem;
     height: 10rem;
+    margin-bottom: 1rem;
     border: 1px solid #000;
     border-radius: 50%;
 }
 
-.icon-container li {
-    margin: 0 1.5rem;
+.icon-container h3 {
+    margin: 0.5rem 1rem;
+    text-align: center;
 }
 
-ol {
-    margin: 0;
-    padding: 0;
+.icon-container p {
+    margin: 0 1rem;
+    text-align: center;
 }
 
 .button-container {

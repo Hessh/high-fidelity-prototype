@@ -17,7 +17,7 @@
 
 <body>
     <?php include './includes/header.php' ?>
-    <div class="container-fluid">
+    <div class="container-fluid first">
         <div class="row text-row-container text-row-container-left">
                 <div class="col-2 text-container">
                     <div id="filter"></div>
