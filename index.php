@@ -32,7 +32,7 @@
                     <p class="text">Registrer dine plagg og motta gavekort hos våre samarbeidspartnere. Spar tiden du ellers ville brukt på å undersøke priser på like produkter, skrive om dine plagg og avtale møtested!</p>
                 </div>
                 <div class="col-6 img-container">
-                    <img src="img/browse.jpg" alt="Illustrasjon">
+                    <img src="img/browse.jpg" alt="Brukte klær">
                     <!-- https://unsplash.com/photos/Fzde_6ITjkw -->
                 </div>
             </div>
@@ -92,18 +92,18 @@
             <!-- TEXTCONTENT 2 -->
             <div class="row text-wrapper">
                 <div class="col-6 img-container">
-                    <img src="" alt="Koselig miljøbilde">
+                    <img src="img/plant.jpg" alt="Plante">
                 </div>
                 <div class="col-6 text-container">
-                    <H2>Bli med oss å skape kulturen</H2>
-                    <p>Vi ønsker å ta kjøp og salg av gjenbruksklær til nye høyder, ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!</p>
+                    <h2 class="title">Bli med oss å skape kulturen</h2>
+                    <p class="text">Vi ønsker å ta kjøp og salg av gjenbruksklær til nye høyder, ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!</p>
                 </div>
             </div>
             <!-- TEXTCONTENT 3 -->
             <div class="row text-wrapper">
                 <div class="col-6 text-container">
-                    <h2>Tittel</h2>
-                    <p>Tekst</p>
+                    <h2 class="title">Tittel</h2>
+                    <p class="text">Tekst</p>
                 </div>
                 <div class="col-6 img-container">
                     <img src="" alt="Illustrasjon">
