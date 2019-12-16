@@ -19,14 +19,14 @@
     <?php include './includes/header.php' ?>
     <div class="container-fluid">
         <div class="row text-row-container text-row-container-left">
-                <div class="col-2 text-container">
-                    <div id="filter"></div>
+                <div id="filter"class="col-2 text-container">
+                    
                 </div>
-                <div class="col-2 text-container">
-                    <div id="filterCategory"></div>
+                <div id="filterCategory" class="col-2 text-container">
+                    
                 </div>
-                <div class="col-2 text-container">
-                    <div id="filterSubCategory"></div>
+                <div  id="filterSubCategory" class="col-2 text-container">
+                    
                 </div>
                 <div class="col-2 text-container">
                     <div id="Gender"></div>
