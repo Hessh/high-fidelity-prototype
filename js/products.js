@@ -23,7 +23,6 @@ class Product {
 // Use this to Render all products. Container must have ID="products-container".
 // for (i = 0; i < products.length; i++) {renderProduct(document.getElementById("products-container"), products[i]);}
 function renderProduct(container, product) {
-    //let productDiv = createDivWithContent("product-div", null);
 
     let productDiv = document.createElement("a");
     productDiv.classList.add("product-div");

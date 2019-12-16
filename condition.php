@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/condition.css">
+    <link rel="stylesheet" href="./css/filter.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800&display=swap">
@@ -18,11 +19,15 @@
 <body>
     <?php include './includes/header.php' ?>
     <div class="container-fluid">
-
+        <div id="products-container" class="container"></div>
     </div>
     <?php include './includes/footer.php' ?>
     <script src="js/menu.js"></script>
+    <script src="js/products.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        renderProduct(document.getElementById("products-container"), products[getUrlParameter("id")]);
+    </script>
 </body>
 
 </html>
