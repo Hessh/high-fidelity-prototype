@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
-    <title>Restore - Condition</title>
+    <title>Restore - Tilstand</title>
 </head>
 
 <body>

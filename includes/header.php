@@ -8,10 +8,10 @@
         <div onclick="showMenu()" id="menu-button" style="color: black">&#9776;</div>
         <nav id="nav">
             <ul>
-                <a href="info.php">Info</a>
+                <a href="profile-index.php">Profil</a>
             </ul>
             <ul>
-                <a href="kontakt.php">Kontakt</a>
+                <a href="kontakt.php">Logg inn / Registrer</a>
             </ul>
         </nav>
     </div>
