@@ -8,7 +8,7 @@
         <div onclick="showMenu()" id="menu-button" style="color: black">&#9776;</div>
         <nav id="nav">
             <ul>
-                <a href="profile-index.php">Profil</a>
+                <a href="profile-index.php" class="material-icons-outlined user">account_circle</a>
             </ul>
             <ul>
                 <a href="">Logg inn / Registrer</a>

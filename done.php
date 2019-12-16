@@ -17,7 +17,14 @@
 
 <body>
     <?php include './includes/header.php' ?>
-    <div class="container-fluid">
+    <div class="container-fluid first">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="main-title">Takk</h1>
+                </div>
+            </div>
+        </div>
     </div>
     <?php include './includes/footer.php' ?>
     <script src="js/menu.js"></script>
