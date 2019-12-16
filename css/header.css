@@ -1,12 +1,14 @@
 /* HEADER */
 
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
     display: grid;
     grid-template-columns: 30% 70%;
     width: 100vw;
     height: 4rem;
-    background-color: transparent;
+    background-color: #FFF;
+    box-shadow: 1px 0px 4px #00000030;
 }
 
 .header-left {
@@ -49,6 +51,9 @@ nav {
 }
 
 nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 0;
 }
 
@@ -66,6 +71,10 @@ nav a {
 nav a:hover, nav ul:hover {
     cursor: pointer;
     color: #196AA4;
+}
+
+.user {
+    font-size: 2rem !important;
 }
 
 #dropdown {

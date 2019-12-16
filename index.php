@@ -17,7 +17,7 @@
 
 <body>
     <?php include './includes/header.php' ?>
-    <div class="container-fluid">
+    <div class="container-fluid first">
         <div class="container">
             <!-- HEADING -->
             <div class="row">
@@ -26,129 +26,138 @@
                 </div>
             </div>
             <!-- TEXTCONTENT 1 -->
-            <div class="row text-wrapper">
-                <div class="col-8 text-container text-container-left">
+            <div class="row">
+                <div class="col-6">
                     <h2 class="title">Litt for mye klær liggende i skapet?</h2>
                     <p class="text">Registrer dine plagg og motta gavekort hos våre samarbeidspartnere. Spar tiden du ellers ville brukt på å undersøke priser på like produkter, skrive om dine plagg og avtale møtested!</p>
                 </div>
-                <div class="col-push-1"></div>
-                <div class="col-3 img-container">
-                    <img src="" alt="Illustrasjon">
+                <div class="col-6 img-container">
+                    <img src="img/browse.jpg" alt="Brukte klær">
                     <!-- https://unsplash.com/photos/Fzde_6ITjkw -->
                 </div>
             </div>
             <!-- CTA BUTTON -->
             <div class="row">
                 <div class="col-12 button-container">
-                    <a class="cta-button" href="filter.php"><button>Registrer plagg her</button></a>
+                    <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
                 </div>
             </div>
+        </div>
+        <div class="container">
             <!-- ICON GROUP 1 -->
             <div class="row">
                 <div class="col-12 icon-title">
                     <h2>Slik fungerer det</h2>
                 </div>
             </div>
-            <ol>
-                <div class="row icon-wrapper">
-                    <div class="col-4 icon-container">
-                        <img src="" alt="Icon">
-                        <li>Registrer plagget ved å klikke deg frem til riktig plagg</li>
-                    </div>
-                    <div class="col-4 icon-container">
-                        <img src="" alt="Icon">
-                        <li>Få en estimert verdi på et gavekort hos gjeldende merke. Slik at du får et inntrykk av plaggets verdi og hva gavekortet du får vil ligge på i verdi</li>
-                    </div>
-                    <div class="col-4 icon-container">
-                        <img src="" alt="Icon">
-                        <li>Motta en sendingspose i posten, pakk, forsegl og send den inn til oss / Lever det i din nærmeste butikk.</li>
-                    </div>
+            <div class="row icon-wrapper">
+                <div class="col-4 icon-container">
+                    <img src="" alt="Icon">
+                    <h3>1. Tittel</h3>
+                    <p>Registrer plagget ved å klikke deg frem til riktig plagg</p>
                 </div>
-                <div class="row icon-wrapper">
-                    <div class="col-push-2"></div>
-                    <div class="col-4 icon-container">
-                        <img src="" alt="Icon">
-                        <li>Vent på verdivurdering fra våre eksperter (3 dager)- aksepter eller avslå tilbudet</li>
-                    </div>
-                    <div class="col-4 icon-container">
-                        <img src="" alt="Icon">
-                        <li>Aksepter for å motta gavekort som du kan bruke i gjeldende butikk</li>
-                    </div>
-                    <div class="col-push-2"></div>
+                <div class="col-4 icon-container">
+                    <img src="" alt="Icon">
+                    <h3>2. Tittel</h3>
+                    <p>Få en estimert verdi på et gavekort hos gjeldende merke. Slik at du får et inntrykk av plaggets verdi og hva gavekortet du får vil ligge på i verdi</p>
                 </div>
-            </ol>
+                <div class="col-4 icon-container">
+                    <img src="" alt="Icon">
+                    <h3>3. Tittel</h3>
+                    <p>Motta en sendingspose i posten, pakk, forsegl og send den inn til oss / Lever det i din nærmeste butikk.</p>
+                </div>
+            </div>
+            <div class="row icon-wrapper">
+                <div class="col-push-2"></div>
+                <div class="col-4 icon-container">
+                    <img src="" alt="Icon">
+                    <h3>4. Tittel</h3>
+                    <p>Vent på verdivurdering fra våre eksperter (3 dager)- aksepter eller avslå tilbudet</p>
+                </div>
+                <div class="col-4 icon-container">
+                    <img src="" alt="Icon">
+                    <h3>5. Tittel</h3>
+                    <p>Aksepter for å motta gavekort som du kan bruke i gjeldende butikk</p>
+                </div>
+                <div class="col-push-2"></div>
+            </div>
             <!-- CTA BUTTON -->
             <div class="row">
                 <div class="col-12 button-container">
-                    <a class="cta-button" href="filter.php"><button>Registrer plagg her</button></a>
+                    <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
                 </div>
             </div>
+        </div>
+        <div class="container">
             <!-- TEXTCONTENT 2 -->
             <div class="row text-wrapper">
-                <div class="col-3 img-container">
-                    <img src="" alt="Koselig miljøbilde">
+                <div class="col-6 img-container">
+                    <img src="img/plant.jpg" alt="Plante">
                 </div>
-                <div class="col-push-1"></div>
-                <div class="col-8 text-container">
-                    <H2>Bli med oss å skape kulturen</H2>
-                    <p>Vi ønsker å ta kjøp og salg av gjenbruksklær til nye høyder, ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!</p>
+                <div class="col-6 text-container">
+                    <h2 class="title">Bli med oss å skape kulturen</h2>
+                    <p class="text">Vi ønsker å ta kjøp og salg av gjenbruksklær til nye høyder, ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!</p>
                 </div>
             </div>
             <!-- TEXTCONTENT 3 -->
             <div class="row text-wrapper">
-                <div class="col-8 text-container">
-                    <h2>Tittel</h2>
-                    <p>Tekst</p>
+                <div class="col-6 text-container">
+                    <h2 class="title">Tittel</h2>
+                    <p class="text">Tekst</p>
                 </div>
-                <div class="col-push-1"></div>
-                <div class="col-3 img-container">
+                <div class="col-6 img-container">
                     <img src="" alt="Illustrasjon">
                 </div>
             </div>
             <!-- CTA BUTTON -->
             <div class="row">
                 <div class="col-12 button-container">
-                    <a class="cta-button" href="filter.php"><button>Registrer plagg her</button></a>
+                    <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
                 </div>
             </div>
+        </div>
+        <div class="container">
             <!-- ICON GROUP 2 -->
             <div class="row">
                 <div class="col-12 icon-title">
                     <h2>Våre hjertesaker</h2>
                 </div>
             </div>
-            <ol>
-                <div class="row icon-wrapper">
-                    <div class="col-4 icon-container">
-                        <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
-                    </div>
-                    <div class="col-4 icon-container">
-                        <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
-                    </div>
-                    <div class="col-4 icon-container">
-                        <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
-                    </div>
+            <div class="row icon-wrapper">
+                <div class="col-4 icon-container">
+                    <img src="" alt="Icon">
+                    <h3>1. Tittel</h3>
+                    <p>Forklarende tekst</p>
                 </div>
-                <div class="row icon-wrapper">
-                    <div class="col-push-2"></div>
-                    <div class="col-4 icon-container">
-                        <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
-                    </div>
-                    <div class="col-4 icon-container">
-                        <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
-                    </div>
-                    <div class="col-push-2"></div>
+                <div class="col-4 icon-container">
+                    <img src="" alt="Icon">
+                    <h3>2. Tittel</h3>
+                    <p>Forklarende tekst</p>
                 </div>
-            </ol>
+                <div class="col-4 icon-container">
+                    <img src="" alt="Icon">
+                    <h3>3. Tittel</h3>
+                    <p>Forklarende tekst</p>
+                </div>
+            </div>
+            <div class="row icon-wrapper">
+                <div class="col-push-2"></div>
+                <div class="col-4 icon-container">
+                    <img src="" alt="Icon">
+                    <h3>4. Tittel</h3>
+                    <p>Forklarende tekst</p>
+                </div>
+                <div class="col-4 icon-container">
+                    <img src="" alt="Icon">
+                    <h3>5. Tittel</h3>
+                    <p>Forklarende tekst</p>
+                </div>
+                <div class="col-push-2"></div>
+            </div>
             <!-- CTA BUTTON -->
             <div class="row">
                 <div class="col-12 button-container">
-                    <a class="cta-button" href="filter.php"><button>Registrer plagg her</button></a>
+                    <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
                 </div>
             </div>
         </div>
