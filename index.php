@@ -27,8 +27,8 @@
             <!-- TEXTCONTENT 1 -->
             <div class="row text-row-container text-row-container-left">
                 <div class="col-8 text-container">
-                    <h2>Tittel</h2>
-                    <p>Tekst</p>
+                    <h2>Litt for mye klær liggende i skapet?</h2>
+                    <p>Registrer dine plagg og motta gavekort hos våre samarbeidspartnere. Spar tiden du ellers ville brukt på å undersøke priser på like produkter, skrive om dine plagg og avtale møtested!</p>
                 </div>
                 <div class="col-4 img-container">
                     <img src="" alt="Illustrasjon">
@@ -45,27 +45,29 @@
                 <div class="col-12 icon-title">
                     <h2>Slik fungerer det</h2>
                 </div>
-                <div class="col-4">
-                    <img src="" alt="Icon">
-                    <p>Forklarende tekst</p>
-                </div>
-                <div class="col-4">
-                    <img src="" alt="Icon">
-                    <p>Forklarende tekst</p>
-                </div>
-                <div class="col-4">
-                    <img src="" alt="Icon">
-                    <p>Forklarende tekst</p>
-                </div>
-                <div class="col-push-2"></div>
-                <div class="col-4">
-                    <img src="" alt="Icon">
-                    <p>Forklarende tekst</p>
-                </div>
-                <div class="col-4">
-                    <img src="" alt="Icon">
-                    <p>Forklarende tekst</p>
-                </div>
+                <ol>
+                    <div class="col-4">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                    <div class="col-4">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                    <div class="col-4">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                    <div class="col-push-2"></div>
+                    <div class="col-4">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                    <div class="col-4">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                </ol>
                 <div class="col-push-2"></div>
             </div>
             <!-- CTA BUTTON -->
@@ -103,29 +105,31 @@
             <!-- ICON GROUP 2 -->
             <div class="row">
                 <div class="col-12 icon-title">
-                    <h2>Våre hjertesaker</h2>
+                    <h2>Slik fungerer det</h2>
                 </div>
-                <div class="col-4">
-                    <img src="" alt="Icon">
-                    <p>Forklarende tekst</p>
-                </div>
-                <div class="col-4">
-                    <img src="" alt="Icon">
-                    <p>Forklarende tekst</p>
-                </div>
-                <div class="col-4">
-                    <img src="" alt="Icon">
-                    <p>Forklarende tekst</p>
-                </div>
-                <div class="col-push-2"></div>
-                <div class="col-4">
-                    <img src="" alt="Icon">
-                    <p>Forklarende tekst</p>
-                </div>
-                <div class="col-4">
-                    <img src="" alt="Icon">
-                    <p>Forklarende tekst</p>
-                </div>
+                <ol>
+                    <div class="col-4">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                    <div class="col-4">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                    <div class="col-4">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                    <div class="col-push-2"></div>
+                    <div class="col-4">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                    <div class="col-4">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                </ol>
                 <div class="col-push-2"></div>
             </div>
             <!-- CTA BUTTON -->

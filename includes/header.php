@@ -11,7 +11,7 @@
                 <a href="profile-index.php">Profil</a>
             </ul>
             <ul>
-                <a href="kontakt.php">Logg inn / Registrer</a>
+                <a href="">Logg inn / Registrer</a>
             </ul>
         </nav>
     </div>
