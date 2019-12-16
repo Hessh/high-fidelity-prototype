@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800&display=swap">
@@ -19,19 +20,21 @@
     <div class="container-fluid">
         <div class="container">
             <!-- HEADING -->
-            <div class="row main-title-container">
-                <div class="col-12 main-title">
-                    <h1>Hovedtittel</h1>
+            <div class="row">
+                <div class="col-12 main-title-container">
+                    <h1 class="main-title">Hovedtittel</h1>
                 </div>
             </div>
             <!-- TEXTCONTENT 1 -->
-            <div class="row text-row-container text-row-container-left">
-                <div class="col-8 text-container">
-                    <h2>Litt for mye klær liggende i skapet?</h2>
-                    <p>Registrer dine plagg og motta gavekort hos våre samarbeidspartnere. Spar tiden du ellers ville brukt på å undersøke priser på like produkter, skrive om dine plagg og avtale møtested!</p>
+            <div class="row text-wrapper">
+                <div class="col-8 text-container text-container-left">
+                    <h2 class="title">Litt for mye klær liggende i skapet?</h2>
+                    <p class="text">Registrer dine plagg og motta gavekort hos våre samarbeidspartnere. Spar tiden du ellers ville brukt på å undersøke priser på like produkter, skrive om dine plagg og avtale møtested!</p>
                 </div>
-                <div class="col-4 img-container">
+                <div class="col-push-1"></div>
+                <div class="col-3 img-container">
                     <img src="" alt="Illustrasjon">
+                    <!-- https://unsplash.com/photos/Fzde_6ITjkw -->
                 </div>
             </div>
             <!-- CTA BUTTON -->
@@ -45,31 +48,35 @@
                 <div class="col-12 icon-title">
                     <h2>Slik fungerer det</h2>
                 </div>
-                <ol>
-                    <div class="col-4">
+            </div>
+            <ol>
+                <div class="row icon-wrapper">
+                    <div class="col-4 icon-container">
                         <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
+                        <li>Registrer plagget ved å klikke deg frem til riktig plagg</li>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 icon-container">
                         <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
+                        <li>Få en estimert verdi på et gavekort hos gjeldende merke. Slik at du får et inntrykk av plaggets verdi og hva gavekortet du får vil ligge på i verdi</li>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 icon-container">
                         <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
+                        <li>Motta en sendingspose i posten, pakk, forsegl og send den inn til oss / Lever det i din nærmeste butikk.</li>
+                    </div>
+                </div>
+                <div class="row icon-wrapper">
+                    <div class="col-push-2"></div>
+                    <div class="col-4 icon-container">
+                        <img src="" alt="Icon">
+                        <li>Vent på verdivurdering fra våre eksperter (3 dager)- aksepter eller avslå tilbudet</li>
+                    </div>
+                    <div class="col-4 icon-container">
+                        <img src="" alt="Icon">
+                        <li>Aksepter for å motta gavekort som du kan bruke i gjeldende butikk</li>
                     </div>
                     <div class="col-push-2"></div>
-                    <div class="col-4">
-                        <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
-                    </div>
-                    <div class="col-4">
-                        <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
-                    </div>
-                </ol>
-                <div class="col-push-2"></div>
-            </div>
+                </div>
+            </ol>
             <!-- CTA BUTTON -->
             <div class="row">
                 <div class="col-12 button-container">
@@ -77,22 +84,24 @@
                 </div>
             </div>
             <!-- TEXTCONTENT 2 -->
-            <div class="row text-row-container text-row-container-right">
-                <div class="col-4 img-container">
-                    <img src="" alt="Illustrasjon">
+            <div class="row text-wrapper">
+                <div class="col-3 img-container">
+                    <img src="" alt="Koselig miljøbilde">
                 </div>
+                <div class="col-push-1"></div>
                 <div class="col-8 text-container">
-                    <H2>Tittel</H2>
-                    <p>Tekst</p>
+                    <H2>Bli med oss å skape kulturen</H2>
+                    <p>Vi ønsker å ta kjøp og salg av gjenbruksklær til nye høyder, ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!</p>
                 </div>
             </div>
             <!-- TEXTCONTENT 3 -->
-            <div class="row text-row-container text-row-container-left">
+            <div class="row text-wrapper">
                 <div class="col-8 text-container">
                     <h2>Tittel</h2>
                     <p>Tekst</p>
                 </div>
-                <div class="col-4 img-container">
+                <div class="col-push-1"></div>
+                <div class="col-3 img-container">
                     <img src="" alt="Illustrasjon">
                 </div>
             </div>
@@ -105,33 +114,37 @@
             <!-- ICON GROUP 2 -->
             <div class="row">
                 <div class="col-12 icon-title">
-                    <h2>Slik fungerer det</h2>
+                    <h2>Våre hjertesaker</h2>
                 </div>
-                <ol>
-                    <div class="col-4">
+            </div>
+            <ol>
+                <div class="row icon-wrapper">
+                    <div class="col-4 icon-container">
                         <img src="" alt="Icon">
                         <li>Forklarende tekst</li>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 icon-container">
                         <img src="" alt="Icon">
                         <li>Forklarende tekst</li>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 icon-container">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                </div>
+                <div class="row icon-wrapper">
+                    <div class="col-push-2"></div>
+                    <div class="col-4 icon-container">
+                        <img src="" alt="Icon">
+                        <li>Forklarende tekst</li>
+                    </div>
+                    <div class="col-4 icon-container">
                         <img src="" alt="Icon">
                         <li>Forklarende tekst</li>
                     </div>
                     <div class="col-push-2"></div>
-                    <div class="col-4">
-                        <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
-                    </div>
-                    <div class="col-4">
-                        <img src="" alt="Icon">
-                        <li>Forklarende tekst</li>
-                    </div>
-                </ol>
-                <div class="col-push-2"></div>
-            </div>
+                </div>
+            </ol>
             <!-- CTA BUTTON -->
             <div class="row">
                 <div class="col-12 button-container">
