@@ -1,1 +1,30 @@
 /* INDEX STYLES */
+
+.main-title {
+    text-align: center;
+}
+
+.text-wrapper {
+    align-items: center;
+}
+
+.img-container {
+    width: 15rem !important;
+    height: 15rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.icon-wrapper {
+    justify-content: center;
+}
+
+.icon-title {
+    text-align: center;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
