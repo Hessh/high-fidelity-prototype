@@ -35,22 +35,18 @@
                     <img src="" alt="Illustrasjon">
                 </div>
             </div>
-            <!---
-        <div id="products-container"></div>
-        ---->
+        <div id="products-container" class="container"></div>
     </div>
     <?php include './includes/footer.php' ?>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
     <script src="js/products.js"></script>
     <script src="js/filter.js"></script>
-<!---
     <script>
         for (i = 0; i < products.length; i++) {
             renderProduct(document.getElementById("products-container"), products[i]);
         }
     </script>
------>
 </body>
 
 </html>

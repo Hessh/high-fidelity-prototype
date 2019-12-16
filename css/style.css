@@ -7,38 +7,3 @@ html, body {
     font-size: 1rem;
     background-color: #FCF6F3;
 }
-
-/*
-    PRODUCTS
- */
-.product-div {
-}
-
-.product-brand {
-
-}
-
-.product-category {
-
-}
-
-.product-subcategory {
-
-}
-
-.product-gender {
-
-}
-
-.product-model {
-
-}
-
-.product-color {
-
-}
-
-.product-image {
-    width: 300px;
-    height: 300px;
-}

@@ -1,1 +1,64 @@
 /* FILTER STYLES */
+
+/*
+    PRODUCTS
+ */
+
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-div {
+    margin: 10px;
+    padding: 10px;
+
+    text-decoration: none;
+    color: #000000;
+
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px 10px 0 0;
+
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 10px -1px rgba(0,0,0,0.1);
+
+    transition: 0.1s;
+}
+
+.product-div:hover {
+    box-shadow: 0 5px 10px -1px rgba(0,0,0,0.6);
+}
+
+.product-image {
+    width: 250px;
+}
+
+.product-brand {
+    padding: 5px 0 5px 0;
+
+    font-weight: bold;
+
+    border-top: 2px solid rgba(0,0,0, 0.5);
+}
+
+.product-category {
+    display: none;
+}
+
+.product-subcategory {
+    display: none;
+}
+
+.product-gender {
+    display: none;
+}
+
+.product-model {
+    font-size: 20px;
+    padding: 0 0 5px 0;
+}
+
+.product-color {
+
+}
