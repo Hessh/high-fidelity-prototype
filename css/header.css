@@ -7,7 +7,8 @@ header {
     grid-template-columns: 30% 70%;
     width: 100vw;
     height: 4rem;
-    background-color: transparent;
+    background-color: #FFF;
+    box-shadow: 1px 0px 4px #00000030;
 }
 
 .header-left {
