@@ -1,6 +1,7 @@
 class Product {
 
     constructor(brand, category, subCategory, gender, model, color, imageLink) {
+        this._id = Product.incrementId();
         this.brand = brand;
         this.category = category;
         this.subCategory = subCategory;
@@ -10,6 +11,14 @@ class Product {
         this.imageLink = imageLink;
     }
 
+    static incrementId() {
+        if (!this.latestId) {
+            this.latestId = 1;
+        } else {
+            this.latestId++;
+        }
+        return this.latestId -1;
+    }
 }
 // Use this to Render all products. Container must have ID="products-container".
 // for (i = 0; i < products.length; i++) {renderProduct(document.getElementById("products-container"), products[i]);}
@@ -18,7 +27,7 @@ function renderProduct(container, product) {
 
     let productDiv = document.createElement("a");
     productDiv.classList.add("product-div");
-    productDiv.setAttribute("href", product.imageLink);
+    productDiv.setAttribute("href", "condition.php?id=" + product._id);
 
     let imgElement = document.createElement("img");
     imgElement.classList.add("product-image");
