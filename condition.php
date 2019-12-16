@@ -18,7 +18,58 @@
 <body>
     <?php include './includes/header.php' ?>
     <div class="container-fluid first">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="main-title">Hovedtittel</h1>
+                </div>
+            </div>
+            <!-- AGE -->
+            <div class="row">
+                <div class="col-12">
+                    <h2>Tittel</h2>
+                </div>
+                <div class="col-12">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                </div>
+            </div>
+            <!-- WEAR -->
+            <div class="row">
+                <div class="col-12">
+                    <h2>Tittel</h2>
+                </div>
+                <div class="col-12">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                    <input type="radio">
+                </div>
+            </div>
+            <!-- UPLOAD PICTURE -->
+            <div class="row">
+                <div class="col-12">
+                    <h2>Tittel</h2>
+                </div>
+                <div class="col-12">
+                    <button>Last opp bilde</button>
+                </div>
+                <div class="col-12">
+                    <div class="preview"></div>
+                </div>
+            </div>
+            <!-- CTA BUTTON -->
+            <div class="row">
+                <div class="col-12 button-container">
+                    <button class="cta-button" onclick="estimate()">Beregn verdi</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            MASSE PENGER
+        </div>
     </div>
     <?php include './includes/footer.php' ?>
     <script src="js/menu.js"></script>

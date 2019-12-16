@@ -9,6 +9,7 @@ header {
     height: 4rem;
     background-color: #FFF;
     box-shadow: 1px 0px 4px #00000030;
+    z-index: 2;
 }
 
 .header-left {

@@ -1,1 +1,26 @@
 /* CONDITION STYLES */
+
+.preview {
+    position: relative;
+    width: 50%;
+    height: 15rem;
+    border: 1px solid lightgray;
+}
+
+.preview:before, .preview:after {
+    position: absolute;
+    top: -140px;
+    left: 240px;
+    content: ' ';
+    height: 525px;
+    width: 1px;
+    background-color: lightgray;
+}
+
+.preview:before {
+    transform: rotate(64deg);
+}
+
+.preview:after {
+    transform: rotate(-64deg);
+}
