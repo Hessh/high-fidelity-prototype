@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-container">
         <div class="footer-content footer-content-1">
-            <a target="_blank" href="https://repairable.no/"><img src="./img/repairable.png" alt="Logo"></a>
+            <a target="_blank" href="https://repairable.no/"><img src="./img/logo/repairable.png" alt="Logo"></a>
         </div>
         <div class="footer-content footer-content-2">
             <div class="footer-wrapper">
