@@ -18,17 +18,39 @@
 <body>
     <?php include './includes/header.php' ?>
     <div class="container-fluid">
+        <div class="row text-row-container text-row-container-left">
+                <div class="col-2 text-container">
+                    <div id="filter"></div>
+                </div>
+                <div class="col-2 text-container">
+                    <div id="filterCategory"></div>
+                </div>
+                <div class="col-2 text-container">
+                    <div id="filterSubCategory"></div>
+                </div>
+                <div class="col-2 text-container">
+                    <div id="Gender"></div>
+                </div>
+                <div class="col-4 img-container">
+                    <img src="" alt="Illustrasjon">
+                </div>
+            </div>
+            <!---
         <div id="products-container"></div>
+        ---->
     </div>
     <?php include './includes/footer.php' ?>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
     <script src="js/products.js"></script>
+    <script src="js/filter.js"></script>
+<!---
     <script>
         for (i = 0; i < products.length; i++) {
             renderProduct(document.getElementById("products-container"), products[i]);
         }
     </script>
+----->
 </body>
 
 </html>
