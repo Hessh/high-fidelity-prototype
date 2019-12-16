@@ -1,0 +1,9 @@
+/* COMMON */
+
+html, body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #FCF6F3;
+}

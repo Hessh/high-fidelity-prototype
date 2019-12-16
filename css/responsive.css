@@ -1,0 +1,115 @@
+.container-fluid {
+    width: 100vw;
+    min-height: calc(100vh - 30vh);
+}
+
+.container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    margin: 0 -10px;
+    padding: 5px 10px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-push-"] {
+    display: block;
+}
+
+.col-push-1 {width: 8.33%;}
+.col-push-2 {width: 16.66%;}
+.col-push-3 {width: 25%;}
+.col-push-4 {width: 33.33%;}
+.col-push-5 {width: 41.66%;}
+.col-push-6 {width: 50%;}
+.col-push-7 {width: 58.33%;}
+.col-push-8 {width: 66.66%;}
+.col-push-9 {width: 75%;}
+.col-push-10 {width: 83.33%;}
+.col-push-11 {width: 91.66%;}
+.col-push-12 {width: 100%;}
+
+@media only screen and (max-width: 780px) {
+
+.col-sm-push-1 {width: 8.33%;}
+.col-sm-push-2 {width: 16.66%;}
+.col-sm-push-3 {width: 25%;}
+.col-sm-push-4 {width: 33.33%;}
+.col-sm-push-5 {width: 41.66%;}
+.col-sm-push-6 {width: 50%;}
+.col-sm-push-7 {width: 58.33%;}
+.col-sm-push-8 {width: 66.66%;}
+.col-sm-push-9 {width: 75%;}
+.col-sm-push-10 {width: 83.33%;}
+.col-sm-push-11 {width: 91.66%;}
+.col-sm-push-12 {width: 100%;}
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+.sm-none {display: none;}
+.order-sm-one {order:1;}
+.order-sm-two {order:2;}
+.order-sm-three {order:3;}
+.order-sm-four {order:4;}
+.sm-text-center {text-align: center;}
+.sm-container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.container-fluid{
+    min-height: unset;
+}
+
+.container{
+    margin: 2rem 1rem;
+}
+
+}
+
+@media only screen and (min-width: 780px){
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+    .lg-none {display: none;}
+}
