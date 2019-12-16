@@ -1,7 +1,7 @@
 <header>
     <div class="header-left">
         <div id="logo">
-            <a href="./"><img id="logo-img" src="./img/restore.png" alt="logo"></a>
+            <a href="./"><img id="logo-img" src="./img/logo/restore.png" alt="logo"></a>
         </div>
     </div>
     <div class="header-right">
