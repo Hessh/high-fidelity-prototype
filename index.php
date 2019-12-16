@@ -64,7 +64,7 @@
                         <li>Motta en sendingspose i posten, pakk, forsegl og send den inn til oss / Lever det i din nærmeste butikk.</li>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row icon-wrapper">
                     <div class="col-push-2"></div>
                     <div class="col-4 icon-container">
                         <img src="" alt="Icon">
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <!-- TEXTCONTENT 2 -->
-            <div class="row text-row-container text-row-container-right">
+            <div class="row text-wrapper">
                 <div class="col-3 img-container">
                     <img src="" alt="Koselig miljøbilde">
                 </div>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <!-- TEXTCONTENT 3 -->
-            <div class="row text-row-container text-row-container-left">
+            <div class="row text-wrapper">
                 <div class="col-8 text-container">
                     <h2>Tittel</h2>
                     <p>Tekst</p>
@@ -132,7 +132,7 @@
                         <li>Forklarende tekst</li>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row icon-wrapper">
                     <div class="col-push-2"></div>
                     <div class="col-4 icon-container">
                         <img src="" alt="Icon">
