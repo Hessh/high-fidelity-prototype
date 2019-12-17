@@ -32,17 +32,23 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-3 content-center">
-                        <input type="radio">
+                    <div class="col-3 content-center ">
+                        <div class="col content-center column">
+                            <label for="first">0-2</label>
+                            <input type="radio" id="first">
+                        </div>
                     </div>
-                    <div class="col-3 content-center">
-                        <input type="radio">
+                    <div class="col-3 content-center column">
+                        <label for="second">3-5</label>
+                        <input type="radio" id="second">
                     </div>
-                    <div class="col-3 content-center">
-                        <input type="radio">
+                    <div class="col-3 content-center column">
+                        <label for="third">6-8</label>
+                        <input type="radio" id="third">
                     </div>
-                    <div class="col-3 content-center">
-                        <input type="radio">
+                    <div class="col-3 content-center column">
+                        <label for="fourth">9+</label>
+                        <input type="radio" id="fourth">
                     </div>
                 </div>
             </div>
@@ -54,17 +60,21 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-3 content-center">
-                        <input type="radio">
+                    <div class="col-3 content-center column">
+                        <label for="as-new">Som ny</label>
+                        <input type="radio" id="as-new">
                     </div>
-                    <div class="col-3 content-center">
-                        <input type="radio">
+                    <div class="col-3 content-center column">
+                        <label for="easy-worn">Litt slitt</label>
+                        <input type="radio" id="easy-worn">
                     </div>
-                    <div class="col-3 content-center">
-                        <input type="radio">
+                    <div class="col-3 content-center column">
+                        <label for="worn">Slitt</label>
+                        <input type="radio" id="worn">
                     </div>
-                    <div class="col-3 content-center">
-                        <input type="radio">
+                    <div class="col-3 content-center column">
+                        <label for="very-worn">Veldig slitt</label>
+                        <input type="radio" id="very-worn">
                     </div>
                 </div>
             </div>
@@ -97,7 +107,7 @@
             <!-- UPLOAD PICTURE -->
             <div class="row">
                 <div class="col-12">
-                    <h2>Bilde (valgfritt)</h2>
+                    <h2>Bilde (anbefales)</h2>
                 </div>
                 <div class="col-12">
                     <button>Last opp bilde</button>

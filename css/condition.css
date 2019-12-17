@@ -31,6 +31,25 @@
     align-items: center;
 }
 
+.content-end {
+    display: flex;
+    justify-content: end;
+}
+
 .column {
     flex-direction: column;
+}
+
+#S {
+    position: relative;
+}
+
+#S:after {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    content: ' ';
+    height: 1px;
+    width: 155px;
+    background-color: lightgray;
 }
