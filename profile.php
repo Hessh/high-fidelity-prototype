@@ -32,14 +32,14 @@
                 <!-- INDEX -->
                 <div class="row">
                     <div class="col-12">
-                        <button id="discounts" class="discounts" onclick="toDiscounts()">
+                        <button id="discounts" class="discounts">
                             <h3>Dine rabatter</h3>
                         </button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <button id="orders" class="orders" onclick="toOrders()">
+                        <button id="orders" class="orders">
                             <h3>Dine order</h3>
                         </button>
                     </div>
