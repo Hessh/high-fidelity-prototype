@@ -1,5 +1,13 @@
 /* DONE STYLES */
 
+* {
+    text-align: center;
+}
+
+.title {
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+}
 
 .icon-wrapper {
     justify-content: center;
@@ -17,36 +25,20 @@
 }
 
 .icon-container img {
-    width: 10rem;
-    height: 10rem;
+    width: 7.5rem;
+    height: 7.5rem;
     margin-bottom: 1rem;
     border: 1px solid #000;
     border-radius: 50%;
 }
 
-.container-fluid {
-    text-align: center;
-}
-
-h1, h4 {
+.icon-container h3 {
     margin: 0.5rem 1rem;
     text-align: center;
 }
 
-p {
+.icon-container p {
     margin: 0 1rem;
     text-align: center;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-   
-    
-}
-
-.cta-button {
-    background-color: #A1D192;
-    color: black;
 }
 

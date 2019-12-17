@@ -51,7 +51,7 @@
                     <input type="text" id="address" placeholder="Din gateadresse">
                     <label for="zip">Postnummer</label>
                     <input type="zipcode" id="zip" placeholder="Ditt postnummer">
-                    <input type="submit" class="submit-button">
+                    <a class="center" href="done.php"><button class="submit-button">Fullfør</button></a>
                 </div>
                 <div class="col-push-3"></div>
             </div>

@@ -125,6 +125,12 @@
         </div>
         <div class="container">
             MASSE PENGER
+            <!-- NEXT BUTTON -->
+            <div class="row">
+                <div class="col-12 button-container">
+                    <a href="delivery.php"><button class="cta-button">Videre</button></a>
+                </div>
+            </div>
         </div>
     </div>
     <?php include './includes/footer.php' ?>
