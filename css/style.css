@@ -1,8 +1,11 @@
 /* COMMON STYLES FOR ALL SITES */
 
+* {
+    font-family: 'Muli', sans-serif;
+}
+
 html, body {
     margin: 0;
-    font-family: 'Muli', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     background-color: #FFFFFF;

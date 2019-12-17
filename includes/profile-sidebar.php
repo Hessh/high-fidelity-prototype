@@ -5,9 +5,18 @@
 </div>
 <div class="row">
     <div class="col-12">
-        <h2>Name</h2>
-        <h3>Email</h3>
-        <h3>Address</h3>
-        <button>Edit</button>
+        <h2>Ola Nordmann</h2>
+        <div class="info-wrapper">
+            <span class="material-icons-outlined">email</span>
+            <span>ola-gutten1@gmail.com</span>
+        </div>
+        <div class="info-wrapper">
+            <span class="material-icons-outlined">room</span>
+            <span>Heiveien 1,</span>
+            <div class="last-span">
+                <span>0570 Oslo</span>
+            </div>
+        </div>
+        <button id="edit-button" class="edit-button" onclick="editProfile()">Edit Profile</button>
     </div>
 </div>

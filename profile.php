@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/profile/index.css">
+    <link rel="stylesheet" href="./css/profile/style.css">
     <link rel="stylesheet" href="./css/profile/sidebar.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -36,6 +36,7 @@
     <?php include './includes/footer.php' ?>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
 </body>
 
 </html>
