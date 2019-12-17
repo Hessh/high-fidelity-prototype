@@ -7,3 +7,25 @@
 .map-container .col-12 {
     flex-direction: column;
 }
+
+.cta-buttons {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: 1px 1px 3px #00000050;
+    font-size: 1rem;
+    background-color: #A1D192;
+    color: black;
+}
+
+.submit-button{
+    width: 7rem;
+    align-self: center;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: 1px 1px 3px #00000050;
+    font-size: 1rem;
+    background-color: #A1D192;
+    color: black;
+}
