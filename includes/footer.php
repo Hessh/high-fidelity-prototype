@@ -27,7 +27,12 @@
         <div class="footer-content footer-content-2">
             <div class="footer-wrapper">
                 <h4>SOSIALE MEDIER</h4>
-                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-facebook-square">
+                    <i class="fa fa-twitter-square">
+                        <i class="fa fa-linkedin">
+                        </i>
+                    </i>
+                </i>
             </div>
         </div>
     </div>
