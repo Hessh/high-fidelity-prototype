@@ -32,19 +32,19 @@
                     <h2 class="title">Litt for mye klær liggende i skapet?</h2>
                     <p class="text">Registrer dine plagg og motta gavekort hos våre samarbeidspartnere. 
                         Spar tiden du ellers ville brukt på å undersøke priser, beskrive dine plagg og avtale møtested med kjøper. Vi gjør jobben for deg!</p>
-                    </div>
+                        <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+                    <br><br><br>
+                </div>
+                </div>
+    
                 <div class="col-6 img-container">
                     <img src="img/browse.jpg" alt="Brukte klær">
                     <!-- https://unsplash.com/photos/Fzde_6ITjkw -->
                 </div>
             </div>
-            <!-- CTA BUTTON -->
-            <div class="row">
-                <div class="col-12 button-container">
-                    <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
-                </div>
+                
             </div>
-        </div>
+     
         <div class="container">
             <!-- ICON GROUP 1 -->
             <div class="row">
