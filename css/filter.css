@@ -1,6 +1,22 @@
 /* FILTER STYLES */
 
 /*
+    FILTER MENU
+*/
+
+.selected-filter-element {
+    font-weight: 800;
+}
+
+.selected-filter-element:after {
+    content: " >";
+}
+
+.filter-element {
+    cursor: pointer;
+}
+
+/*
     PRODUCTS
  */
 
