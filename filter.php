@@ -46,9 +46,7 @@
     <script src="js/products.js"></script>
     <script src="js/filter.js"></script>
     <script>
-        for (i = 0; i < products.length; i++) {
-            renderProduct(document.getElementById("products-container"), products[i]);
-        }
+        renderFilterPage();
     </script>
 </body>
 

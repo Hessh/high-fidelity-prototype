@@ -175,5 +175,3 @@ function filter(products){
         filteredProducts = filteredProducts.filter(e => e.model == selectedModel)
     }
 }
-
-renderFilterPage();
