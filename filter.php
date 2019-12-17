@@ -19,20 +19,23 @@
     <?php include './includes/header.php' ?>
     <div class="container-fluid first">
         <div class="row text-row-container text-row-container-left">
-                <div id="filter"class="col-2 text-container">
+                <div id="filter-brand"class="col-2 text-container">
                     
                 </div>
-                <div id="filterCategory" class="col-2 text-container">
+                <div id="filter-category" class="col-2 text-container">
                     
                 </div>
-                <div  id="filterSubCategory" class="col-2 text-container">
+                <div  id="filter-sub-category" class="col-2 text-container">
                     
                 </div>
-                <div class="col-2 text-container">
-                    <div id="Gender"></div>
+                <div id="filter-gender" class="col-2 text-container">
+
                 </div>
-                <div class="col-4 img-container">
-                    <img src="" alt="Illustrasjon">
+                <div id="filter-color" class="col-2 text-container">
+
+                </div>
+                <div id="filter-model" class="col-2 img-container">
+
                 </div>
             </div>
         <div id="products-container" class="container"></div>
