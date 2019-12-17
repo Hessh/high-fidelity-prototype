@@ -1,10 +1,5 @@
 /* DELIVERY STYLES */
 
-.center {
-    display: flex;
-    justify-content: center;
-}
-
 .input-form {
     flex-direction: column;
 }

@@ -23,6 +23,15 @@
     background-color: transparent;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    float: right;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -32,8 +41,6 @@
 
 [class*="col-"] {
     float: left;
-    margin: 0 -10px;
-    padding: 5px 0px;
 }
 
 .col-1 {width: 8.33%;}

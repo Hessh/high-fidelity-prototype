@@ -1,11 +1,3 @@
-/* FARGEPALETT */
-.Proto-1-hex { color: #FCF6F3; }
-.Proto-2-hex { color: #E3D5D3; }
-.Proto-3-hex { color: #D13B3B; }
-.Proto-4-hex { color: #772F2F; }
-.Proto-5-hex { color: #555555; }
-
-
 /* COMMON STYLES FOR ALL SITES */
 
 * {
@@ -30,6 +22,10 @@ html, body {
 
 .title {
     margin-top: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .button-container {
