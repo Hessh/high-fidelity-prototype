@@ -4,6 +4,7 @@
     width: 90%;
 }
 
+
 .icon-wrapper {
     justify-content: center;
 }
@@ -40,4 +41,12 @@
 .button-container {
     display: flex;
     justify-content: center;
+   
+    
 }
+
+.cta-button {
+    background-color: #D13B3B;
+    color: white;
+}
+

@@ -1,3 +1,11 @@
+/* FARGEPALETT */
+.Proto-1-hex { color: #FCF6F3; }
+.Proto-2-hex { color: #E3D5D3; }
+.Proto-3-hex { color: #D13B3B; }
+.Proto-4-hex { color: #772F2F; }
+.Proto-5-hex { color: #555555; }
+
+
 /* COMMON STYLES FOR ALL SITES */
 
 * {
@@ -8,6 +16,7 @@ html, body {
     margin: 0;
     font-weight: 400;
     font-size: 1rem;
+    line-height: 1.5rem;
     background-color: #FFFFFF;
 }
 
@@ -33,6 +42,8 @@ html, body {
     border-radius: 0.2rem;
     box-shadow: 1px 1px 3px #00000050;
     font-size: 1rem;
+    background-color: #D13B3B;
+    color: white;
 }
 
 .cta-button:hover {

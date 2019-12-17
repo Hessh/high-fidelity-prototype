@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -22,15 +23,15 @@
             <!-- HEADING -->
             <div class="row">
                 <div class="col-12 main-title-container">
-                    <h1 class="main-title">Hovedtittel</h1>
                 </div>
             </div>
             <!-- TEXTCONTENT 1 -->
             <div class="row">
                 <div class="col-6">
                     <h2 class="title">Litt for mye klær liggende i skapet?</h2>
-                    <p class="text">Registrer dine plagg og motta gavekort hos våre samarbeidspartnere. Spar tiden du ellers ville brukt på å undersøke priser på like produkter, skrive om dine plagg og avtale møtested!</p>
-                </div>
+                    <p class="text">Registrer dine plagg og motta gavekort hos våre samarbeidspartnere. 
+                        Spar tiden du ellers ville brukt på å undersøke priser, beskrive dine plagg og avtale møtested med kjøper. Vi gjør jobben for deg!</p>
+                    </div>
                 <div class="col-6 img-container">
                     <img src="img/browse.jpg" alt="Brukte klær">
                     <!-- https://unsplash.com/photos/Fzde_6ITjkw -->
@@ -53,17 +54,17 @@
             <div class="row icon-wrapper">
                 <div class="col-4 icon-container">
                     <img src="" alt="Icon">
-                    <h3>1. Tittel</h3>
+                    <h3>1. Registrer plagget</h3>
                     <p>Registrer plagget ved å klikke deg frem til riktig plagg</p>
                 </div>
                 <div class="col-4 icon-container">
                     <img src="" alt="Icon">
-                    <h3>2. Tittel</h3>
+                    <h3>2. Estimert verdi</h3>
                     <p>Få en estimert verdi på et gavekort hos gjeldende merke. Slik at du får et inntrykk av plaggets verdi og hva gavekortet du får vil ligge på i verdi</p>
                 </div>
                 <div class="col-4 icon-container">
                     <img src="" alt="Icon">
-                    <h3>3. Tittel</h3>
+                    <h3>3. Send/lever</h3>
                     <p>Motta en sendingspose i posten, pakk, forsegl og send den inn til oss / Lever det i din nærmeste butikk.</p>
                 </div>
             </div>
@@ -71,12 +72,12 @@
                 <div class="col-push-2"></div>
                 <div class="col-4 icon-container">
                     <img src="" alt="Icon">
-                    <h3>4. Tittel</h3>
+                    <h3>4. Vent på vurdering</h3>
                     <p>Vent på verdivurdering fra våre eksperter (3 dager)- aksepter eller avslå tilbudet</p>
                 </div>
                 <div class="col-4 icon-container">
                     <img src="" alt="Icon">
-                    <h3>5. Tittel</h3>
+                    <h3>5. Motta tilbud</h3>
                     <p>Aksepter for å motta gavekort som du kan bruke i gjeldende butikk</p>
                 </div>
                 <div class="col-push-2"></div>
@@ -89,24 +90,51 @@
             </div>
         </div>
         <div class="container">
-            <!-- TEXTCONTENT 2 -->
+            <!-- TEXTCONTENT 2-->
+        <div class="row text-wrapper">
+                <div class="col-6 img-container">
+                    <br><img src="img/resale.jpg" alt="Gavekort">
+                </div>
+                <div class="col-6 text-container">
+                <br><br><br>
+                <h2 class="title">Hvorfor ReStore?</h2>
+                    <p class="text">Restore betyr å restaurere.
+                        <br>Vi følger definisjonene på å restaurere:
+                    </p>
+                    <p class="text">: å returnere noe 
+                        <br>: å bringe noe tilbake til eksistens eller bruk. 
+                        <br>: å returnere noe til en tidligere eller original tilstand ved å reparere det, rengjøre det, sette i stand osv.
+                </div>
+               
+            </div>
+            <!-- TEXTCONTENT 3 -->
+            <br><br>
             <div class="row text-wrapper">
+                <div class="col-6 text-container">
+                    <h2 class="title">Vårt mål</h2>
+                    <p class="text">Vårt mål er å skape en kultur for kjøp og salg av gjenbruksklær. Det vil vi gjøre ved å oppfordre deg som bruker til å sende inn plagg til oss. </p>
+                    <p class="text">Vi sender brukte klær i god stand til butikkenes merker slik at disse kan bli solgt på nytt i deres bruktavdelinger. Samtidig som du bidrar til et 
+                        bedre miljø vil du kunne få muligheten til å kjøpe noe nytt med gavekortene du får. Slik minsker vi på sikt store mengder av klesforbruket.</p>
+                </div>
                 <div class="col-6 img-container">
                     <img src="img/plant.jpg" alt="Plante">
                 </div>
-                <div class="col-6 text-container">
-                    <h2 class="title">Bli med oss å skape kulturen</h2>
-                    <p class="text">Vi ønsker å ta kjøp og salg av gjenbruksklær til nye høyder, ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!</p>
-                </div>
             </div>
-            <!-- TEXTCONTENT 3 -->
+            
+            <!-- TEXTCONTENT 4 -->
             <div class="row text-wrapper">
-                <div class="col-6 text-container">
-                    <h2 class="title">Tittel</h2>
-                    <p class="text">Tekst</p>
+            <br><br>
+            <div class="col-6 img-container">
+                    <br><img src="img/thankyou.jpg" alt="Gavekort">
                 </div>
-                <div class="col-6 img-container">
-                    <img src="" alt="Illustrasjon">
+                <div class="col-6 text-container">
+                <br><br><br>
+                <h2 class="title">Bli med oss å skape kulturen</h2>
+                    <p class="text">Vi ønsker å skape en kultur for kjøp og salg av gjenbruksklær til nye høyder, 
+                        ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!
+                    </p>
+                    <p class="text">Som takk for at du sender inn dine brukte klær til oss får du ulike gavekort basert på hvilke type merker det er og plaggets tilstand. Derfor har vi også en estimert verdi du får 
+                        før du leverer inn, slik at du kan se hva slags verdi dine plagg ligger på.</p>
                 </div>
             </div>
             <!-- CTA BUTTON -->
@@ -126,17 +154,17 @@
             <div class="row icon-wrapper">
                 <div class="col-4 icon-container">
                     <img src="" alt="Icon">
-                    <h3>1. Tittel</h3>
+                    <h3>Dyr</h3>
                     <p>Forklarende tekst</p>
                 </div>
                 <div class="col-4 icon-container">
                     <img src="" alt="Icon">
-                    <h3>2. Tittel</h3>
+                    <h3>Din lommebok</h3>
                     <p>Forklarende tekst</p>
                 </div>
                 <div class="col-4 icon-container">
                     <img src="" alt="Icon">
-                    <h3>3. Tittel</h3>
+                    <h3>Havet</h3>
                     <p>Forklarende tekst</p>
                 </div>
             </div>
@@ -144,12 +172,12 @@
                 <div class="col-push-2"></div>
                 <div class="col-4 icon-container">
                     <img src="" alt="Icon">
-                    <h3>4. Tittel</h3>
+                    <h3>Miljø</h3>
                     <p>Forklarende tekst</p>
                 </div>
                 <div class="col-4 icon-container">
                     <img src="" alt="Icon">
-                    <h3>5. Tittel</h3>
+                    <h3>Regnskogen</h3>
                     <p>Forklarende tekst</p>
                 </div>
                 <div class="col-push-2"></div>
