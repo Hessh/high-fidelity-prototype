@@ -6,7 +6,7 @@
         <div class="footer-content footer-content-2">
             <div class="footer-wrapper">
                 <h4>INFORMASJON</h4>
-                <h5></h5>
+                <a href=""><h5>FAQ</h5></a>
                 <h5></h5>
                 <h5></h5>
                 <h5></h5>
@@ -15,11 +15,17 @@
         <div class="footer-content footer-content-4">
             <div class="footer-wrapper">
                 <h4>KONTAKT</h4>
+                <h5><a href="">E-post</a></h5>
+                <h5><a href="">Tlf: 22 22 22 22</a></h5>
                 <h5><a href=""></a></h5>
                 <h5><a href=""></a></h5>
                 <h5><a href=""></a></h5>
-                <h5><a href=""></a></h5>
-                <h5><a href=""></a></h5>
+            </div>
+        </div>
+        <div class="footer-content footer-content-2">
+            <div class="footer-wrapper">
+                <h4>SOSIALE MEDIER</h4>
+                <i class="fab fa-facebook"></i>
             </div>
         </div>
     </div>
