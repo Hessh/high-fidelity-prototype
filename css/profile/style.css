@@ -2,7 +2,7 @@
 
 .top-nav {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .top-nav button {
@@ -11,10 +11,6 @@
     border-right: 1px solid lightgray;
     font-size: 1rem;
     background-color: transparent;
-}
-
-.top-nav button:last-of-type {
-    border: none;
 }
 
 .top-nav button:hover {
