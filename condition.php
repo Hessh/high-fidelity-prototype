@@ -21,37 +21,83 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="main-title">Hovedtittel</h1>
+                    <h1 class="main-title">Registrer produkt</h1>
                 </div>
             </div>
             <!-- AGE -->
             <div class="row">
                 <div class="col-12">
-                    <h2>Tittel</h2>
+                    <div class="col-12 content-center">
+                        <h2>Alder</h2>
+                    </div>
                 </div>
-                <div class="col-12">
-                    <input type="radio">
-                    <input type="radio">
-                    <input type="radio">
-                    <input type="radio">
+                <div class="row">
+                    <div class="col-3 content-center">
+                        <input type="radio">
+                    </div>
+                    <div class="col-3 content-center">
+                        <input type="radio">
+                    </div>
+                    <div class="col-3 content-center">
+                        <input type="radio">
+                    </div>
+                    <div class="col-3 content-center">
+                        <input type="radio">
+                    </div>
                 </div>
             </div>
-            <!-- WEAR -->
+            <!-- DEGRATATION -->
+            <div class="row">
+            <div class="col-12">
+                    <div class="col-12 content-center">
+                        <h2>Slitasje</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 content-center">
+                        <input type="radio">
+                    </div>
+                    <div class="col-3 content-center">
+                        <input type="radio">
+                    </div>
+                    <div class="col-3 content-center">
+                        <input type="radio">
+                    </div>
+                    <div class="col-3 content-center">
+                        <input type="radio">
+                    </div>
+                </div>
+            </div>
+            <!-- SIZE -->
             <div class="row">
                 <div class="col-12">
-                    <h2>Tittel</h2>
+                    <div class="col-12 content-center">
+                        <h2>Størrelse</h2>
+                    </div>
                 </div>
-                <div class="col-12">
-                    <input type="radio">
-                    <input type="radio">
-                    <input type="radio">
-                    <input type="radio">
+                <div class="row">
+                    <div class="col-3 content-center column">
+                        <label for="S">S</label>
+                        <input type="radio" id="S">
+                    </div>
+                    <div class="col-3 content-center column">
+                        <label for="M">M</label>
+                        <input type="radio" id="M">
+                    </div>
+                    <div class="col-3 content-center column">
+                        <label for="L">L</label>
+                        <input type="radio" id="L">
+                    </div>
+                    <div class="col-3 content-center column">
+                        <label for="XL">XL</label>
+                        <input type="radio" id="XL">
+                    </div>
                 </div>
             </div>
             <!-- UPLOAD PICTURE -->
             <div class="row">
                 <div class="col-12">
-                    <h2>Tittel</h2>
+                    <h2>Bilde (valgfritt)</h2>
                 </div>
                 <div class="col-12">
                     <button>Last opp bilde</button>

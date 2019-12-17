@@ -25,9 +25,9 @@
             </div>
             <div class="content-right">
                 <div class="top-nav">
-                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="0">Oversikt</button>
-                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="1">Rabatter</button>
-                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="2">Ordre</button>
+                    <button class="top-nav-button" onclick="toOverview()" data-id="0">Oversikt</button>
+                    <button class="top-nav-button" onclick="toDiscounts()" data-id="1">Rabatter</button>
+                    <button class="top-nav-button" onclick="toOrders()" data-id="2">Ordre</button>
                 </div>
                 <!-- INDEX -->
                 <div class="row">
