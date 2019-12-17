@@ -24,9 +24,12 @@
         <div id="filter-sub-category" class="col-2 text-container"></div>
         <div id="filter-gender" class="col-2 text-container"></div>
         <div id="filter-color" class="col-2 text-container"></div>
-        <div id="filter-model" class="col-2 img-container"></div>
+        <div id="filter-model"></div>
     </div>
-    <div id="instruction-container" class="container"></div>
+
+    <div id="instruction-text" class="container"></div>
+    <div id="instruction-selector" class="container"></div>
+
     <div id="products-container" class="container"></div>
 </div>
 <?php include './includes/footer.php' ?>

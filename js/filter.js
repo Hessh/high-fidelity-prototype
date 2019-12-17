@@ -13,6 +13,8 @@ let genders = [];
 let models = [];
 let colors = [];
 
+let instructionTextElement = document.getElementById("instruction-text");
+let instructionElement = document.getElementById("instruction-selector");
 let productsElement = document.getElementById("products-container");
 let brandElement = document.getElementById("filter-brand");
 let categoryElement = document.getElementById("filter-category");
@@ -23,9 +25,89 @@ let modelElement = document.getElementById("filter-model");
 
 function renderFilterPage(){
     clearMenu();
-    filter(products);
+    filter(products)
+    renderInstructions();
     renderMenu();
     renderProducts(filteredProducts);
+}
+
+function renderInstructions() {
+    instructionElement.innerHTML = "";
+    instructionElement.removeAttribute("hidden");
+
+    if (selectedColor) {
+        instructionTextElement.innerHTML = "Vennligst velg plagget ditt i oversikten under";
+        instructionElement.setAttribute("hidden", null);
+        return;
+    }
+    if (selectedGender) {
+        instructionTextElement.innerHTML = "Vennligst velg farge på produktet";
+        colors.forEach(element => {
+            let node = createDivWithContent("big-filter-element", element);
+            if(element == selectedColor) node.classList.add("selected-filter-element");
+            node.addEventListener("click", function(){
+                selectedColor = element;
+                renderFilterPage();
+            });
+            instructionElement.appendChild(node);
+        });
+        return;
+    }
+
+    if (selectedSubCategory) {
+        instructionTextElement.innerHTML = "Vennligst velg kjønn";
+        genders.forEach(element => {
+            let node = createDivWithContent("big-filter-element", element);
+            if(element == selectedGender) node.classList.add("selected-filter-element");
+            node.addEventListener("click", function(){
+                selectedGender = element;
+                renderFilterPage();
+            });
+            instructionElement.appendChild(node);
+        });
+        return;
+    }
+
+    if (selectedCategory) {
+        instructionTextElement.innerHTML = "Vennligst velg en underkategori";
+        subCategories.forEach(element => {
+            let node = createDivWithContent("big-filter-element", element);
+            if(element == selectedSubCategory) node.classList.add("selected-filter-element");
+            node.addEventListener("click", function(){
+                selectedSubCategory = element;
+                renderFilterPage();
+            });
+            instructionElement.appendChild(node);
+        });
+        return;
+    }
+
+    if (selectedBrand) {
+        instructionTextElement.innerHTML = "Vennligst velg kategorien som passer til ditt plagg";
+        categories.forEach(element => {
+            let node = createDivWithContent("big-filter-element", element);
+            if(element == selectedCategory) node.classList.add("selected-filter-element");
+            node.addEventListener("click", function(){
+                selectedCategory = element;
+                renderFilterPage();
+            });
+            instructionElement.appendChild(node);
+        });
+        return;
+    }
+
+    if (!selectedBrand) {
+        instructionTextElement.innerHTML = "Vennligst velg merket på plagget du ønsker å levere inn";
+        brands.forEach(element => {
+            let node = createDivWithContent("big-filter-element", element);
+            if(element == selectedBrand) node.classList.add("selected-filter-element");
+            node.addEventListener("click", function(){
+                selectedBrand = element;
+                renderFilterPage();
+            });
+            instructionElement.appendChild(node);
+        });
+    }
 }
 
 function renderProducts(products){
@@ -45,14 +127,12 @@ function clearMenu() {
 }
 
 function renderMenu(){
+
     brands.forEach(element => {
         let node = createDivWithContent("filter-element", element);
-
         if(element == selectedBrand) node.classList.add("selected-filter-element");
-
         node.addEventListener("click", function(){
             selectedBrand = element;
-
             selectedCategory = null;
             selectedSubCategory = null;
             selectedGender = null;
@@ -63,7 +143,6 @@ function renderMenu(){
         });
         brandElement.appendChild(node);
     });
-
     if (!selectedBrand) return;
 
     categories.forEach(element => {
@@ -71,7 +150,6 @@ function renderMenu(){
         if(element == selectedCategory) node.classList.add("selected-filter-element");
         node.addEventListener("click", function(){
             selectedCategory = element;
-
             selectedSubCategory = null;
             selectedGender = null;
             selectedModel = null;
@@ -81,7 +159,6 @@ function renderMenu(){
         });
         categoryElement.appendChild(node);
     });
-
     if (!selectedCategory) return;
 
     subCategories.forEach(element => {
@@ -89,7 +166,6 @@ function renderMenu(){
         if(element == selectedSubCategory) node.classList.add("selected-filter-element");
         node.addEventListener("click", function(){
             selectedSubCategory = element;
-
             selectedGender = null;
             selectedModel = null;
             selectedColor = null;
@@ -98,7 +174,6 @@ function renderMenu(){
         });
         subCategoryElement.appendChild(node);
     });
-
     if (!selectedSubCategory) return;
 
     genders.forEach(element => {
@@ -106,7 +181,6 @@ function renderMenu(){
         if(element == selectedGender) node.classList.add("selected-filter-element");
         node.addEventListener("click", function(){
             selectedGender = element;
-
             selectedModel = null;
             selectedColor = null;
 
@@ -114,7 +188,6 @@ function renderMenu(){
         });
         genderElement.appendChild(node);
     });
-
     if (!selectedGender) return;
 
     colors.forEach(element => {
