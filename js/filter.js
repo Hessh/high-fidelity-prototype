@@ -255,18 +255,23 @@ function filter(products){
 
     filteredProducts.forEach(b => brands.push(b.brand));
     brands = [...new Set(brands)];
+    brands.sort();
     if(selectedBrand){
         filteredProducts = filteredProducts.filter(e => e.brand == selectedBrand)
     }
 
     filteredProducts.forEach(b => categories.push(b.category));
     categories = [...new Set(categories)];
+    categories.sort();
+
     if(selectedCategory){
         filteredProducts = filteredProducts.filter(e => e.category == selectedCategory)
     }
 
     filteredProducts.forEach(b => subCategories.push(b.subCategory));
     subCategories = [...new Set(subCategories)];
+    subCategories.sort();
+
     if(selectedSubCategory){
         filteredProducts = filteredProducts.filter(e => e.subCategory == selectedSubCategory)
     }
@@ -276,12 +281,14 @@ function filter(products){
     if(selectedGender){
         filteredProducts = filteredProducts.filter(e => e.gender == selectedGender)
     }
+    genders.sort();
 
     filteredProducts.forEach(b => colors.push(b.color));
     colors = [...new Set(colors)];
     if(selectedColor){
         filteredProducts = filteredProducts.filter(e => e.color == selectedColor)
     }
+    colors.sort();
 
     filteredProducts.forEach(b => models.push(b.model));
     models = [...new Set(models)];
