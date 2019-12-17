@@ -14,6 +14,16 @@
     background-color: #FCF6F3;
 }
 
+.profile-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem 10px;
+    border-radius: 0.2rem;
+    background-color: transparent;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
