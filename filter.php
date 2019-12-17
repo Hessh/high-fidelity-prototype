@@ -17,6 +17,7 @@
 
 <body>
 <?php include './includes/header.php' ?>
+
 <div class="container-fluid first">
     <div class="row text-row-container text-row-container-left">
         <div id="filter-brand" class="col-2 text-container"></div>
@@ -36,7 +37,6 @@
         <div id="progress-model" class="col-2 text-container center filter-progress">Modell</div>
     </div>
     <div id="instruction-selector" class="container"></div>
-
     <div id="products-container" class="container"></div>
 </div>
 <?php include './includes/footer.php' ?>
