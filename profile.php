@@ -30,6 +30,20 @@
                     <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="2">Ordre</button>
                     <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="3">Stats</button>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="discounts">
+                            <h2>Rabatter</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="orders">
+                            <h2>Order</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
