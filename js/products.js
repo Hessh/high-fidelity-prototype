@@ -71,3 +71,69 @@ products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Crew 
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W Crew Midlayer Jacket", "Red", "https://www.hellyhansen.com/media/catalog/product/3/0/30317_222-2-main.jpg"));
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W Crew Midlayer Jacket", "Pink", "https://www.hellyhansen.com/media/catalog/product/3/0/30317_039-2-main.jpg"));
 products.push(new Product("Jelly Hansen", "Jakke", "Seilerjakke", "Female", "W Crew Midlayer Jacket", "Black", "https://www.hellyhansen.com/media/catalog/product/3/0/30317_990-2-main.jpg"));
+
+
+let filteredProducts = [];
+let selectedBrand = "Helly Hansen";
+let selectedCategory = "Jakke";
+let selectedSubCategory = "Seilerjakke";
+let selectedGender = "Female";
+let selectedModel = "W Salt Flag Jacket";
+let selectedColor = "White";
+
+let brands = [];
+let categories = [];
+let subCategories = [];
+let genders = [];
+let models = [];
+let colors = [];
+
+products.forEach(b => brands.push(b.brand));
+brands = [...new Set(brands)];
+
+function filter(products){
+    filteredProducts = products;
+    if(selectedBrand != null){
+        filteredProducts = filteredProducts.filter(e => e.brand == selectedBrand)
+    }
+    products.forEach(b => categories.push(b.category));
+    categories = [...new Set(categories)];
+
+    if(selectedCategory != null){
+        filteredProducts = filteredProducts.filter(e => e.category == selectedCategory)
+    }
+
+    products.forEach(b => subCategories.push(b.subCategory));
+    subCategories = [...new Set(subCategories)];
+
+    if(selectedSubCategory != null){
+        filteredProducts = filteredProducts.filter(e => e.subCategory == selectedSubCategory)
+    }
+
+    products.forEach(b => genders.push(b.gender));
+    genders = [...new Set(genders)];
+
+    if(selectedGender != null){
+        filteredProducts = filteredProducts.filter(e => e.gender == selectedGender)
+    }
+
+    products.forEach(b => models.push(b.model));
+    models = [...new Set(models)];
+
+    if(selectedModel!= null){
+        filteredProducts = filteredProducts.filter(e => e.model == selectedModel)
+    }
+
+    products.forEach(b => colors.push(b.color));
+    colors = [...new Set(colors)];
+
+    if(selectedColor != null){
+        filteredProducts = filteredProducts.filter(e => e.color == selectedColor)
+    }
+
+
+}
+filter(products);
+console.table(filteredProducts);
+
+
