@@ -1,10 +1,5 @@
 /* FILTER STYLES */
 
-[class*="col-"] {
-    margin: 0 -10px!important;
-    padding: 0 10px !important;
-}
-
 /*
     FILTER MENU
 */
@@ -24,7 +19,34 @@
 }
 
 #instruction-text {
+    margin: 0 auto;
     font-size: 24px;
+}
+
+#instruction-progress {
+    margin: 0 auto;
+    padding: 5px 10px;
+
+    height: 40px;
+}
+
+.filter-progress {
+    padding: 5px 0;
+    line-height: 20px;
+
+    border-bottom: 5px solid gray;
+}
+
+.progress-done {
+    border-bottom: 5px solid green;
+}
+
+.progress-next {
+    border-bottom: 5px solid orange;
+}
+
+#instruction-selector {
+    margin: 0 auto;
 }
 
 .big-filter-element {

@@ -23,6 +23,13 @@ let genderElement = document.getElementById("filter-gender");
 let colorElement = document.getElementById("filter-color");
 let modelElement = document.getElementById("filter-model");
 
+let progBrandElement = document.getElementById("progress-brand");
+let progCategoryElement = document.getElementById("progress-category");
+let progSubCategoryElement = document.getElementById("progress-sub-category");
+let progGenderElement = document.getElementById("progress-gender");
+let progColorElement = document.getElementById("progress-color");
+let progModelElement = document.getElementById("progress-model");
+
 function renderFilterPage(){
     clearMenu();
     filter(products)
@@ -35,13 +42,38 @@ function renderInstructions() {
     instructionElement.innerHTML = "";
     instructionElement.removeAttribute("hidden");
 
+    progBrandElement.classList.remove("progress-done");
+    progBrandElement.classList.remove("progress-next");
+    progCategoryElement.classList.remove("progress-done");
+    progCategoryElement.classList.remove("progress-next");
+    progSubCategoryElement.classList.remove("progress-done");
+    progSubCategoryElement.classList.remove("progress-next");
+    progGenderElement.classList.remove("progress-done");
+    progGenderElement.classList.remove("progress-next");
+    progColorElement.classList.remove("progress-done");
+    progColorElement.classList.remove("progress-next");
+    progModelElement.classList.remove("progress-done");
+    progModelElement.classList.remove("progress-next");
+
+
     if (selectedColor) {
         instructionTextElement.innerHTML = "Vennligst velg plagget ditt i oversikten under";
+        progBrandElement.classList.add("progress-done");
+        progCategoryElement.classList.add("progress-done");
+        progSubCategoryElement.classList.add("progress-done");
+        progGenderElement.classList.add("progress-done");
+        progColorElement.classList.add("progress-done");
+        progModelElement.classList.add("progress-next");
         instructionElement.setAttribute("hidden", null);
         return;
     }
     if (selectedGender) {
         instructionTextElement.innerHTML = "Vennligst velg farge på produktet";
+        progBrandElement.classList.add("progress-done");
+        progCategoryElement.classList.add("progress-done");
+        progSubCategoryElement.classList.add("progress-done");
+        progGenderElement.classList.add("progress-done");
+        progColorElement.classList.add("progress-next");
         colors.forEach(element => {
             let node = createDivWithContent("big-filter-element", element);
             if(element == selectedColor) node.classList.add("selected-filter-element");
@@ -56,6 +88,10 @@ function renderInstructions() {
 
     if (selectedSubCategory) {
         instructionTextElement.innerHTML = "Vennligst velg kjønn";
+        progBrandElement.classList.add("progress-done");
+        progCategoryElement.classList.add("progress-done");
+        progSubCategoryElement.classList.add("progress-done");
+        progGenderElement.classList.add("progress-next");
         genders.forEach(element => {
             let node = createDivWithContent("big-filter-element", element);
             if(element == selectedGender) node.classList.add("selected-filter-element");
@@ -70,6 +106,9 @@ function renderInstructions() {
 
     if (selectedCategory) {
         instructionTextElement.innerHTML = "Vennligst velg en underkategori";
+        progBrandElement.classList.add("progress-done");
+        progCategoryElement.classList.add("progress-done");
+        progSubCategoryElement.classList.add("progress-next");
         subCategories.forEach(element => {
             let node = createDivWithContent("big-filter-element", element);
             if(element == selectedSubCategory) node.classList.add("selected-filter-element");
@@ -84,6 +123,8 @@ function renderInstructions() {
 
     if (selectedBrand) {
         instructionTextElement.innerHTML = "Vennligst velg kategorien som passer til ditt plagg";
+        progBrandElement.classList.add("progress-done");
+        progCategoryElement.classList.add("progress-next");
         categories.forEach(element => {
             let node = createDivWithContent("big-filter-element", element);
             if(element == selectedCategory) node.classList.add("selected-filter-element");
@@ -98,6 +139,7 @@ function renderInstructions() {
 
     if (!selectedBrand) {
         instructionTextElement.innerHTML = "Vennligst velg merket på plagget du ønsker å levere inn";
+        progBrandElement.classList.add("progress-next");
         brands.forEach(element => {
             let node = createDivWithContent("big-filter-element", element);
             if(element == selectedBrand) node.classList.add("selected-filter-element");
