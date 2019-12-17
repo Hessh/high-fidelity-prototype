@@ -65,7 +65,7 @@ products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W S
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W Salt Flag Jacket", "Blue", "https://www.hellyhansen.com/media/catalog/product/3/3/33923_994-2-main4.jpg"));
 
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Crew Midlayer Jacket", "White", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_001-2-main.jpg"));
-products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Crew Midlayer Jacket", "Black", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_990-2-main.jpg"));
+products.push(new Product("Helly Hansen", "Bukse", "Seilerjakke", "Male", "Crew Midlayer Jacket", "Black", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_990-2-main.jpg"));
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Crew Midlayer Jacket", "Red", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_222-2-main.jpg"));
 
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W Crew Midlayer Jacket", "Red", "https://www.hellyhansen.com/media/catalog/product/3/0/30317_222-2-main.jpg"));
@@ -74,12 +74,12 @@ products.push(new Product("Jelly Hansen", "Jakke", "Seilerjakke", "Female", "W C
 
 
 let filteredProducts = [];
-let selectedBrand = "Helly Hansen";
-let selectedCategory = "Jakke";
-let selectedSubCategory = "Seilerjakke";
-let selectedGender = "Female";
-let selectedModel = "W Salt Flag Jacket";
-let selectedColor = "White";
+let selectedBrand;
+let selectedCategory;
+let selectedSubCategory;
+let selectedGender;
+let selectedModel;
+let selectedColor;
 
 let brands = [];
 let categories = [];
@@ -112,17 +112,9 @@ let subCategoryElement = document.getElementById("filter-sub-category");
 let genderElement = document.getElementById("filter-gender");
 let colorElement = document.getElementById("filter-color");
 let modelElement = document.getElementById("filter-model");
-function selectBrand(brand){
-    selectedBrand = brand;
-}
 
 function renderFilterPage(){
-    brands.forEach(brand => {
-        let node = "<div onclick='selectBrand(\"" + brand + "\")'>" + brand + "</div>"
-        brandElement.appendChild(node);
-    });
-
-
+    clearMenu();
     renderMenu();
     filter(products);
     renderProducts(filteredProducts);
@@ -134,13 +126,36 @@ function renderProducts(products){
     }
 }
 
-
-
-function renderMenu(){
-
+function clearMenu() {
+    brandElement.innerHTML = "";
+    categoryElement.innerHTML = "";
+    subCategoryElement.innerHTML = "";
+    genderElement.innerHTML = "";
+    colorElement.innerHTML = "";
+    modelElement.innerHTML = "";
 }
 
+function renderMenu(){
+    brands.forEach(brand => {
+        let node = createDivWithContent("filter-element", brand);
+        node.addEventListener("click", function(){
+            selectedBrand = brand;
+            renderFilterPage();
+        });
+        brandElement.appendChild(node);
+    });
 
+    if (!selectedBrand) return;
+
+    categories.forEach(element => {
+        let node = createDivWithContent("filter-element", element);
+        node.addEventListener("click", function(){
+            selectedCategory = element;
+            renderFilterPage();
+        });
+        categoryElement.appendChild(node);
+    });
+}
 
 function filter(products){
     filteredProducts = products;
@@ -185,15 +200,8 @@ function filter(products){
     if(selectedModel!= null){
         filteredProducts = filteredProducts.filter(e => e.model == selectedModel)
     }
-
-
-
-    //renderFilter();
-    renderMenu()
 }
 
-
-filter(products);
-console.table(filteredProducts);
+renderFilterPage();
 
 

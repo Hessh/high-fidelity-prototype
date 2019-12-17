@@ -4,7 +4,7 @@
 
 let categoryElement = document.getElementById("filterCategory");
 let subCategoryElement = document.getElementById("filterSubCategory");
-*/
+
 let filter = document.getElementById("filter");
 let brands = [];
 products.forEach(b => brands.push(b.brand));
@@ -93,5 +93,4 @@ function resetFilter(){
 
 }
 
-
-
+*/
