@@ -1,3 +1,4 @@
+/** FOR PROFILE PAGE */
 let topNav = document.querySelectorAll(".top-nav")[0]
 let topNavButtons = document.querySelectorAll(".top-nav-button")
 
