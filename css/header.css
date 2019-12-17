@@ -42,6 +42,10 @@ header {
     display: none;
 }
 
+.profile-nav ul:last-of-type {
+    padding-left: 0.2rem;
+}
+
 nav {
     display: flex;
     flex-direction: row;

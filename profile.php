@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <?php include './includes/header.php' ?>
+    <?php include './includes/header-profile.php' ?>
     <div class="container-fluid first">
         <div class="profile-container">
             <div class="content-left">

@@ -36,7 +36,6 @@
                 </div>
                 <div class="col-6 img-container">
                     <img class="right" src="img/browse.jpg" alt="Brukte klær">
-                    <!-- https://unsplash.com/photos/Fzde_6ITjkw -->
                 </div>
             </div>
         </div>
@@ -89,10 +88,9 @@
             <!-- TEXTCONTENT 2-->
             <div class="row text-wrapper">
                 <div class="col-6 img-container">
-                    <br><img src="img/resale.jpg" alt="Gavekort">
+                    <img src="img/resale.jpg" alt="Gavekort">
                 </div>
                 <div class="col-6 text-container">
-                    <br><br><br>
                     <h2 class="title">Hvorfor ReStore?</h2>
                     <p class="text">Restore betyr å restaurere.
                         <br>Vi følger definisjonene på å restaurere:
@@ -101,7 +99,6 @@
                         <br>: å bringe noe tilbake til eksistens eller bruk.
                         <br>: å returnere noe til en tidligere eller original tilstand ved å reparere det, rengjøre det, sette i stand osv.
                 </div>
-
             </div>
             <!-- TEXTCONTENT 3 -->
             <br><br>
@@ -116,27 +113,19 @@
                     <img class="right" src="img/plant.jpg" alt="Plante">
                 </div>
             </div>
-
             <!-- TEXTCONTENT 4 -->
             <div class="row text-wrapper">
-                <br><br>
                 <div class="col-6 img-container">
-                    <br><img src="img/thankyou.jpg" alt="Gavekort">
+                    <img src="img/thankyou.jpg" alt="Gavekort">
                 </div>
                 <div class="col-6 text-container">
-                    <br><br><br>
                     <h2 class="title">Bli med oss å skape kulturen</h2>
                     <p class="text">Vi ønsker å skape en kultur for kjøp og salg av gjenbruksklær til nye høyder,
                         ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!
                     </p>
                     <p class="text">Som takk for at du sender inn dine brukte klær til oss får du ulike gavekort basert på hvilke type merker det er og plaggets tilstand. Derfor har vi også en estimert verdi du får
                         før du leverer inn, slik at du kan se hva slags verdi dine plagg ligger på.</p>
-                </div>
-            </div>
-            <!-- CTA BUTTON -->
-            <div class="row">
-                <div class="col-12 button-container">
-                    <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+                    <a class="center" href="filter.php"><button class="cta-button">Kom igang nå</button></a>
                 </div>
             </div>
         </div>
