@@ -18,7 +18,7 @@
 <body>
     <?php include './includes/header.php' ?>
     <div class="container-fluid first">
-        <div class="container">
+        <div class="container condition-container">
             <div class="row">
                 <div class="col-12">
                     <h1 class="main-title">Registrer produkt</h1>
@@ -27,7 +27,7 @@
             <!-- AGE -->
             <div class="row">
                 <div class="col-12">
-                    <div class="col-12 content-center">
+                    <div class="col-12">
                         <h2>Alder</h2>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
             <!-- DEGRATATION -->
             <div class="row">
             <div class="col-12">
-                    <div class="col-12 content-center">
+                    <div class="col-12">
                         <h2>Slitasje</h2>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
             <!-- SIZE -->
             <div class="row">
                 <div class="col-12">
-                    <div class="col-12 content-center">
+                    <div class="col-12">
                         <h2>Størrelse</h2>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                     <h2>Bilde (anbefales)</h2>
                 </div>
                 <div class="col-12">
-                    <button>Last opp bilde</button>
+                    <button class="cta-button upload-button" onclick="showImg()">Last opp bilde</button>
                 </div>
                 <div class="col-12">
                     <div class="preview"></div>
@@ -118,17 +118,30 @@
             </div>
             <!-- CTA BUTTON -->
             <div class="row">
-                <div class="col-12 button-container">
-                    <button class="cta-button" onclick="estimate()">Beregn verdi</button>
+                <div class="col-12 button-container center">
+                    <button class="cta-button estimate-button" onclick="estimate()">Beregn verdi</button>
                 </div>
             </div>
         </div>
-        <div class="container">
-            MASSE PENGER
+        <div class="container estimate-container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="main-title">Estimert verdi:</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-push-2"></div>
+                <div class="col-8">
+                    <h1 class="text-center">250,-</h1>
+                    <h3 class="text-center">avslag ved ditt neste kjøp i butikk hos Helly Hansen</h3>
+                    <p class="text-center">Dette vil bli endelig verdivurdert hos våre eksperter når du mottar et endelig tilbud i løpet av de neste virkedagene.</p>
+                </div>
+                <div class="col-push-2"></div>
+            </div>
             <!-- NEXT BUTTON -->
             <div class="row">
                 <div class="col-12 button-container">
-                    <a href="delivery.php"><button class="cta-button">Videre</button></a>
+                    <a class="center" href="delivery.php"><button class="cta-button">Videre</button></a>
                 </div>
             </div>
         </div>
@@ -136,6 +149,7 @@
     <?php include './includes/footer.php' ?>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/condition.js"></script>
 </body>
 
 </html>
