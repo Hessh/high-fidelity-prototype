@@ -1,96 +1,177 @@
+let selectedBrand;
+let selectedCategory;
+let selectedSubCategory;
+let selectedGender;
+let selectedModel;
+let selectedColor;
 
-//brand, kategori, sub-category, gender,  model, farge
-/*
-
-let categoryElement = document.getElementById("filterCategory");
-let subCategoryElement = document.getElementById("filterSubCategory");
-
-let filter = document.getElementById("filter");
+let filteredProducts = [];
 let brands = [];
-products.forEach(b => brands.push(b.brand));
-brands = [...new Set(brands)];
+let categories = [];
+let subCategories = [];
+let genders = [];
+let models = [];
+let colors = [];
 
+let productsElement = document.getElementById("products-container");
+let brandElement = document.getElementById("filter-brand");
+let categoryElement = document.getElementById("filter-category");
+let subCategoryElement = document.getElementById("filter-sub-category");
+let genderElement = document.getElementById("filter-gender");
+let colorElement = document.getElementById("filter-color");
+let modelElement = document.getElementById("filter-model");
 
-for(let i = 0 ; i < products.length; i++){
-	if(!brands.includes(products[i].brand)){
-		brands.push(products[i].brand);
-	}
+function renderFilterPage(){
+    clearMenu();
+    filter(products);
+    renderMenu();
+    renderProducts(filteredProducts);
 }
 
-for(let i = 0; 	i < brands.length; i++){
-	let content = "<div onclick='filterBrand(\"" + brands[i] + "\","+"this)' name='brand'>"+ brands[i] + "</div>";
-	let node = createDivWithContent("brand", content)
-	filter.appendChild(node)
+function renderProducts(products){
+    productsElement.innerHTML = "";
+    for (let i = 0; i < products.length; i++) {
+        renderProduct(productsElement, products[i]);
+    }
 }
 
-
-
-
-
-
-function filterProducts(){
-	document.getElementById("products-container").innerHTML = "";
-     for (let i = 0; i < filteredProducts.length; i++) {
-            renderProduct(document.getElementById("products-container"), filteredProducts[i]);
-        }
+function clearMenu() {
+    brandElement.innerHTML = "";
+    categoryElement.innerHTML = "";
+    subCategoryElement.innerHTML = "";
+    genderElement.innerHTML = "";
+    colorElement.innerHTML = "";
+    modelElement.innerHTML = "";
 }
 
+function renderMenu(){
+    brands.forEach(element => {
+        let node = createDivWithContent("filter-element", element);
 
+        if(element == selectedBrand) node.classList.add("selected-filter-element");
 
-function filterBrand(currentFilter, element){
-	resetFilter();
-	if(lastClickedElement != null){
-		lastClickedElement.style.backgroundColor = "";
-	}
+        node.addEventListener("click", function(){
+            selectedBrand = element;
 
-	lastClickedElement = element;
-	//element.style.backgroundColor = "blue";
+            selectedCategory = null;
+            selectedSubCategory = null;
+            selectedGender = null;
+            selectedModel = null;
+            selectedColor = null;
 
-	categoryElement.innerHTML = "";
-	let category = []
+            renderFilterPage();
+        });
+        brandElement.appendChild(node);
+    });
 
-	for(let i = 0; i < products.length; i++){
-		if(products[i].brand == currentFilter){
-			if(!category.includes(products[i].category))
-				category.push(products[i].category);
-			filteredProducts.push(products[i]);
-		}
-	}
+    if (!selectedBrand) return;
 
-	for(let i = 0; i < category.length; i++){
-		let content ="<div onclick='filterCategory(\"" + category[i] + "\")' name='brand'>"+ category[i] + "</div>";
-		let node = createDivWithContent("brand", content)
-		categoryElement.appendChild(node)
-	}
-	console.log(filteredProducts)
-	filterProducts();
+    categories.forEach(element => {
+        let node = createDivWithContent("filter-element", element);
+        if(element == selectedCategory) node.classList.add("selected-filter-element");
+        node.addEventListener("click", function(){
+            selectedCategory = element;
+
+            selectedSubCategory = null;
+            selectedGender = null;
+            selectedModel = null;
+            selectedColor = null;
+
+            renderFilterPage();
+        });
+        categoryElement.appendChild(node);
+    });
+
+    if (!selectedCategory) return;
+
+    subCategories.forEach(element => {
+        let node = createDivWithContent("filter-element", element);
+        if(element == selectedSubCategory) node.classList.add("selected-filter-element");
+        node.addEventListener("click", function(){
+            selectedSubCategory = element;
+
+            selectedGender = null;
+            selectedModel = null;
+            selectedColor = null;
+
+            renderFilterPage();
+        });
+        subCategoryElement.appendChild(node);
+    });
+
+    if (!selectedSubCategory) return;
+
+    genders.forEach(element => {
+        let node = createDivWithContent("filter-element", element);
+        if(element == selectedGender) node.classList.add("selected-filter-element");
+        node.addEventListener("click", function(){
+            selectedGender = element;
+
+            selectedModel = null;
+            selectedColor = null;
+
+            renderFilterPage();
+        });
+        genderElement.appendChild(node);
+    });
+
+    if (!selectedGender) return;
+
+    colors.forEach(element => {
+        let node = createDivWithContent("filter-element", element);
+        if(element == selectedColor) node.classList.add("selected-filter-element");
+        node.addEventListener("click", function(){
+            selectedColor = element;
+
+            renderFilterPage();
+        });
+        colorElement.appendChild(node);
+    });
 }
 
-function filterCategory(category){
+function filter(products){
+    filteredProducts = products;
 
-	let subCategory = []
+    brands = [];
+    categories = [];
+    subCategories = [];
+    genders = [];
+    models = [];
+    colors = [];
 
-	for(let i = 0; i < filteredProducts.length; i++){
-		if(filteredProducts[i].category == category){
-			if(!subCategory.includes(products[i].category))
-				subCategory.push(products[i].category);
-			refilteredProducts.push(products[i]);
-		}
-	}
-	filterProducts = refilteredProducts;
-	refilteredProducts = [];
+    filteredProducts.forEach(b => brands.push(b.brand));
+    brands = [...new Set(brands)];
+    if(selectedBrand){
+        filteredProducts = filteredProducts.filter(e => e.brand == selectedBrand)
+    }
 
-let content ="<div onclick='filterSubCategory(\"" + subCategory[i] + "\")' name='brand'>"+ subCategory[i] + "</div>";
-let node = createDivWithContent("brand", content)
-subCategoryElement.appendChild(node)
+    filteredProducts.forEach(b => categories.push(b.category));
+    categories = [...new Set(categories)];
+    if(selectedCategory){
+        filteredProducts = filteredProducts.filter(e => e.category == selectedCategory)
+    }
+
+    filteredProducts.forEach(b => subCategories.push(b.subCategory));
+    subCategories = [...new Set(subCategories)];
+    if(selectedSubCategory){
+        filteredProducts = filteredProducts.filter(e => e.subCategory == selectedSubCategory)
+    }
+
+    filteredProducts.forEach(b => genders.push(b.gender));
+    genders = [...new Set(genders)];
+    if(selectedGender){
+        filteredProducts = filteredProducts.filter(e => e.gender == selectedGender)
+    }
+
+    filteredProducts.forEach(b => colors.push(b.color));
+    colors = [...new Set(colors)];
+    if(selectedColor){
+        filteredProducts = filteredProducts.filter(e => e.color == selectedColor)
+    }
+
+    filteredProducts.forEach(b => models.push(b.model));
+    models = [...new Set(models)];
+    if(selectedModel){
+        filteredProducts = filteredProducts.filter(e => e.model == selectedModel)
+    }
 }
-
-
-
-function resetFilter(){
-	categoryElement.innerHTML = "";
-	subCategoryElement.innerHTML ="";
-
-}
-
-*/
