@@ -14,8 +14,6 @@
 
 .filter-element {
     cursor: pointer;
-
-    border: 1px solid black;
 }
 
 #instruction-text {
