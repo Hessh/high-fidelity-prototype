@@ -10,6 +10,8 @@ let orderButton = document.getElementById("orders");
 let discountCards = document.querySelectorAll(".discount-card")
 let orderCards = document.querySelectorAll(".order-card")
 
+toOverview()
+
 /** SHOW ALL DISCOUNTS */
 discountButton.addEventListener("click", function () {
     for (let i = 0; i < topNavButtons.length; i++) {
