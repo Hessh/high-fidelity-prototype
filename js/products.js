@@ -91,48 +91,81 @@ let colors = [];
 products.forEach(b => brands.push(b.brand));
 brands = [...new Set(brands)];
 
+products.forEach(b => categories.push(b.category));
+categories = [...new Set(categories)];
+
+products.forEach(b => subCategories.push(b.subCategory));
+subCategories = [...new Set(subCategories)];
+
+products.forEach(b => genders.push(b.gender));
+genders = [...new Set(genders)];
+
+products.forEach(b => models.push(b.model));
+models = [...new Set(models)];
+
+products.forEach(b => colors.push(b.color));
+colors = [...new Set(colors)];
+
+function renderMenu(){
+
+}
+
+
 function filter(products){
     filteredProducts = products;
+
+    filteredProducts.forEach(b => brands.push(b.brand));
+    brands = [...new Set(brands)];
+
     if(selectedBrand != null){
         filteredProducts = filteredProducts.filter(e => e.brand == selectedBrand)
+
     }
-    products.forEach(b => categories.push(b.category));
+    filteredProducts.forEach(b => categories.push(b.category));
     categories = [...new Set(categories)];
 
     if(selectedCategory != null){
         filteredProducts = filteredProducts.filter(e => e.category == selectedCategory)
     }
 
-    products.forEach(b => subCategories.push(b.subCategory));
+    filteredProducts.forEach(b => subCategories.push(b.subCategory));
     subCategories = [...new Set(subCategories)];
 
     if(selectedSubCategory != null){
         filteredProducts = filteredProducts.filter(e => e.subCategory == selectedSubCategory)
     }
 
-    products.forEach(b => genders.push(b.gender));
+    filteredProducts.forEach(b => genders.push(b.gender));
     genders = [...new Set(genders)];
 
     if(selectedGender != null){
         filteredProducts = filteredProducts.filter(e => e.gender == selectedGender)
     }
 
-    products.forEach(b => models.push(b.model));
+    filteredProducts.forEach(b => models.push(b.model));
     models = [...new Set(models)];
 
     if(selectedModel!= null){
         filteredProducts = filteredProducts.filter(e => e.model == selectedModel)
     }
 
-    products.forEach(b => colors.push(b.color));
+    filteredProducts.forEach(b => colors.push(b.color));
     colors = [...new Set(colors)];
 
     if(selectedColor != null){
         filteredProducts = filteredProducts.filter(e => e.color == selectedColor)
     }
 
-
+    //renderFilter();
+    renderMenu()
 }
+/*
+function renderFilter(){
+    for (let i = 0; i < filteredProducts.length; i++) {
+        renderProduct(document.getElementById("products-container"), filteredProducts[i]);
+    }
+}
+*/
 filter(products);
 console.table(filteredProducts);
 
