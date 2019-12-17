@@ -106,9 +106,40 @@ models = [...new Set(models)];
 products.forEach(b => colors.push(b.color));
 colors = [...new Set(colors)];
 
+let brandElement = document.getElementById("filter-brand");
+let categoryElement = document.getElementById("filter-category");
+let subCategoryElement = document.getElementById("filter-sub-category");
+let genderElement = document.getElementById("filter-gender");
+let colorElement = document.getElementById("filter-color");
+let modelElement = document.getElementById("filter-model");
+function selectBrand(brand){
+    selectedBrand = brand;
+}
+
+function renderFilterPage(){
+    brands.forEach(brand => {
+        let node = "<div onclick='selectBrand(\"" + brand + "\")'>" + brand + "</div>"
+        brandElement.appendChild(node);
+    });
+
+
+    renderMenu();
+    filter(products);
+    renderProducts(filteredProducts);
+}
+
+function renderProducts(products){
+    for (let i = 0; i < products.length; i++) {
+        renderProduct(document.getElementById("products-container"), products[i]);
+    }
+}
+
+
+
 function renderMenu(){
 
 }
+
 
 
 function filter(products){
@@ -119,7 +150,6 @@ function filter(products){
 
     if(selectedBrand != null){
         filteredProducts = filteredProducts.filter(e => e.brand == selectedBrand)
-
     }
     filteredProducts.forEach(b => categories.push(b.category));
     categories = [...new Set(categories)];
@@ -142,13 +172,6 @@ function filter(products){
         filteredProducts = filteredProducts.filter(e => e.gender == selectedGender)
     }
 
-    filteredProducts.forEach(b => models.push(b.model));
-    models = [...new Set(models)];
-
-    if(selectedModel!= null){
-        filteredProducts = filteredProducts.filter(e => e.model == selectedModel)
-    }
-
     filteredProducts.forEach(b => colors.push(b.color));
     colors = [...new Set(colors)];
 
@@ -156,16 +179,20 @@ function filter(products){
         filteredProducts = filteredProducts.filter(e => e.color == selectedColor)
     }
 
+    filteredProducts.forEach(b => models.push(b.model));
+    models = [...new Set(models)];
+
+    if(selectedModel!= null){
+        filteredProducts = filteredProducts.filter(e => e.model == selectedModel)
+    }
+
+
+
     //renderFilter();
     renderMenu()
 }
-/*
-function renderFilter(){
-    for (let i = 0; i < filteredProducts.length; i++) {
-        renderProduct(document.getElementById("products-container"), filteredProducts[i]);
-    }
-}
-*/
+
+
 filter(products);
 console.table(filteredProducts);
 
