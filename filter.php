@@ -34,7 +34,7 @@
                 <div id="filter-color" class="col-2 text-container">
 
                 </div>
-                <div class="col-2 img-container">
+                <div id="filter-model" class="col-2 img-container">
 
                 </div>
             </div>
