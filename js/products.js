@@ -26,7 +26,7 @@ function renderProduct(container, product) {
 
     let productDiv = document.createElement("a");
     productDiv.classList.add("product-div");
-    productDiv.setAttribute("href", "condition.php?id=" + product._id);
+    productDiv.setAttribute("href", "condition.php?productid=" + product._id);
 
     let imgElement = document.createElement("img");
     imgElement.classList.add("product-image");
