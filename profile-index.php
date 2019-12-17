@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/profile/index.css">
+    <link rel="stylesheet" href="./css/profile/sidebar.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800&display=swap">
@@ -18,7 +19,19 @@
 <body>
     <?php include './includes/header.php' ?>
     <div class="container-fluid first">
-        <?php include './includes/profile-sidebar.php' ?>
+        <div class="profile-container">
+            <div class="content-left">
+                <?php include './includes/profile-sidebar.php' ?>
+            </div>
+            <div class="content-right">
+                <div class="top-nav">
+                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="0">Oversikt</button>
+                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="1">Rabatter</button>
+                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="2">Ordre</button>
+                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="3">Stats</button>
+                </div>
+            </div>
+        </div>
     </div>
     <?php include './includes/footer.php' ?>
     <script src="js/menu.js"></script>

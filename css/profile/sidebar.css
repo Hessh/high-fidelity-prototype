@@ -1,1 +1,9 @@
 /* PROFILE SIDEBAR STYLES */
+.content-left {
+    padding: 0 1rem;
+    border-right: 1px solid lightgray;
+}
+
+.content-right {
+    padding: 0 1rem;
+}

@@ -1,1 +1,26 @@
 /* PROFILE INDEX STYLES */
+
+.top-nav {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.top-nav button {
+    padding: 1rem 2rem;
+    border: none;
+    border-right: 1px solid lightgray;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.top-nav button:last-of-type {
+    border: none;
+}
+
+.top-nav button:hover {
+    cursor: pointer;
+}
+
+.top-nav button:focus {
+    outline: none;
+}
