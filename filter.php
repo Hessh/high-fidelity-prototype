@@ -16,38 +16,27 @@
 </head>
 
 <body>
-    <?php include './includes/header.php' ?>
-    <div class="container-fluid first">
-        <div class="row text-row-container text-row-container-left">
-                <div id="filter-brand"class="col-2 text-container">
-                    
-                </div>
-                <div id="filter-category" class="col-2 text-container">
-                    
-                </div>
-                <div  id="filter-sub-category" class="col-2 text-container">
-                    
-                </div>
-                <div id="filter-gender" class="col-2 text-container">
-
-                </div>
-                <div id="filter-color" class="col-2 text-container">
-
-                </div>
-                <div id="filter-model" class="col-2 img-container">
-
-                </div>
-            </div>
-        <div id="products-container" class="container"></div>
+<?php include './includes/header.php' ?>
+<div class="container-fluid first">
+    <div class="row text-row-container text-row-container-left">
+        <div id="filter-brand" class="col-2 text-container"></div>
+        <div id="filter-category" class="col-2 text-container"></div>
+        <div id="filter-sub-category" class="col-2 text-container"></div>
+        <div id="filter-gender" class="col-2 text-container"></div>
+        <div id="filter-color" class="col-2 text-container"></div>
+        <div id="filter-model" class="col-2 img-container"></div>
     </div>
-    <?php include './includes/footer.php' ?>
-    <script src="js/menu.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/products.js"></script>
-    <script src="js/filter.js"></script>
-    <script>
-        renderFilterPage();
-    </script>
+    <div id="instruction-container" class="container"></div>
+    <div id="products-container" class="container"></div>
+</div>
+<?php include './includes/footer.php' ?>
+<script src="js/menu.js"></script>
+<script src="js/script.js"></script>
+<script src="js/products.js"></script>
+<script src="js/filter.js"></script>
+<script>
+    renderFilterPage();
+</script>
 </body>
 
 </html>
