@@ -20,8 +20,7 @@ class Product {
         return this.latestId -1;
     }
 }
-// Use this to Render all products. Container must have ID="products-container".
-// for (i = 0; i < products.length; i++) {renderProduct(document.getElementById("products-container"), products[i]);}
+
 function renderProduct(container, product) {
 
     let productDiv = document.createElement("a");
@@ -65,7 +64,7 @@ products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W S
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W Salt Flag Jacket", "Blue", "https://www.hellyhansen.com/media/catalog/product/3/3/33923_994-2-main4.jpg"));
 
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Crew Midlayer Jacket", "White", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_001-2-main.jpg"));
-products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Crew Midlayer Jacket", "Black", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_990-2-main.jpg"));
+products.push(new Product("Helly Hansen", "Bukse", "Seilerjakke", "Male", "Crew Midlayer Jacket", "Black", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_990-2-main.jpg"));
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Crew Midlayer Jacket", "Red", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_222-2-main.jpg"));
 
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W Crew Midlayer Jacket", "Red", "https://www.hellyhansen.com/media/catalog/product/3/0/30317_222-2-main.jpg"));

@@ -25,10 +25,72 @@
             </div>
             <div class="content-right">
                 <div class="top-nav">
-                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="0">Oversikt</button>
-                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="1">Rabatter</button>
-                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="2">Ordre</button>
-                    <button class="top-nav-button" onclick="toggle(dataset.id)" data-id="3">Stats</button>
+                    <button class="top-nav-button" onclick="toOverview()" data-id="0">Oversikt</button>
+                    <button class="top-nav-button" onclick="toDiscounts()" data-id="1">Rabatter</button>
+                    <button class="top-nav-button" onclick="toOrders()" data-id="2">Ordre</button>
+                </div>
+                <!-- INDEX -->
+                <div class="row">
+                    <div class="col-12">
+                        <button id="discounts" class="discounts" onclick="toDiscounts()">
+                            <h3>Dine rabatter</h3>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button id="orders" class="orders" onclick="toOrders()">
+                            <h3>Dine order</h3>
+                        </button>
+                    </div>
+                </div>
+                <!-- DISCOUNTS -->
+                <div class="row">
+                    <div class="col-12">
+                        <button id="discount-1" class="discount-card" onclick="exitDiscount()" data-id="0">
+                            <img src="" alt="Logo">
+                            <h4>Brand</h4>
+                            <p>Date</p>
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <button id="discount-2" class="discount-card" onclick="exitDiscount()" data-id="1">
+                            <img src="" alt="Logo">
+                            <h4>Brand</h4>
+                            <p>Date</p>
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <button id="discount-3" class="discount-card" onclick="exitDiscount()" data-id="2">
+                            <img src="" alt="Logo">
+                            <h4>Brand</h4>
+                            <p>Date</p>
+                        </button>
+                    </div>
+                </div>
+                <!-- ORDERS -->
+                <div class="row">
+                    <div class="col-12">
+                        <button id="order-1" class="order-card" onclick="showOrder()" data-id="0">
+                            <img src="" alt="Picture">
+                            <h4>Name</h4>
+                            <p>Date</p>
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <button id="order-2" class="order-card" onclick="showOrder()" data-id="1">
+                            <img src="" alt="Picture">
+                            <h4>Name</h4>
+                            <p>Date</p>
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <button id="order-3" class="order-card" onclick="showOrder()" data-id="2">
+                            <img src="" alt="Picture">
+                            <h4>Name</h4>
+                            <p>Date</p>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
