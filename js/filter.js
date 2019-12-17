@@ -127,7 +127,6 @@ function clearMenu() {
 }
 
 function renderMenu(){
-
     brands.forEach(element => {
         let node = createDivWithContent("filter-element", element);
         if(element == selectedBrand) node.classList.add("selected-filter-element");
@@ -249,6 +248,18 @@ function filter(products){
     }
 }
 
+function clearFilter() {
+    filteredProducts = products;
+
+    selectedBrand = null;
+    selectedCategory = null;
+    selectedSubCategory = null;
+    selectedGender = null;
+    selectedModel = null;
+    selectedColor = null;
+
+    renderFilterPage();
+}
 
 
 //FIRST LOADING
