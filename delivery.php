@@ -26,10 +26,10 @@
             </div>
             <div class="row">
                 <div class="col-6 center">
-                    <button class="cta-button" onclick="showStores()">Lever i nærmeste butikk</button>
+                    <button class="cta-buttons" onclick="showStores()">Lever i nærmeste butikk</button>
                 </div>
                 <div class="col-6 center">
-                    <button class="cta-button" onclick="showForm()">Få tilsendt pose hjem</button>
+                    <button class="cta-buttons" onclick="showForm()">Få tilsendt pose hjem</button>
                 </div>
             </div>
             <div class="row map-container">
