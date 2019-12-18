@@ -87,24 +87,23 @@
         </div>
     </div>
     <div class="container-fluid blue-index">
-        <!-- TEXTCONTENT 2-->
-        <div class="container">
-            <div class="row text-wrapper">
-                <div class="col-6 img-container">
-                    <img src="img/resale.jpg" alt="Gavekort">
-                </div>
-                <div class="col-6 text-container">
-                    <h2 class="title">Hvorfor ReStore?</h2>
-                    <p class="text">Restore betyr å restaurere.
-                        <br>Vi følger definisjonene på å restaurere:
-                    </p>
-                    <p class="text">: å returnere noe
-                        <br>: å bringe noe tilbake til eksistens eller bruk.
-                        <br>: å returnere noe til en tidligere eller original tilstand ved å reparere det, rengjøre det, sette i stand osv.
+            <!-- TEXTCONTENT 4 -->
+            <div class="container">
+                <div class="row text-wrapper">
+                    <div class="col-6 img-container">
+                         <img src="img/resale.jpg" alt="Gavekort">
+                    </div>
+                    <div class="col-6 text-container">
+                        <h2 class="title">Bli med oss å skape kulturen</h2>
+                        <p class="text">Vi ønsker å skape en kultur for kjøp og salg av gjenbruksklær til nye høyder,
+                            ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!
+                        </p>
+                        <p class="text">Som takk for at du sender inn dine brukte klær til oss får du ulike gavekort basert på hvilke type merker det er og plaggets tilstand. Derfor har vi også en estimert verdi du får
+                            før du leverer inn, slik at du kan se hva slags verdi dine plagg ligger på.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     <div class="container-fluid">
         <!-- TEXTCONTENT 3 -->
         <div class="container">
@@ -121,25 +120,29 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid blue-index">
-        <!-- TEXTCONTENT 4 -->
-        <div class="container">
-            <div class="row text-wrapper">
-                <div class="col-6 img-container">
-                    <img src="img/thankyou.jpg" alt="Gavekort">
-                </div>
-                <div class="col-6 text-container">
-                    <h2 class="title">Bli med oss å skape kulturen</h2>
-                    <p class="text">Vi ønsker å skape en kultur for kjøp og salg av gjenbruksklær til nye høyder,
-                        ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!
-                    </p>
-                    <p class="text">Som takk for at du sender inn dine brukte klær til oss får du ulike gavekort basert på hvilke type merker det er og plaggets tilstand. Derfor har vi også en estimert verdi du får
-                        før du leverer inn, slik at du kan se hva slags verdi dine plagg ligger på.</p>
-                    <a class="center" href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+            <!-- TEXTCONTENT 2-->
+            <div class="container">
+                <div class="row text-wrapper">
+                    <div class="col-6 img-container">
+                        <img src="img/thankyou.jpg" alt="Gavekort">
+                    </div>
+                    <div class="col-6 text-container">
+                        <h2 class="title">Hvorfor ReStore?</h2>
+                        <p class="text">Restore betyr å restaurere.
+                            <br>Vi følger definisjonene på å restaurere:
+                        </p>
+                        <ul class="text">
+                            <li>Returnere noe.</li>
+                            <li>Bringe noe tilbake til eksistens eller bruk.</li>
+                            <li>Returnere noe til en tidligere eller original tilstand ved å reparere det, rengjøre det, sette i stand osv.</li>
+                        </ul>
+                        <a class="center" href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     <div class="container-fluid">
         <div class="container">
             <!-- ICON GROUP 2 -->
