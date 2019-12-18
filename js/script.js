@@ -20,20 +20,82 @@ function createOptionWithContent(itemClass, content) {
     return option;
 }
 
+function mouseOver(element, circle){
+    element.onmouseover = function() {
+        this.style.fontWeight = "bold";
+        circle.style.borderWidth = "2px"
+    };
+    element.onmouseout = function() {
+        this.style.fontWeight = "";
+        circle.style.borderWidth = ""
+    };
+}
+
+
+
+function clickableProgress(){
+
+    let circleOne = document.getElementById("circle-one");
+    let circleTwo = document.getElementById("circle-two");
+    let circleFour = document.getElementById("circle-four");
+    let circleFive = document.getElementById("circle-five");
+
+
+    let one = document.getElementById("progress-one-container");
+    let two = document.getElementById("progress-two-container");
+    let four = document.getElementById("progress-four-container");
+    let five = document.getElementById("progress-five-container");
+
+    one.style.cursor = "pointer";
+    two.style.cursor = "pointer";
+    four.style.cursor = "pointer";
+    five.style.cursor = "pointer";
+
+    mouseOver(one, circleOne);
+    mouseOver(two, circleTwo);
+    mouseOver(four, circleFour);
+    mouseOver(five, circleFive);
+
+
+    one.addEventListener("click", function(){
+        window.location = "/filter.php"
+    });
+    two.addEventListener("click", function(){
+        window.location = "/condition.php"
+    });
+    four.addEventListener("click", function(){
+        window.location = "/delivery.php"
+    });
+    five.addEventListener("click", function(){
+        window.location = "/done.php"
+    });
+
+}
+
+
 function styleProgress(){
-    currentPage = window.location.pathname;
+    let circleOne = document.getElementById("circle-one");
+    let circleTwo = document.getElementById("circle-two");
+    let circleFour = document.getElementById("circle-four");
+    let circleFive = document.getElementById("circle-five");
+    let currentPage = window.location.pathname;
+
     switch(currentPage){
         case "/filter.php": document.getElementById("progress-one").style.fontWeight = "bold";
+            circleOne.style.backgroundColor= "orange";
             break;
         case "/condition.php":  document.getElementById("progress-two").style.fontWeight = "bold";
+            circleTwo.style.backgroundColor= "orange";
             break;
         case "/delivery.php":  document.getElementById("progress-four").style.fontWeight = "bold";
+            circleFour.style.backgroundColor= "orange";
             break;
         case "/done.php":  document.getElementById("progress-five").style.fontWeight = "bold";
+            circleFive.style.backgroundColor= "orange";
             break;
-
         default: console.log("error");
     }
 }
 
 styleProgress();
+clickableProgress();
