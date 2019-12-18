@@ -1,6 +1,7 @@
 /* SIMPLIFIED BOOTSTRAP GRID */
 
 .container-fluid {
+    position: relative;
     width: 100vw;
     min-height: calc(100vh - 30vh);
 }

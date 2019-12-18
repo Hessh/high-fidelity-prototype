@@ -18,13 +18,31 @@
 <body>
     <?php include './includes/header.php' ?>
     <div class="container-fluid first">
+        <div class="progress-container">
+            <div id="circle-one" class="circle">1</div>
+            <div id="circle-two" class="circle">2</div>
+            <div id="circle-three" class="circle">3</div>
+            <div id="circle-four" class="circle">4</div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h1 class="main-title">Leveringsmetode</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row icon-wrapper">
+                <div class="col-6 icon-container">
+                    <img src="img/register.png" alt="Icon">
+                    <h3>1. Lever i nærmeste butikk</h3>
+                    <p>Tekst</p>
+                </div>
+                <div class="col-6 icon-container">
+                    <img src="img/value.png" alt="Icon">
+                    <h3>2. Få tilsendt pose hjem</h3>
+                    <p>Tekst</p>
+                </div>
+            </div>
+            <div class="row delivery-button">
                 <div class="col-6 center">
                     <button class="cta-buttons" onclick="showStores()">Lever i nærmeste butikk</button>
                 </div>
@@ -35,8 +53,7 @@
             <div class="row map-container">
 
                 <iframe class="center" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d16001.862170515704!2d10.725829863523485!3d59.91168414726755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shelly%20hansen!5e0!3m2!1sen!2sno!4v1576588704343!5m2!1sen!2sno" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                <div class="col-12 center">
-                    <p class="center">Her har du en oversikt over alle butikkene du kan levere plagget i.<br>Du kan fritt velge hvor du vil levere plagget</p>
+                <div class="col-12 button-container">
                     <a class="center" href="done.php"><button class="cta-button">Fullfør</button></a>
                 </div>
             </div>

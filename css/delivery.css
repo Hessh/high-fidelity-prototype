@@ -8,6 +8,43 @@
     flex-direction: column;
 }
 
+.icon-wrapper {
+    justify-content: center;
+}
+
+.icon-title {
+    text-align: center;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 !important;
+}
+
+.icon-container img {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.icon-container h3 {
+    margin: 0.5rem 1rem;
+    text-align: center;
+}
+
+.icon-container p {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.delivery-button button {
+    margin-bottom: 2rem;
+}
+
 .cta-buttons {
     padding: 1rem 2rem;
     border: none;
@@ -28,4 +65,10 @@
     font-size: 1rem;
     background-color: #A1D192;
     color: black;
+}
+
+/* PROGRESS BAR */
+
+.progress-container {
+    position: fixed;
 }
