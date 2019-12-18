@@ -34,35 +34,35 @@
                     </div>
                     <div class="col-push-2"></div>
                 </div>
-                    <div class="row">
-                        <div class="col-push-2"></div>
-                        <div class="col-2 content-center column ">
-                            <div class="radio-buttons">
-                                <input type="radio" name="age" id="first">
-                                <label for="first">0-2 år</label>
-                            </div>
+                <div class="row">
+                    <div class="col-push-2"></div>
+                    <div class="col-2 content-center column ">
+                        <div class="radio-buttons">
+                            <input type="radio" name="age" id="first">
+                            <label for="first">0-2 år</label>
                         </div>
-
-                        <div class="col-2 content-center column">
-                            <div class="radio-buttons">
-                                <input type="radio" name="age" id="second">
-                                <label for="second">3-5 år</label>
-                            </div>
-                        </div>
-                        <div class="col-2 content-center column">
-                            <div class="radio-buttons">
-                                <input type="radio" name="age" id="third">
-                                <label for="third">6-8 år</label>
-                            </div>
-                        </div>
-                        <div class="col-2 content-center column">
-                            <div class="radio-buttons">
-                                <input type="radio" name="age" id="fourth">
-                                <label for="fourth">9+ år</label>
-                            </div>
-                        </div>
-                        <div class="col-push-2"></div>
                     </div>
+
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <input type="radio" name="age" id="second">
+                            <label for="second">3-5 år</label>
+                        </div>
+                    </div>
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <input type="radio" name="age" id="third">
+                            <label for="third">6-8 år</label>
+                        </div>
+                    </div>
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <input type="radio" name="age" id="fourth">
+                            <label for="fourth">9+ år</label>
+                        </div>
+                    </div>
+                    <div class="col-push-2"></div>
+                </div>
             </div>
             <!-- WORN -->
             <div class="condition-containers">
@@ -143,23 +143,23 @@
 
             <!-- UPLOAD PICTURE -->
             <div class="row">
-
-                <div class="col-8">
-                    <h2>Legg ved bilde av ditt plagg (anbefales)</h2>
-                </div>
-                
-                <form runat="server">
-                   <!-- <div class = "imgImpContainer cta-button upload-button"> -->
-                    <!--    Upload File -->
-                        <input class="cta-button upload-button"  type='file' id="imgInp" />
-                     <!--</div> -->
-                    <!--<img id="customerProdImg" src="#" /> -->
-                </form>
-
                 <div class="col-push-2"></div>
                 <div class="col-8">
-                    <img id="customerProdImg" src="#" class="preview"/>
-
+                    <h2>Legg ved bilde av ditt plagg (anbefales)</h2>
+                    <form runat="server">
+                        <!-- <div class = "imgImpContainer cta-button upload-button"> -->
+                        <!--    Upload File -->
+                        <input type='file' id="imgInp" />
+                        <!--</div> -->
+                        <!--<img id="customerProdImg" src="#" /> -->
+                    </form>
+                </div>
+                <div class="col-push-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-push-2"></div>
+                <div class="col-8">
+                    <img id="customerProdImg" src="#" class="preview" />
                 </div>
                 <div class="col-push-2"></div>
             </div>
