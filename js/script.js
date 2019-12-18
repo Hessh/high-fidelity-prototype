@@ -63,6 +63,8 @@ function styleProgress() {
             back.addEventListener("click", function () {
                 window.location = "/index.php"
             });
+
+            circleBack.style.display = "none";
             mouseOver(back, circleBack);
             break;
         case "/condition.php":
