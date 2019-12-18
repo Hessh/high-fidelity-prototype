@@ -60,7 +60,7 @@ function styleProgress() {
             document.getElementById("progress-one").style.fontWeight = "bold";
             circleOne.style.backgroundColor = currentColor;
             back.addEventListener("click", function () {
-                window.location = "/index.php"
+                window.location = "./index.php"
             });
 
             circleBack.style.display = "none";
@@ -72,10 +72,10 @@ function styleProgress() {
             circleTwo.style.backgroundColor = currentColor;
 
             one.addEventListener("click", function () {
-                window.location = "/filter.php"
+                window.location = "./filter.php"
             });
             back.addEventListener("click", function () {
-                window.location = "/filter.php"
+                window.location = "./filter.php"
             });
 
             mouseOver(one, circleOne);
@@ -92,13 +92,13 @@ function styleProgress() {
             imageTwo.src ="img/book2.svg";
             circleFour.style.backgroundColor = currentColor;
             one.addEventListener("click", function () {
-                window.location = "/filter.php"
+                window.location = "./filter.php"
             });
             two.addEventListener("click", function () {
-                window.location = "/condition.php"
+                window.location = "./condition.php"
             });
             back.addEventListener("click", function () {
-                window.location = "/condition.php"
+                window.location = "./condition.php"
             });
             mouseOver(one, circleOne);
             mouseOver(two, circleTwo);
@@ -119,16 +119,16 @@ function styleProgress() {
 
             circleFive.style.backgroundColor = currentColor;
             one.addEventListener("click", function () {
-                window.location = "/filter.php"
+                window.location = "./filter.php"
             });
             two.addEventListener("click", function () {
-                window.location = "/condition.php"
+                window.location = "./condition.php"
             });
             four.addEventListener("click", function () {
-                window.location = "/delivery.php"
+                window.location = "./delivery.php"
             });
             back.addEventListener("click", function () {
-                window.location = "/delivery.php"
+                window.location = "./delivery.php"
             });
 
             mouseOver(one, circleOne);
