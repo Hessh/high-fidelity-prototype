@@ -26,6 +26,11 @@
     outline: none;
 }
 
+.top-nav button span {
+    vertical-align: middle;
+    padding-right: 0.5rem;
+}
+
 .row button {
     display: flex;
     width: 100%;
@@ -35,8 +40,55 @@
     border: 1px solid lightgray;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+/* Overview */
 .discounts, .orders {
     height: 200px !important;
+}
+
+.discounts img, .orders img {
+    width: 150px;
+}
+
+
+/* Other tabs */
+.discount-card, .order-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.discount-card img, .order-card img {
+    width: 200px;
+}
+
+/* All tabs */
+.card {
+    box-shadow: 0 1px 5px 1px #00000020;
+}
+
+.card:hover {
+    box-shadow: 0 1px 5px 1px #00000040;
+}
+
+.card:focus {
+    outline: none;
+    outline-width: none;
+}
+
+.card:active {
+    box-shadow: none;
+}
+
+.card span {
+    font-size: 8rem;
+}
+
+.card .color {
+    color: #187b90;
 }
 
 /* SIDEBAR (RIGHT) STYLES */
@@ -85,7 +137,6 @@
 }
 
 .edit-button:hover {
-    cursor: pointer;
     color: #FFF;
     background-color: #187B90 !important;
 }
