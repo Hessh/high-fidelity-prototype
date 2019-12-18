@@ -28,7 +28,7 @@
         </div>
         <div class="row icon-wrapper">
             <div class="col-4 icon-container">
-                <img src="img/register.png" alt="Icon">
+                <img src="img/walk.png" alt="Icon">
             </div>
 
             <div class="col-2 text-container center" style="align-self: center">ELLER</div>

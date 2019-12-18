@@ -53,11 +53,13 @@ a {
 
 /* PROGRESS BAR */
 .progress-container {
-    left: 5%;
+    left: 2%;
     position: fixed;
-    width:250px;
+    width:10%;
     top: 20%;
     z-index: 10;
+
+
 }
 
 .progress-row{
@@ -65,15 +67,15 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 5px;
-    height: 80px;
-
+    margin-bottom: 10%;
+    height: 30%;
 }
 
 .progress-circle{
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    margin-left: 2%;
+    width: 3rem;
+    height: 3rem;
     border: solid black 1px;
     box-shadow: inset 0 0 2px 0;
     background-color: white;
