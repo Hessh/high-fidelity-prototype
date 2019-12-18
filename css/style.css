@@ -53,9 +53,9 @@ a {
 
 /* PROGRESS BAR */
 .progress-container {
-    left: 2%;
+    left: 5%;
     position: fixed;
-    width:10%;
+    width:20%;
     top: 20%;
     z-index: 10;
 
@@ -69,11 +69,16 @@ a {
     flex-direction: row;
     margin-bottom: 10%;
     height: 30%;
+
+}
+.progress-text{
+    word-wrap: break-word;
+    width: 50%;
 }
 
 .progress-circle{
     border-radius: 50%;
-    margin-left: 2%;
+
     width: 3rem;
     height: 3rem;
     border: solid black 1px;
