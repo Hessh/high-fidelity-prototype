@@ -4,7 +4,7 @@ let estContainer = document.querySelectorAll(".estimate-container")[0]
 let conditionContainer = document.querySelectorAll(".condition-container")[0]
 
 img.style.display = "none"
-estButton.style.display = "none"
+estButton.style.display = "flex"
 estContainer.style.display = "none"
 
 function showImg() {
