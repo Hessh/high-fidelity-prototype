@@ -34,7 +34,11 @@ function renderFilterPage(){
     filter(products)
     renderInstructions();
     renderMenu();
-    renderProducts(filteredProducts);
+    if (selectedColor) {
+        renderProducts(filteredProducts);
+    } else {
+        productsElement.innerHTML = "";
+    }
 }
 
 function renderInstructions() {
@@ -55,7 +59,7 @@ function renderInstructions() {
 
 
     if (selectedColor) {
-        instructionTextElement.innerHTML = "Vennligst velg plagget ditt i oversikten under";
+        instructionTextElement.innerHTML = "Vennligst velg plagget:";
         progBrandElement.classList.add("progress-done");
         progCategoryElement.classList.add("progress-done");
         progSubCategoryElement.classList.add("progress-done");
