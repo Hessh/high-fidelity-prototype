@@ -27,24 +27,27 @@
             </div>
         </div>
         <div class="row icon-wrapper">
-            <div class="col-6 icon-container">
+            <div class="col-4 icon-container">
                 <img src="img/register.png" alt="Icon">
-                <h3>1. Lever i nærmeste butikk</h3>
-                <p>Tekst</p>
             </div>
-            <div class="col-6 icon-container">
+
+            <div class="col-2 text-container center" style="align-self: center">ELLER</div>
+
+            <div class="col-4 icon-container">
                 <img src="img/value.png" alt="Icon">
-                <h3>2. Få tilsendt pose hjem</h3>
-                <p>Tekst</p>
+                <div class="col-push-1"></div>
             </div>
         </div>
         <div class="row delivery-button">
-            <div class="col-6 center">
+            <div class="col-push-1"></div>
+            <div class="col-4 center">
                 <button class="cta-buttons" onclick="showStores()">Lever i nærmeste butikk</button>
             </div>
-            <div class="col-6 center">
+            <div class="col-2"></div>
+            <div class="col-4 center">
                 <button class="cta-buttons" onclick="showForm()">Få tilsendt pose hjem</button>
             </div>
+            <div class="col-push-1"></div>
         </div>
         <div class="row map-container">
 
@@ -66,8 +69,14 @@
                 <input type="mail" id="mail" placeholder="Din e-post adresse">
                 <label for="address">Adresse</label>
                 <input type="text" id="address" placeholder="Din gateadresse">
-                <label for="zip">Postnummer</label>
-                <input type="zipcode" id="zip" placeholder="Ditt postnummer">
+                <div>
+                    <label for="zip" class="col-4">Postnummer</label>
+                    <div class="col-push-1"></div>
+                    <label for="area" class="col-6" style="padding-left: 3rem;">Poststed</label>
+                    <input type="zipcode" id="zip" placeholder="Postnummer" class="col-3" style="margin-right: 4.24rem;">
+                    <div class="col-3"></div>
+                    <input type="text" id="area" placeholder="Poststed" class="col-6" style="padding-right:1.2rem;">
+                </div>
                 <a class="center" href="done.php">
                     <button class="submit-button">Fullfør</button>
                 </a>

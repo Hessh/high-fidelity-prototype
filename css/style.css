@@ -42,6 +42,7 @@ a {
     color: #FFF;
     font-weight: 600;
     font-size: 1.2rem;
+    border-radius: 0.2rem;
 }
 
 .cta-button:hover {
