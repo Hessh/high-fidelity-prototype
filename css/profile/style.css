@@ -1,4 +1,9 @@
-/* PROFILE INDEX STYLES */
+/* MAIN (LEFTSIDE) STYLES */
+
+.content-left {
+    padding: 0 1rem;
+    border-right: 1px solid lightgray;
+}
 
 .top-nav {
     display: grid;
@@ -32,4 +37,55 @@
 
 .discounts, .orders {
     height: 200px !important;
+}
+
+/* SIDEBAR (RIGHT) STYLES */
+
+.content-right {
+    padding: 0 1rem;
+}
+
+.profile-picture-container {
+    width: 100%;
+}
+
+.profile-picture-container img {
+    width: 100%;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+.info-wrapper:last-of-type span {
+    margin-top: 1rem;
+}
+
+.info-wrapper span:first-of-type {
+     padding-right: 1rem;
+}
+
+.edit-button {
+    width: unset !important;
+    height: unset !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 0.2rem !important;
+    font-size: 1rem !important;
+    font-weight: 600;
+    text-align: center !important;
+    background-color: #E7F3F5 !important;
+}
+
+.edit-button span {
+    margin: 0;
+    padding: 0 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+.edit-button:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #187B90 !important;
 }

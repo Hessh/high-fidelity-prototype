@@ -20,16 +20,36 @@
     <?php include './includes/header-profile.php' ?>
     <div class="container-fluid first">
         <div class="profile-container">
+            <!-- RIGHT -->
             <div class="content-left">
-                <?php include './includes/profile-sidebar.php' ?>
+                <div class="row">
+                    <div class="profile-picture-container">
+                        <img src="img/profile-picture.jpg" alt="Profilbilde">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="name">Ola Nordmann</h2>
+                        <div class="info-wrapper">
+                            <span class="material-icons-outlined">email</span>
+                            <span>ola-gutt1@gmail.com</span>
+                        </div>
+                        <div class="info-wrapper">
+                            <span class="material-icons-outlined">room</span>
+                            <span>Heiveien 1,<br>0570 Oslo</span>
+                        </div>
+                        <button id="edit-button" class="edit-button" onclick="editProfile()"><span class="material-icons">edit</span>Endre profil</button>
+                    </div>
+                </div>
             </div>
+            <!-- RIGHT -->
             <div class="content-right">
                 <div class="top-nav">
                     <button class="top-nav-button" onclick="toOverview()" data-id="0">Oversikt</button>
                     <button class="top-nav-button" onclick="toDiscounts()" data-id="1">Rabatter</button>
                     <button class="top-nav-button" onclick="toOrders()" data-id="2">Ordre</button>
                 </div>
-                <!-- INDEX -->
+                <!-- OVERVIEW -->
                 <div class="row">
                     <div class="col-12">
                         <button id="discounts" class="discounts">
