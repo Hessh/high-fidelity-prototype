@@ -43,7 +43,7 @@ function styleProgress() {
     let currentPage = window.location.pathname;
 
     let finishedColor = "#A1D192";
-    let currentColor = "#fa9741";
+    let currentColor =  "#E7F3F5";
 
     let back = document.getElementById("progress-back-container");
     let one = document.getElementById("progress-one-container");
@@ -51,10 +51,6 @@ function styleProgress() {
     let four = document.getElementById("progress-four-container");
     let five = document.getElementById("progress-five-container");
 
-    one.style.cursor = "pointer";
-    two.style.cursor = "pointer";
-    four.style.cursor = "pointer";
-    five.style.cursor = "pointer";
 
     switch (currentPage) {
         case "/filter.php":
@@ -65,7 +61,6 @@ function styleProgress() {
             });
 
             circleBack.style.display = "none";
-            mouseOver(back, circleBack);
             break;
         case "/condition.php":
             document.getElementById("progress-two").style.fontWeight = "bold";
@@ -79,6 +74,7 @@ function styleProgress() {
             });
             mouseOver(one, circleOne);
             mouseOver(back, circleBack);
+            one.style.cursor = "pointer";
 
             break;
         case "/delivery.php":
@@ -98,6 +94,9 @@ function styleProgress() {
             mouseOver(one, circleOne);
             mouseOver(two, circleTwo);
             mouseOver(back, circleBack);
+
+            one.style.cursor = "pointer";
+            two.style.cursor = "pointer";
 
             break;
         case "/done.php":
@@ -122,6 +121,9 @@ function styleProgress() {
             mouseOver(two, circleTwo);
             mouseOver(four, circleFour);
             mouseOver(back, circleBack);
+            one.style.cursor = "pointer";
+            two.style.cursor = "pointer";
+            four.style.cursor = "pointer";
 
             break;
         default:
