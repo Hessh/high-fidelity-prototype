@@ -81,3 +81,39 @@ input[type="radio"]:checked+label{
     background-color: lightgray !important;
     margin-bottom: 2rem !important;
 }
+
+/*
+input#imgInp {
+    display: inline-block;
+    width: 100%;
+    padding: 120px 0 0 0;
+    height: 100px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat #e4e4e4;
+    border-radius: 20px;
+    background-size: 60px 60px;
+  }
+
+  */
+
+/*Hide the input button. */
+.hidden {
+    /*Opacity settings for all browsers*/
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+} 
+
+
+
+.fileInput {
+    cursor: pointer;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    font-size:50px;
+}

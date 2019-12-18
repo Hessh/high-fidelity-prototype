@@ -139,11 +139,16 @@
                 <div class="col-12">
                     <h2>Bilde (anbefales)</h2>
                 </div>
+                
+                <form runat="server">
+                   <!-- <div class = "imgImpContainer cta-button upload-button"> -->
+                    <!--    Upload File -->
+                        <input class="cta-button upload-button"  type='file' id="imgInp" />
+                     <!--</div> -->
+                    <!--<img id="customerProdImg" src="#" /> -->
+                </form>
                 <div class="col-12">
-                    <button class="cta-button upload-button" onclick="showImg()">Last opp bilde</button>
-                </div>
-                <div class="col-12">
-                    <div class="preview"></div>
+                    <img id="customerProdImg" src="#" class="preview"/>
                 </div>
             </div>
             <!-- CTA BUTTON -->
@@ -179,7 +184,9 @@
     <?php include './includes/footer.php' ?>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- Load jquery in order to display images -->
     <script src="js/condition.js"></script>
+
 </body>
 
 </html>

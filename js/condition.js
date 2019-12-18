@@ -17,3 +17,23 @@ function estimate() {
     estContainer.style.flexDirection = "column"
     conditionContainer.style.display = "none"
 }
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      showImg();
+
+      reader.onload = function(e) {
+        $('#customerProdImg').attr('src', e.target.result);
+      }
+      
+      reader.readAsDataURL(input.files[0]);
+      
+
+    }
+  }
+  
+  $("#imgInp").change(function() {
+    readURL(this);
+  });
+
