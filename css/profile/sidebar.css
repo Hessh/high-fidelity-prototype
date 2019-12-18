@@ -8,7 +8,15 @@
     padding: 0 1rem;
 }
 
-.profile-picture-container{
-    width: 30%;
 
+.icon-wrapper {
+    justify-content: center;
+    
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
 }

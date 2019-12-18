@@ -31,10 +31,10 @@ let progModelElement = document.getElementById("progress-model");
 
 function renderFilterPage(){
     clearMenu();
-    filter(products)
+    filter(products);
     renderInstructions();
     renderMenu();
-    if (selectedColor) {
+    if (selectedBrand) {
         renderProducts(filteredProducts);
     } else {
         productsElement.innerHTML = "";
