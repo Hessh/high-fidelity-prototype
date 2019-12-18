@@ -1,7 +1,13 @@
 /* INDEX STYLES */
 
+.first-index {}
+.blue-index {
+    background-color: #E7F3F5;
+}
+
 .container {
     padding: 2rem !important;
+    background-color: transparent !important;
 }
 
 .img-container img {
