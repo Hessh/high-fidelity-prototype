@@ -19,7 +19,7 @@
 
 #instruction-progress {
     margin: 0 auto;
-    padding: 5px 10px;
+    padding: 10px 10px 5px 10px;
 
     height: 40px;
 }
@@ -46,6 +46,7 @@
 
 #instruction-selector {
     margin: 0 auto;
+    padding: 1rem 10px;
 }
 
 .big-filter-element {
@@ -84,6 +85,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    margin: 0 auto;
+
+
 }
 
 .product-div {
@@ -109,7 +114,9 @@
 }
 
 .product-image {
-     width: 250px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .product-brand {
