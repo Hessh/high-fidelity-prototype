@@ -4,8 +4,7 @@ label {
 }
 .preview {
     position: relative;
-    width: 75%;
-    height: 15rem;
+    max-width: 100%;
     border: 1px solid lightgray;
 }
 

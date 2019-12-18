@@ -3,13 +3,13 @@ let estButton = document.querySelectorAll(".estimate-button")[0]
 let estContainer = document.querySelectorAll(".estimate-container")[0]
 let conditionContainer = document.querySelectorAll(".condition-container")[0]
 
-img.style.display = "none"
-estButton.style.display = "flex"
-estContainer.style.display = "none"
+img.style.display = "none";
+estButton.style.display = "flex";
+estContainer.style.display = "none";
 
 function showImg() {
-    img.style.display = "flex"
-    estButton.style.display = "flex"
+    img.style.display = "flex";
+    estButton.style.display = "flex";
 }
 
 function estimate() {

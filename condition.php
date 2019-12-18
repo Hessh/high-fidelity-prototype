@@ -149,7 +149,7 @@
                     <form runat="server">
                         <!-- <div class = "imgImpContainer cta-button upload-button"> -->
                         <!--    Upload File -->
-                        <input type='file' id="imgInp" />
+                        <input type='file' id="imgInp"/>
                         <!--</div> -->
                         <!--<img id="customerProdImg" src="#" /> -->
                     </form>
@@ -173,15 +173,15 @@
         <div class="container estimate-container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="main-title">Estimert verdi:</h2>
+                    <h1 class="main-title">Estimert verdi:</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-push-2"></div>
                 <div class="col-8">
-                    <h1 class="text-center">250,-</h1>
-                    <h3 class="text-center">avslag ved ditt neste kjøp i butikk hos Helly Hansen</h3>
-                    <p class="text-center">Dette vil bli endelig verdivurdert hos våre eksperter når du mottar et endelig tilbud i løpet av de neste virkedagene.</p>
+                    <div class="text-center" style="font-size: 80px; padding: 2rem">250,-</div>
+                    <h3 class="text-center" style="padding: 0 4rem">avslag ved ditt neste kjøp i butikk hos Helly Hansen</h3>
+                    <p class="text-center" style="padding: 0 5rem">Våre eksperter vil verdivurdere plagget så fort vi har mottatt det, og du vil motta et endelig tilbud fra oss så fort dette er gjort.</p>
                 </div>
                 <div class="col-push-2"></div>
             </div>
