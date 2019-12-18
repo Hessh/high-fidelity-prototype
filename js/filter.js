@@ -33,7 +33,7 @@ function renderFilterPage(){
     clearMenu();
     filter(products)
     renderInstructions();
-    renderMenu2();
+    renderMenu();
     renderProducts(filteredProducts);
 }
 
@@ -65,6 +65,7 @@ function renderInstructions() {
         instructionElement.setAttribute("hidden", null);
         return;
     }
+
     if (selectedGender) {
         instructionTextElement.innerHTML = "Vennligst velg farge på produktet";
         progBrandElement.classList.add("progress-done");
@@ -163,14 +164,21 @@ function clearMenu() {
     subCategoryElement.innerHTML = "";
     genderElement.innerHTML = "";
     colorElement.innerHTML = "";
+
+    progBrandElement.style.cursor = "";
+    progCategoryElement.style.cursor = "";
+    progSubCategoryElement.style.cursor = "";
+    progGenderElement.style.cursor = "";
+    progColorElement.style.cursor = "";
+
 }
 
-function renderMenu2() {
+function renderMenu() {
     if (!selectedBrand) return;
     let node = createDivWithContent("filter-element", selectedBrand);
     node.classList.add("selected-filter-element", "center");
     node.addEventListener("click", function(){
-        selectedBrand = this.value;
+        selectedBrand = null;
         selectedCategory = null;
         selectedSubCategory = null;
         selectedGender = null;
@@ -178,130 +186,93 @@ function renderMenu2() {
         selectedColor = null;
         renderFilterPage();
     });
+    progBrandElement.addEventListener("click", function(){
+        selectedBrand = null;
+        selectedCategory = null;
+        selectedSubCategory = null;
+        selectedGender = null;
+        selectedModel = null;
+        selectedColor = null;
+        renderFilterPage();
+    });
+    progBrandElement.style.cursor = "pointer";
     brandElement.appendChild(node);
 
     if (!selectedCategory) return;
     node = createDivWithContent("filter-element", selectedCategory);
     node.classList.add("selected-filter-element", "center");
     node.addEventListener("click", function(){
-        selectedCategory = this.value;
+        selectedCategory = null;
         selectedSubCategory = null;
         selectedGender = null;
         selectedModel = null;
         selectedColor = null;
         renderFilterPage();
     });
+    progCategoryElement.addEventListener("click", function(){
+        selectedCategory = null;
+        selectedSubCategory = null;
+        selectedGender = null;
+        selectedModel = null;
+        selectedColor = null;
+        renderFilterPage();
+    });
+    progCategoryElement.style.cursor = "pointer";
     categoryElement.appendChild(node);
 
     if (!selectedSubCategory) return;
     node = createDivWithContent("filter-element", selectedSubCategory);
     node.classList.add("selected-filter-element", "center");
     node.addEventListener("click", function(){
-        selectedCategory = this.value;
         selectedSubCategory = null;
         selectedGender = null;
         selectedModel = null;
         selectedColor = null;
         renderFilterPage();
     });
+    progSubCategoryElement.addEventListener("click", function(){
+        selectedSubCategory = null;
+        selectedGender = null;
+        selectedModel = null;
+        selectedColor = null;
+        renderFilterPage();
+    });
+    progSubCategoryElement.style.cursor = "pointer";
     subCategoryElement.appendChild(node);
 
     if (!selectedGender) return;
     node = createDivWithContent("filter-element", selectedGender);
     node.classList.add("selected-filter-element", "center");
     node.addEventListener("click", function(){
-        selectedGender = this.value;
+        selectedGender = null;
         selectedModel = null;
         selectedColor = null;
         renderFilterPage();
     });
+    progGenderElement.addEventListener("click", function(){
+        selectedGender = null;
+        selectedModel = null;
+        selectedColor = null;
+        renderFilterPage();
+    });
+    progGenderElement.style.cursor = "pointer";
     genderElement.appendChild(node);
 
     if (!selectedColor) return;
     node = createDivWithContent("filter-element", selectedColor);
     node.classList.add("selected-filter-element", "center");
     node.addEventListener("click", function(){
-        selectedGender = this.value;
         selectedModel = null;
         selectedColor = null;
         renderFilterPage();
     });
+    progColorElement.addEventListener("click", function(){
+        selectedModel = null;
+        selectedColor = null;
+        renderFilterPage();
+    });
+    progColorElement.style.cursor = "pointer";
     colorElement.appendChild(node);
-}
-
-function renderMenu(){
-    brands.forEach(element => {
-        let node = createOptionWithContent("filter-element", element);
-        if(element == selectedBrand) node.setAttribute("selected", null);
-        brandElement.appendChild(node);
-    });
-    brandElement.addEventListener("change", function(){
-        selectedBrand = this.value;
-        selectedCategory = null;
-        selectedSubCategory = null;
-        selectedGender = null;
-        selectedModel = null;
-        selectedColor = null;
-
-        renderFilterPage();
-    });
-    if (!selectedBrand) return;
-
-    categories.forEach(element => {
-        let node = createOptionWithContent("filter-element", element);
-        if(element == selectedCategory) node.setAttribute("selected", null);
-        categoryElement.appendChild(node);
-    });
-    categoryElement.addEventListener("change", function(){
-        selectedCategory = this.value;
-        selectedSubCategory = null;
-        selectedGender = null;
-        selectedModel = null;
-        selectedColor = null;
-
-        renderFilterPage();
-    });
-    if (!selectedCategory) return;
-
-    subCategories.forEach(element => {
-        let node = createOptionWithContent("filter-element", element);
-        if(element == selectedSubCategory) node.setAttribute("selected", null);
-        subCategoryElement.appendChild(node);
-    });
-    subCategoryElement.addEventListener("change", function(){
-        selectedSubCategory = this.value;
-        selectedGender = null;
-        selectedModel = null;
-        selectedColor = null;
-
-        renderFilterPage();
-    });
-    if (!selectedSubCategory) return;
-
-    genders.forEach(element => {
-        let node = createOptionWithContent("filter-element", element);
-        if(element == selectedGender) node.setAttribute("selected", null);
-        genderElement.appendChild(node);
-    });
-    genderElement.addEventListener("change", function(){
-        selectedGender = this.value;
-        selectedModel = null;
-        selectedColor = null;
-
-        renderFilterPage();
-    });
-    if (!selectedGender) return;
-
-    colors.forEach(element => {
-        let node = createOptionWithContent("filter-element", element);
-        if(element == selectedColor) node.setAttribute("selected", null);
-        colorElement.appendChild(node);
-    });
-    colorElement.addEventListener("change", function(){
-        selectedColor = this.value;
-
-        renderFilterPage();
-    });
 }
 
 function filter(products){

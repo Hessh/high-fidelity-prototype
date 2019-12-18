@@ -41,7 +41,7 @@
 
 .filter-drop-down-container {
     margin: 0 auto !important;
-    padding: 0 10px !important;
+    padding: 0 10px 30px 10px !important;
 }
 
 #instruction-selector {
