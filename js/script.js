@@ -20,20 +20,19 @@ function createOptionWithContent(itemClass, content) {
     return option;
 }
 
-function mouseOver(element, circle){
-    element.onmouseover = function() {
+function mouseOver(element, circle) {
+    element.onmouseover = function () {
         this.style.fontWeight = "bold";
         circle.style.borderWidth = "2px"
     };
-    element.onmouseout = function() {
+    element.onmouseout = function () {
         this.style.fontWeight = "";
         circle.style.borderWidth = ""
     };
 }
 
 
-
-function clickableProgress(){
+function clickableProgress() {
 
     let circleOne = document.getElementById("circle-one");
     let circleTwo = document.getElementById("circle-two");
@@ -57,43 +56,55 @@ function clickableProgress(){
     mouseOver(five, circleFive);
 
 
-    one.addEventListener("click", function(){
+    one.addEventListener("click", function () {
         window.location = "/filter.php"
     });
-    two.addEventListener("click", function(){
+    two.addEventListener("click", function () {
         window.location = "/condition.php"
     });
-    four.addEventListener("click", function(){
+    four.addEventListener("click", function () {
         window.location = "/delivery.php"
     });
-    five.addEventListener("click", function(){
+    five.addEventListener("click", function () {
         window.location = "/done.php"
     });
 
 }
 
 
-function styleProgress(){
+function styleProgress() {
     let circleOne = document.getElementById("circle-one");
     let circleTwo = document.getElementById("circle-two");
     let circleFour = document.getElementById("circle-four");
     let circleFive = document.getElementById("circle-five");
     let currentPage = window.location.pathname;
-
-    switch(currentPage){
-        case "/filter.php": document.getElementById("progress-one").style.fontWeight = "bold";
-            circleOne.style.backgroundColor= "orange";
+    let finishedColor = "#A1D192";
+    let currentColor = "#fa9741";
+    switch (currentPage) {
+        case "/filter.php":
+            document.getElementById("progress-one").style.fontWeight = "bold";
+            circleOne.style.backgroundColor = currentColor;
             break;
-        case "/condition.php":  document.getElementById("progress-two").style.fontWeight = "bold";
-            circleTwo.style.backgroundColor= "orange";
+        case "/condition.php":
+            document.getElementById("progress-two").style.fontWeight = "bold";
+            circleOne.style.backgroundColor = finishedColor;
+            circleTwo.style.backgroundColor = currentColor;
             break;
-        case "/delivery.php":  document.getElementById("progress-four").style.fontWeight = "bold";
-            circleFour.style.backgroundColor= "orange";
+        case "/delivery.php":
+            document.getElementById("progress-four").style.fontWeight = "bold";
+            circleOne.style.backgroundColor = finishedColor;
+            circleTwo.style.backgroundColor = finishedColor;
+            circleFour.style.backgroundColor = currentColor;
             break;
-        case "/done.php":  document.getElementById("progress-five").style.fontWeight = "bold";
-            circleFive.style.backgroundColor= "orange";
+        case "/done.php":
+            document.getElementById("progress-five").style.fontWeight = "bold";
+            circleOne.style.backgroundColor = finishedColor;
+            circleTwo.style.backgroundColor = finishedColor;
+            circleFour.style.backgroundColor = finishedColor;
+            circleFive.style.backgroundColor = currentColor;
             break;
-        default: console.log("error");
+        default:
+            console.log("error");
     }
 }
 
