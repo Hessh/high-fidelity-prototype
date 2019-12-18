@@ -53,10 +53,10 @@ a {
 
 /* PROGRESS BAR */
 .progress-container {
-    left: 5%;
+    left: 1%;
     position: fixed;
     width:15%;
-    top: 15%;
+    top: 20%;
     z-index: 10;
 }
 
@@ -71,7 +71,7 @@ a {
 }
 .progress-text{
     word-wrap: break-word !important;
-    width: 70%;
+    width: 75%;
     text-align: right !important;
 }
 

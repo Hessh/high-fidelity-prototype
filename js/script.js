@@ -141,7 +141,7 @@ function styleProgress() {
             four.style.cursor = "pointer";
             break;
         default:
-            console.log("error");
+
     }
 
 }
