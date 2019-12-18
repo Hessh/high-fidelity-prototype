@@ -22,56 +22,60 @@
         <div class="container condition-container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="main-title">Registrer produkt</h1>
+                    <h1 class="main-title">Vurder plaggets tilstand</h1>
                 </div>
             </div>
             <!-- AGE -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="col-12">
-                        <h2>Alder</h2>
+            <div class="background condition-containers">
+                <div class="row">
+                    <div class="col-push-2"></div>
+                    <div class="col-8">
+                        <h2>Hvor gammelt er plagget?</h2>
                     </div>
+                    <div class="col-push-2"></div>
                 </div>
                 <div class="row">
                     <div class="col-push-2"></div>
                     <div class="col-2 content-center ">
-                        <div class="col content-center column">
+                        <div class="col content-center column ">
                             <div class="radio-buttons">
                                 <input type="radio" name="age" id="first">
-                                <label for="first">0-2</label>
+                                <label for="first">0-2 år</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
                             <input type="radio" name="age" id="second">
-                            <label for="second">3-5</label>
+                            <label for="second">3-5 år</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
                             <input type="radio" name="age" id="third">
-                            <label for="third">6-8</label>
+                            <label for="third">6-8 år</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
                             <input type="radio" name="age" id="fourth">
-                            <label for="fourth">9+</label>
+                            <label for="fourth">9+ år</label>
                         </div>
                     </div>
                     <div class="col-push-2"></div>
                 </div>
             </div>
             <!-- WORN -->
-            <div class="row">
-            <div class="col-12">
-                    <div class="col-12">
-                        <h2>Slitasje</h2>
+            <div class="condition-containers">
+                <div class="row">
+                    <div class="col-push-2"></div>
+                    <div class="col-8">
+                        <h2>Hvor slitt er plagget?</h2>
                     </div>
+                    <div class="col-push-2"></div>
                 </div>
                 <div class="row">
-                <div class="col-push-2"></div>
+                    <div class="col-push-2"></div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
                             <input type="radio" name="worn" id="as-new">
@@ -100,44 +104,48 @@
                 </div>
             </div>
             <!-- SIZE -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="col-12">
-                        <h2>Størrelse</h2>
+            <div class="background condition-containers">
+                <div class="row">
+                    <div class="col-push-2"></div>
+                    <div class="col-8">
+                        <h2>Hvilken størrelse er plagget?</h2>
                     </div>
+                    <div class="col-push-2"></div>
                 </div>
                 <div class="row">
-                <div class="col-push-2"></div>
+                    <div class="col-push-2"></div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
                             <input type="radio" name="size" id="S">
-                            <label for="S">S</label>
+                            <label for="S">Small</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
                             <input type="radio" name="size" id="M">
-                            <label for="M">M</label>
+                            <label for="M">Medium</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
                             <input type="radio" name="size" id="L">
-                            <label for="L">L</label>
+                            <label for="L">Large</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
                             <input type="radio" name="size" id="XL">
-                            <label for="XL">XL</label>
+                            <label for="XL">Extra Large</label>
                         </div>
                     </div>
                     <div class="col-push-2"></div>
                 </div>
             </div>
+
             <!-- UPLOAD PICTURE -->
             <div class="row">
-                <div class="col-12">
+                <div class="col-push-2"></div>
+                <div class="col-8">
                     <h2>Bilde (anbefales)</h2>
                 </div>
                 
@@ -148,9 +156,13 @@
                      <!--</div> -->
                     <!--<img id="customerProdImg" src="#" /> -->
                 </form>
-                <div class="col-12">
+
+                <div class="col-push-2"></div>
+                <div class="col-8">
                     <img id="customerProdImg" src="#" class="preview"/>
+
                 </div>
+                <div class="col-push-2"></div>
             </div>
             <!-- CTA BUTTON -->
             <div class="row">
