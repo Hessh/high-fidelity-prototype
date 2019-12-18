@@ -21,38 +21,41 @@
     <div class="container">
         <div class="progress-container">
             <div class="progress-row">
+                <div class="progress-text" id="progress-one">Registrer</div>
                 <div id="circle-one" class="progress-circle">
                     <img src="img/ship.png" id="">
                 </div>
-                <div class="progress-text">Hol</div>
+
 
             </div>
             <div class="progress-row">
+                <div class="progress-text" id="progress-two">Søk</div>
                 <div id="circle-two" class="progress-circle">
-                    <img src="" id="">
+                    <img src="img/ship.png" id="">
                 </div>
-                <div class="progress-text">Hol</div>
+
 
             </div>
             <div class="progress-row">
+                <div class="progress-text" id="progress-three">Vurder</div>
                 <div id="circle-three" class="progress-circle">
-                    <img src="" id="">
+                    <img src="img/ship.png" id="">
                 </div>
-                <div class="progress-text">Hol</div>
 
             </div>
             <div class="progress-row">
+                <div class="progress-text" id="progress-four">Estimer</div>
                 <div id="circle-four" class="progress-circle">
                     <img src="" id="">
                 </div>
-                <div class="progress-text">Hol</div>
 
             </div>
             <div class="progress-row">
+                <div class="progress-text" id="progress-five">Lever</div>
                 <div id="circle-five" class="progress-circle">
                     <img src="" id="">
                 </div>
-                    <div class="progress-text">Hol</div>
+
             </div>
         </div>
         <div class="row">
