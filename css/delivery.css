@@ -67,8 +67,6 @@
     color: black;
 }
 
-/* PROGRESS BAR */
-
-.progress-container {
-    position: fixed;
+#progress-four {
+    font-weight: bold;
 }
