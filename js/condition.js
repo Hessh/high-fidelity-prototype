@@ -16,6 +16,16 @@ function estimate() {
     estContainer.style.display = "flex"
     estContainer.style.flexDirection = "column"
     conditionContainer.style.display = "none"
+
+    topScroll();
+}
+
+function topScroll() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+  setTimeout(500)
 }
 
 function readURL(input) {
