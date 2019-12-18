@@ -17,6 +17,7 @@
 
 <body>
     <?php include './includes/header.php' ?>
+    <?php include './includes/progress.php' ?>
     <div class="container-fluid first">
         <div class="container">
             <div class="row">
@@ -43,17 +44,17 @@
             </div>
             <div class="row icon-wrapper">
                 <div class="col-4 icon-container">
-                    <img src="" alt="Icon">
+                    <img src="img/wait.png" alt="Icon">
                     <h3>1. Vent på verdivurdering</h3>
                     <p>Våre eksperter gjør en verdivurdering på ditt plagg</p>
                 </div>
                 <div class="col-4 icon-container">
-                    <img src="" alt="Icon">
+                    <img src="img/value.png" alt="Icon">
                     <h3>2. Motta tilbud</h3>
                     <p>Varsel på e-post kommer om tilbud, i tillegg til at gavekortet dukker opp på Min side på din profil</p>
                 </div>
                 <div class="col-4 icon-container">
-                    <img src="" alt="Icon">
+                    <img src="img/offer.png" alt="Icon">
                     <h3>3. Godta/avslå tilbud</h3>
                     <p>Om du godtar tilbudet vil du motta ditt gavekort som vil ligge tilgjengelig på “Min side”</p>
                 </div>

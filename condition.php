@@ -17,6 +17,7 @@
 
 <body>
     <?php include './includes/header.php' ?>
+    <?php include './includes/progress.php' ?>
     <div class="container-fluid first">
         <div class="container condition-container">
             <div class="row">

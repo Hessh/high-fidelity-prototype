@@ -1,6 +1,9 @@
 /* INDEX STYLES */
 .first-index {
     margin-top: 4rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .blue-index {
@@ -8,8 +11,11 @@
 }
 
 .index-container {
-    height: 250px !important;
-    margin-bottom: 0 !important;
+    margin: 0 auto !important;
+}
+
+.second-container {
+    margin-top: 0 !important;
 }
 
 
@@ -23,9 +29,15 @@
     
 }
 .hero {
-    background-image: url(../img/clothing.jpg);
+    width: 100% !important;
+    height: 400px;
+    background-image: url(../img/clothing-2.jpg);
     background-position: center center;
     background-size: cover;
+}
+
+.first-main-title-container h1 {
+    margin-top: 0 !important;
 }
 
 
@@ -50,6 +62,7 @@
     margin-bottom: 1rem;
     border: 1px solid #000;
     border-radius: 50%;
+    background-color: #E7F3F5;
 }
 
 .icon-container h3 {

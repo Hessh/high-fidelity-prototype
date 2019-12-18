@@ -19,6 +19,8 @@
 <?php include './includes/header.php' ?>
 <?php include './includes/progress.php' ?>
 <div class="container-fluid first">
+<div class="container" style="padding: 0.5rem 0;">
+    <h1 class="main-title">Finn plagget du ønsker å levere inn</h1>
 
     <div id="filter-progress-bar">
         <div id="instruction-progress" class="container">
@@ -37,9 +39,12 @@
             <div id="filter-color" class="col-2 text-container"></div>
         </div>
     </div>
-    <div id="instruction-text" class="container"></div>
-    <div id="instruction-selector" class="container"></div>
+    <div id="instruction-container">
+        <div id="instruction-text" class="container"></div>
+        <div id="instruction-selector" class="container"></div>
+    </div>
     <div id="products-container" class="container"></div>
+    </div>
 </div>
 <?php include './includes/footer.php' ?>
 <script src="js/menu.js"></script>

@@ -19,11 +19,11 @@
 
 <body>
     <?php include './includes/header.php' ?>
-    <div class="container-fluid first-index hero">
+    <div class="first-index hero">
         <div class="container index-container">
             <!-- HEADING -->
             <div class="row">
-                <div class="col-12 main-title-container">
+                <div class="col-12 main-title-container first-main-title-container">
                     <h1>Velkommen<h1>
                 </div>
             </div>
@@ -33,14 +33,14 @@
                     <h2 class="title">Litt for mye klær liggende i skapet?</h2>
                     <p class="text">Registrer dine plagg og motta gavekort hos våre samarbeidspartnere.
                         Spar tiden du ellers ville brukt på å undersøke priser, beskrive dine plagg og avtale møtested med kjøper. Vi gjør jobben for deg!</p>
-                    <a class="center" href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+                    <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
                 </div>
                 <div class="col-push-6"></div>
             </div>
         </div>
     </div>
-    <div class="container-fluid blue-index">
-        <div class="container">
+    <div class="container-fluid">
+        <div class="container second-container">
             <!-- ICON GROUP 1 -->
             <div class="row">
                 <div class="col-12 icon-title">
@@ -86,52 +86,61 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid blue-index">
         <!-- TEXTCONTENT 2-->
-        <div class="row text-wrapper">
-            <div class="col-6 img-container">
-                <img src="img/resale.jpg" alt="Gavekort">
-            </div>
-            <div class="col-6 text-container">
-                <h2 class="title">Hvorfor ReStore?</h2>
-                <p class="text">Restore betyr å restaurere.
-                    <br>Vi følger definisjonene på å restaurere:
-                </p>
-                <p class="text">: å returnere noe
-                    <br>: å bringe noe tilbake til eksistens eller bruk.
-                    <br>: å returnere noe til en tidligere eller original tilstand ved å reparere det, rengjøre det, sette i stand osv.
+        <div class="container">
+            <div class="row text-wrapper">
+                <div class="col-6 img-container">
+                    <img src="img/resale.jpg" alt="Gavekort">
+                </div>
+                <div class="col-6 text-container">
+                    <h2 class="title">Hvorfor ReStore?</h2>
+                    <p class="text">Restore betyr å restaurere.
+                        <br>Vi følger definisjonene på å restaurere:
+                    </p>
+                    <p class="text">: å returnere noe
+                        <br>: å bringe noe tilbake til eksistens eller bruk.
+                        <br>: å returnere noe til en tidligere eller original tilstand ved å reparere det, rengjøre det, sette i stand osv.
+                </div>
             </div>
         </div>
+    </div>
+    <div class="container-fluid">
         <!-- TEXTCONTENT 3 -->
-        <br><br>
-        <div class="row text-wrapper">
-            <div class="col-6 text-container">
-                <h2 class="title">Vårt mål</h2>
-                <p class="text">Vårt mål er å skape en kultur for kjøp og salg av gjenbruksklær. Det vil vi gjøre ved å oppfordre deg som bruker til å sende inn plagg til oss. </p>
-                <p class="text">Vi sender brukte klær i god stand til butikkenes merker slik at disse kan bli solgt på nytt i deres bruktavdelinger. Samtidig som du bidrar til et
-                    bedre miljø vil du kunne få muligheten til å kjøpe noe nytt med gavekortene du får. Slik minsker vi på sikt store mengder av klesforbruket.</p>
-            </div>
-            <div class="col-6 img-container">
-                <img class="right" src="img/plant.jpg" alt="Plante">
-            </div>
-        </div>
-        <!-- TEXTCONTENT 4 -->
-        <div class="row text-wrapper">
-            <div class="col-6 img-container">
-                <img src="img/thankyou.jpg" alt="Gavekort">
-            </div>
-            <div class="col-6 text-container">
-                <h2 class="title">Bli med oss å skape kulturen</h2>
-                <p class="text">Vi ønsker å skape en kultur for kjøp og salg av gjenbruksklær til nye høyder,
-                    ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!
-                </p>
-                <p class="text">Som takk for at du sender inn dine brukte klær til oss får du ulike gavekort basert på hvilke type merker det er og plaggets tilstand. Derfor har vi også en estimert verdi du får
-                    før du leverer inn, slik at du kan se hva slags verdi dine plagg ligger på.</p>
-                <a class="center" href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+        <div class="container">
+            <div class="row text-wrapper">
+                <div class="col-6 text-container">
+                    <h2 class="title">Vårt mål</h2>
+                    <p class="text">Vårt mål er å skape en kultur for kjøp og salg av gjenbruksklær. Det vil vi gjøre ved å oppfordre deg som bruker til å sende inn plagg til oss. </p>
+                    <p class="text">Vi sender brukte klær i god stand til butikkenes merker slik at disse kan bli solgt på nytt i deres bruktavdelinger. Samtidig som du bidrar til et
+                        bedre miljø vil du kunne få muligheten til å kjøpe noe nytt med gavekortene du får. Slik minsker vi på sikt store mengder av klesforbruket.</p>
+                </div>
+                <div class="col-6 img-container">
+                    <img class="right" src="img/plant.jpg" alt="Plante">
+                </div>
             </div>
         </div>
     </div>
     <div class="container-fluid blue-index">
+        <!-- TEXTCONTENT 4 -->
+        <div class="container">
+            <div class="row text-wrapper">
+                <div class="col-6 img-container">
+                    <img src="img/thankyou.jpg" alt="Gavekort">
+                </div>
+                <div class="col-6 text-container">
+                    <h2 class="title">Bli med oss å skape kulturen</h2>
+                    <p class="text">Vi ønsker å skape en kultur for kjøp og salg av gjenbruksklær til nye høyder,
+                        ved å gi deg som bruker en godtgjørelse for ditt bidrag og samtidig som du bidrar til et bedre miljø!
+                    </p>
+                    <p class="text">Som takk for at du sender inn dine brukte klær til oss får du ulike gavekort basert på hvilke type merker det er og plaggets tilstand. Derfor har vi også en estimert verdi du får
+                        før du leverer inn, slik at du kan se hva slags verdi dine plagg ligger på.</p>
+                    <a class="center" href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
         <div class="container">
             <!-- ICON GROUP 2 -->
             <div class="row">

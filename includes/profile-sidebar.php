@@ -1,6 +1,8 @@
-<div class="row">
+/*<div class="row">
     <div class="col-12">
-        <img src="" alt="Profile picture">
+        <div class="profile-picture-container">
+            <img src="img/man-profile.jpg" alt="Profile picture">
+        </div>
     </div>
 </div>
 <div class="row">

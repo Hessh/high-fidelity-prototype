@@ -34,7 +34,11 @@ function renderFilterPage(){
     filter(products)
     renderInstructions();
     renderMenu();
-    renderProducts(filteredProducts);
+    if (selectedColor) {
+        renderProducts(filteredProducts);
+    } else {
+        productsElement.innerHTML = "";
+    }
 }
 
 function renderInstructions() {
@@ -55,7 +59,7 @@ function renderInstructions() {
 
 
     if (selectedColor) {
-        instructionTextElement.innerHTML = "Vennligst velg plagget ditt i oversikten under";
+        instructionTextElement.innerHTML = "Vennligst velg plagget:";
         progBrandElement.classList.add("progress-done");
         progCategoryElement.classList.add("progress-done");
         progSubCategoryElement.classList.add("progress-done");
@@ -67,7 +71,7 @@ function renderInstructions() {
     }
 
     if (selectedGender) {
-        instructionTextElement.innerHTML = "Vennligst velg farge på produktet";
+        instructionTextElement.innerHTML = "Velg farge:";
         progBrandElement.classList.add("progress-done");
         progCategoryElement.classList.add("progress-done");
         progSubCategoryElement.classList.add("progress-done");
@@ -86,7 +90,7 @@ function renderInstructions() {
     }
 
     if (selectedSubCategory) {
-        instructionTextElement.innerHTML = "Vennligst velg kjønn";
+        instructionTextElement.innerHTML = "Velg kjønn:";
         progBrandElement.classList.add("progress-done");
         progCategoryElement.classList.add("progress-done");
         progSubCategoryElement.classList.add("progress-done");
@@ -104,7 +108,7 @@ function renderInstructions() {
     }
 
     if (selectedCategory) {
-        instructionTextElement.innerHTML = "Vennligst velg en underkategori";
+        instructionTextElement.innerHTML = "Velg underkategori:";
         progBrandElement.classList.add("progress-done");
         progCategoryElement.classList.add("progress-done");
         progSubCategoryElement.classList.add("progress-next");
@@ -121,7 +125,7 @@ function renderInstructions() {
     }
 
     if (selectedBrand) {
-        instructionTextElement.innerHTML = "Vennligst velg kategorien som passer til ditt plagg";
+        instructionTextElement.innerHTML = "Velg kategori:";
         progBrandElement.classList.add("progress-done");
         progCategoryElement.classList.add("progress-next");
         categories.forEach(element => {
@@ -137,7 +141,7 @@ function renderInstructions() {
     }
 
     if (!selectedBrand) {
-        instructionTextElement.innerHTML = "Vennligst velg merket på plagget du ønsker å levere inn";
+        instructionTextElement.innerHTML = "Velg merke:";
         progBrandElement.classList.add("progress-next");
         brands.forEach(element => {
             let node = createDivWithContent("big-filter-element", element);
