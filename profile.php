@@ -47,6 +47,7 @@
                     <button class="top-nav-button" onclick="toOverview()" data-id="0"><span class="material-icons-outlined">home</span>Oversikt</button>
                     <button class="top-nav-button" onclick="toDiscounts()" data-id="1"><span class="material-icons-outlined">monetization_on</span>Rabatter</button>
                     <button class="top-nav-button" onclick="toOrders()" data-id="2"><span class="material-icons-outlined">bookmarks</span>Ordre</button>
+                    <a href="filter.php"><button class="top-nav-button cta-button">Registrer plagg<span class="material-icons-outlined arrow">keyboard_arrow_right</span></button></a>
                 </div>
                 <!-- OVERVIEW -->
                 <div class="row">

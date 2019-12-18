@@ -7,7 +7,7 @@
 
 .top-nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .top-nav button {
@@ -20,6 +20,22 @@
 
 .top-nav button:hover {
     cursor: pointer;
+    color: #187B90;
+}
+
+.cta-button {
+    font-weight: 600 !important;
+    margin-left: 0.5rem;
+}
+
+.arrow {
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem !important;
+}
+
+.cta-button:hover {
+    color: #FFF !important;
 }
 
 .top-nav button:focus {
