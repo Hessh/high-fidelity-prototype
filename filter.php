@@ -17,8 +17,9 @@
 
 <body>
 <?php include './includes/header.php' ?>
-
+<?php include './includes/progress.php' ?>
 <div class="container-fluid first">
+
     <div id="filter-progress-bar">
         <div id="instruction-progress" class="container">
             <div id="progress-brand" class="col-2 text-container center filter-progress">Merke</div>

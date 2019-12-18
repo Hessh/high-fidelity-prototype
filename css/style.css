@@ -55,6 +55,7 @@ a {
     left: 5%;
     position: fixed;
     width:250px;
+    top: 20%;
 }
 
 .progress-row{
@@ -62,7 +63,7 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     height: 80px;
 }
 

@@ -12,54 +12,18 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
-    <title>Restore - Leveringsmetode</title>
+    <title>Restore - Velg leveringsmetode</title>
 </head>
 
 <body>
 <?php include './includes/header.php' ?>
+<?php include './includes/progress.php' ?>
 <div class="container-fluid first">
     <div class="container">
-        <div class="progress-container">
 
-            <div class="progress-row">
-                <div class="progress-text" id="progress-one">Finn produkt</div>
-                <div id="circle-two" class="progress-circle">
-                    <img src="img/search.svg" id="">
-                </div>
-            </div>
-
-            <div class="progress-row">
-                <div class="progress-text" id="progress-two">Tilstandvurdering</div>
-                <div id="circle-three" class="progress-circle">
-                    <img src="img/book.svg" id="">
-                </div>
-
-            </div>
-            <div class="progress-row">
-                <div class="progress-text" id="progress-three">Estimer</div>
-                <div id="circle-four" class="progress-circle">
-                    <img src="img/estimate.svg" id="estimate">
-                </div>
-
-            </div>
-            <div class="progress-row">
-                <div class="progress-text" id="progress-four">Lever</div>
-                <div id="circle-five" class="progress-circle">
-                    <img src="img/deliver.svg" id="">
-                </div>
-
-            </div>
-            <div class="progress-row">
-                <div class="progress-text" id="progress-five">Send</div>
-                <div id="circle-one" class="progress-circle">
-                    <img src="img/ship.png" id="">
-                </div>
-
-            </div>
-        </div>
         <div class="row">
             <div class="col-12">
-                <h1 class="main-title">Leveringsmetode</h1>
+                <h1 class="main-title">Velg leveringsmetode</h1>
             </div>
         </div>
         <div class="row icon-wrapper">
