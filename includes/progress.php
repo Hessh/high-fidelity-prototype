@@ -28,7 +28,8 @@
         </div>
 
     </div>
-    <div class="progress-row">
+
+    <div class="progress-row" >
         <div class="progress-text" id="progress-five">Få bekreftelse</div>
         <div id="circle-one" class="progress-circle">
             <img src="img/ship.png" id="">
