@@ -19,7 +19,7 @@
 
 <body>
     <?php include './includes/header.php' ?>
-    <div class="container-fluid first">
+    <div class="container-fluid first first-index">
         <div class="container">
             <!-- HEADING -->
             <div class="row">
@@ -39,48 +39,50 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <!-- ICON GROUP 1 -->
-            <div class="row">
-                <div class="col-12 icon-title">
-                    <h2>Slik fungerer det</h2>
+        <div class="container-fluid blue-index">
+            <div class="container">
+                <!-- ICON GROUP 1 -->
+                <div class="row">
+                    <div class="col-12 icon-title">
+                        <h2>Slik fungerer det</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row icon-wrapper">
-                <div class="col-4 icon-container">
-                    <img src="img/register.png" alt="Icon">
-                    <h3>1. Registrer plagget</h3>
-                    <p>Registrer plagget ved å klikke deg frem til riktig plagg</p>
+                <div class="row icon-wrapper">
+                    <div class="col-4 icon-container">
+                        <img src="img/register.png" alt="Icon">
+                        <h3>1. Registrer plagget</h3>
+                        <p>Registrer plagget ved å klikke deg frem til riktig plagg</p>
+                    </div>
+                    <div class="col-4 icon-container">
+                        <img src="img/value.png" alt="Icon">
+                        <h3>2. Estimert verdi</h3>
+                        <p>Få en estimert verdi på et gavekort hos gjeldende merke. Slik at du får et inntrykk av plaggets verdi og hva gavekortet du får vil ligge på i verdi</p>
+                    </div>
+                    <div class="col-4 icon-container">
+                        <img src="img/ship.png" alt="Icon">
+                        <h3>3. Send/lever</h3>
+                        <p>Motta en sendingspose i posten, pakk, forsegl og send den inn til oss / Lever det i din nærmeste butikk.</p>
+                    </div>
                 </div>
-                <div class="col-4 icon-container">
-                    <img src="img/value.png" alt="Icon">
-                    <h3>2. Estimert verdi</h3>
-                    <p>Få en estimert verdi på et gavekort hos gjeldende merke. Slik at du får et inntrykk av plaggets verdi og hva gavekortet du får vil ligge på i verdi</p>
+                <div class="row icon-wrapper">
+                    <div class="col-push-2"></div>
+                    <div class="col-4 icon-container">
+                        <img src="img/wait.png" alt="Icon">
+                        <h3>4. Vent på vurdering</h3>
+                        <p>Vent på verdivurdering fra våre eksperter (3 dager)- aksepter eller avslå tilbudet</p>
+                    </div>
+                    <div class="col-4 icon-container">
+                        <img src="img/offer.png" alt="Icon">
+                        <h3>5. Motta tilbud</h3>
+                        <p>Aksepter for å motta gavekort som du kan bruke i gjeldende butikk</p>
+                    </div>
+                    <div class="col-push-2"></div>
                 </div>
-                <div class="col-4 icon-container">
-                    <img src="img/ship.png" alt="Icon">
-                    <h3>3. Send/lever</h3>
-                    <p>Motta en sendingspose i posten, pakk, forsegl og send den inn til oss / Lever det i din nærmeste butikk.</p>
-                </div>
-            </div>
-            <div class="row icon-wrapper">
-                <div class="col-push-2"></div>
-                <div class="col-4 icon-container">
-                    <img src="img/wait.png" alt="Icon">
-                    <h3>4. Vent på vurdering</h3>
-                    <p>Vent på verdivurdering fra våre eksperter (3 dager)- aksepter eller avslå tilbudet</p>
-                </div>
-                <div class="col-4 icon-container">
-                    <img src="img/offer.png" alt="Icon">
-                    <h3>5. Motta tilbud</h3>
-                    <p>Aksepter for å motta gavekort som du kan bruke i gjeldende butikk</p>
-                </div>
-                <div class="col-push-2"></div>
-            </div>
-            <!-- CTA BUTTON -->
-            <div class="row">
-                <div class="col-12 button-container">
-                    <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+                <!-- CTA BUTTON -->
+                <div class="row">
+                    <div class="col-12 button-container">
+                        <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,48 +131,50 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <!-- ICON GROUP 2 -->
-            <div class="row">
-                <div class="col-12 icon-title">
-                    <h2>Våre hjertesaker</h2>
+        <div class="container-fluid blue-index">
+            <div class="container">
+                <!-- ICON GROUP 2 -->
+                <div class="row">
+                    <div class="col-12 icon-title">
+                        <h2>Våre hjertesaker</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row icon-wrapper">
-                <div class="col-4 icon-container">
-                    <img src="img/bird.png" alt="Icon">
-                    <h3>Dyr</h3>
-                    <p>Forklarende tekst</p>
+                <div class="row icon-wrapper">
+                    <div class="col-4 icon-container">
+                        <img src="img/bird.png" alt="Icon">
+                        <h3>Dyr</h3>
+                        <p>Forklarende tekst</p>
+                    </div>
+                    <div class="col-4 icon-container">
+                        <img src="img/wallet.png" alt="Icon">
+                        <h3>Din lommebok</h3>
+                        <p>Forklarende tekst</p>
+                    </div>
+                    <div class="col-4 icon-container">
+                        <img src="img/ocean.png" alt="Icon">
+                        <h3>Havet</h3>
+                        <p>Forklarende tekst</p>
+                    </div>
                 </div>
-                <div class="col-4 icon-container">
-                    <img src="img/wallet.png" alt="Icon">
-                    <h3>Din lommebok</h3>
-                    <p>Forklarende tekst</p>
+                <div class="row icon-wrapper">
+                    <div class="col-push-2"></div>
+                    <div class="col-4 icon-container">
+                        <img src="img/environment.png" alt="Icon">
+                        <h3>Miljø</h3>
+                        <p>Forklarende tekst</p>
+                    </div>
+                    <div class="col-4 icon-container">
+                        <img src="img/trees.png" alt="Icon">
+                        <h3>Regnskogen</h3>
+                        <p>Forklarende tekst</p>
+                    </div>
+                    <div class="col-push-2"></div>
                 </div>
-                <div class="col-4 icon-container">
-                    <img src="img/ocean.png" alt="Icon">
-                    <h3>Havet</h3>
-                    <p>Forklarende tekst</p>
-                </div>
-            </div>
-            <div class="row icon-wrapper">
-                <div class="col-push-2"></div>
-                <div class="col-4 icon-container">
-                    <img src="img/environment.png" alt="Icon">
-                    <h3>Miljø</h3>
-                    <p>Forklarende tekst</p>
-                </div>
-                <div class="col-4 icon-container">
-                    <img src="img/trees.png" alt="Icon">
-                    <h3>Regnskogen</h3>
-                    <p>Forklarende tekst</p>
-                </div>
-                <div class="col-push-2"></div>
-            </div>
-            <!-- CTA BUTTON -->
-            <div class="row">
-                <div class="col-12 button-container">
-                    <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+                <!-- CTA BUTTON -->
+                <div class="row">
+                    <div class="col-12 button-container">
+                        <a href="filter.php"><button class="cta-button">Kom igang nå</button></a>
+                    </div>
                 </div>
             </div>
         </div>
