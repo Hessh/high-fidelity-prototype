@@ -88,8 +88,8 @@ function styleProgress() {
             document.getElementById("progress-four").style.fontWeight = "bold";
             circleOne.style.borderColor = finishedColor;
             circleTwo.style.borderColor = finishedColor;
-            imageOne.src ="img/search2.svg";
-            imageTwo.src ="img/book2.svg";
+            imageOne.src ="./img/search2.svg";
+            imageTwo.src ="./img/book2.svg";
             circleFour.style.backgroundColor = currentColor;
             one.addEventListener("click", function () {
                 window.location = "./filter.php"
@@ -113,9 +113,9 @@ function styleProgress() {
             circleOne.style.borderColor = finishedColor;
             circleTwo.style.borderColor = finishedColor;
             circleFour.style.borderColor = finishedColor;
-            imageOne.src ="img/search2.svg";
-            imageTwo.src ="img/book2.svg";
-            imageFour.src="img/deliver2.svg";
+            imageOne.src ="./img/search2.svg";
+            imageTwo.src ="./img/book2.svg";
+            imageFour.src="./img/deliver2.svg";
 
             circleFive.style.backgroundColor = currentColor;
             one.addEventListener("click", function () {
