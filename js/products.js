@@ -60,7 +60,7 @@ products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Kvinne", "W S
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Kvinne", "W Salt Flag Jacket", "Blå", "https://www.hellyhansen.com/media/catalog/product/3/3/33923_994-2-main4.jpg"));
 
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Mann", "Crew Midlayer Jacket", "Hvit", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_001-2-main.jpg"));
-products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Man", "Crew Midlayer Jacket", "Rød", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_222-2-main.jpg"));
+products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Mann", "Crew Midlayer Jacket", "Rød", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_222-2-main.jpg"));
 
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Kvinne", "W Crew Midlayer Jacket", "Rød", "https://www.hellyhansen.com/media/catalog/product/3/0/30317_222-2-main.jpg"));
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Kvinne", "W Crew Midlayer Jacket", "Rosa", "https://www.hellyhansen.com/media/catalog/product/3/0/30317_039-2-main.jpg"));
