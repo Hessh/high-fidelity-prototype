@@ -26,11 +26,11 @@ function createOptionWithContent(itemClass, content) {
 function mouseOver(element, circle) {
     element.onmouseover = function () {
         this.style.fontWeight = "bold";
-        circle.style.borderWidth = "2px"
+        circle.style.boxShadow = "0 0 4px 0"
     };
     element.onmouseout = function () {
         this.style.fontWeight = "";
-        circle.style.borderWidth = ""
+        circle.style.boxShadow = "inset 0 0 2px 0"
     };
 }
 
@@ -76,6 +76,10 @@ function styleProgress() {
             });
             back.addEventListener("click", function () {
                 window.location = "./filter.php"
+            });
+            let estimateButton = document.getElementsByClassName("estimate-button");
+            estimateButton[0].addEventListener("click", function(){
+                window.scrollBy(0, -100)
             });
 
             mouseOver(one, circleOne);
@@ -141,7 +145,7 @@ function styleProgress() {
             four.style.cursor = "pointer";
             break;
         default:
-
+            console.log("error - no path found")
     }
 
 }
