@@ -49,3 +49,42 @@ a {
 .cta-button:hover {
     cursor: pointer;
 }
+
+/* PROGRESS BAR */
+.progress-container {
+    left: 200px;
+    position: fixed;
+}
+
+.progress-circle{
+    border-radius: 50%;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 70px;
+    justify-content: center;
+    border: solid black 1px;
+}
+
+
+.progress-circle img {
+    height: 100%;
+}
+
+
+
+.progress-text{
+    width: 50%;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.progress-container{
+    width:150px;
+
+}
+.progress-row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    height: 80px;
+}
