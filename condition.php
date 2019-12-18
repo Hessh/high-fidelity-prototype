@@ -32,27 +32,37 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-3 content-center ">
+                    <div class="col-push-2"></div>
+                    <div class="col-2 content-center ">
                         <div class="col content-center column">
-                            <label for="first">0-2</label>
-                            <input type="radio" id="first">
+                            <div class="radio-buttons">
+                                <label for="first">0-2</label>
+                                <input type="radio" name="age" id="first">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-3 content-center column">
-                        <label for="second">3-5</label>
-                        <input type="radio" id="second">
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="second">3-5</label>
+                            <input type="radio" name="age" id="second">
+                        </div>
                     </div>
-                    <div class="col-3 content-center column">
-                        <label for="third">6-8</label>
-                        <input type="radio" id="third">
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="third">6-8</label>
+                            <input type="radio" name="age" id="third">
+                        </div>
                     </div>
-                    <div class="col-3 content-center column">
-                        <label for="fourth">9+</label>
-                        <input type="radio" id="fourth">
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="fourth">9+</label>
+                            <input type="radio" name="age" id="fourth">
+                        </div>
                     </div>
+                    <div class="col-push-2"></div>
                 </div>
             </div>
-            <!-- DEGRATATION -->
+            <!-- WORN -->
             <div class="row">
             <div class="col-12">
                     <div class="col-12">
@@ -60,22 +70,34 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-3 content-center column">
-                        <label for="as-new">Som ny</label>
-                        <input type="radio" id="as-new">
+                <div class="col-push-2"></div>
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="as-new">Som ny
+                            <input type="radio" name="worn" id="as-new">
+                            </label>
+                            
+                        </div>
                     </div>
-                    <div class="col-3 content-center column">
-                        <label for="easy-worn">Litt slitt</label>
-                        <input type="radio" id="easy-worn">
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="easy-worn">Litt slitt</label>
+                            <input type="radio" name="worn" id="easy-worn">
+                        </div>
                     </div>
-                    <div class="col-3 content-center column">
-                        <label for="worn">Slitt</label>
-                        <input type="radio" id="worn">
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="worn">Slitt</label>
+                            <input type="radio" name="worn" id="worn">
+                        </div>
                     </div>
-                    <div class="col-3 content-center column">
-                        <label for="very-worn">Veldig slitt</label>
-                        <input type="radio" id="very-worn">
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="very-worn">Veldig slitt</label>
+                            <input type="radio" name="worn" id="very-worn">
+                        </div>
                     </div>
+                    <div class="col-push-2"></div>
                 </div>
             </div>
             <!-- SIZE -->
@@ -86,22 +108,32 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-3 content-center column">
-                        <label for="S">S</label>
-                        <input type="radio" id="S">
+                <div class="col-push-2"></div>
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="S">S</label>
+                            <input type="radio" name="size" id="S">
+                        </div>
                     </div>
-                    <div class="col-3 content-center column">
-                        <label for="M">M</label>
-                        <input type="radio" id="M">
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="M">M</label>
+                            <input type="radio" name="size" id="M">
+                        </div>
                     </div>
-                    <div class="col-3 content-center column">
-                        <label for="L">L</label>
-                        <input type="radio" id="L">
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="L">L</label>
+                            <input type="radio" name="size" id="L">
+                        </div>
                     </div>
-                    <div class="col-3 content-center column">
-                        <label for="XL">XL</label>
-                        <input type="radio" id="XL">
+                    <div class="col-2 content-center column">
+                        <div class="radio-buttons">
+                            <label for="XL">XL</label>
+                            <input type="radio" name="size" id="XL">
+                        </div>
                     </div>
+                    <div class="col-push-2"></div>
                 </div>
             </div>
             <!-- UPLOAD PICTURE -->

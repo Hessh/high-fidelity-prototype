@@ -37,21 +37,45 @@
 }
 
 .column {
+    display: flex;
     flex-direction: column;
 }
 
-#S {
-    position: relative;
+input[type="radio"] {
+   /* visibility: hidden; */
 }
 
-#S:after {
+input[type="radio"]:checked {
+    background-color: red;
+}
+
+.radio-buttons {
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    padding: 1rem 0;
+    width: 8rem;
+    text-align: center;
+    
+}
+
+.radio-buttons label, .radio-buttons input {
     position: absolute;
-    top: 5px;
-    left: 25px;
-    content: ' ';
-    height: 1px;
-    width: 155px;
-    background-color: lightgray;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.radio-buttons label {
+    
+}
+
+.radio-buttons:hover, label:hover, input[type="radio"]:hover {
+    cursor: pointer;
 }
 
 .upload-button {
