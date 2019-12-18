@@ -42,13 +42,6 @@ function renderProduct(container, product) {
     container.append(productDiv);
 }
 
-function createDivWithContent(itemClass, content) {
-    let div = document.createElement("div");
-    div.classList.add(itemClass);
-    div.innerHTML = content;
-    return div;
-}
-
 let products = [];
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Skagen Offshore Jacket", "Red", "https://www.hellyhansen.com/media/catalog/product/3/3/33907_222-2-main.jpg"));
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Skagen Offshore Jacket", "Blue", "https://www.hellyhansen.com/media/catalog/product/3/3/33907_597-2-main.jpg"));

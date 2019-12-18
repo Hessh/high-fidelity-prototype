@@ -43,6 +43,11 @@
     border-bottom: 5px solid orange;
 }
 
+.filter-drop-down-container {
+    margin: 0 auto !important;
+    padding: 0 10px !important;
+}
+
 #instruction-selector {
     margin: 0 auto;
 }

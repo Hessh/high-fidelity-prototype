@@ -21,7 +21,6 @@ let categoryElement = document.getElementById("filter-category");
 let subCategoryElement = document.getElementById("filter-sub-category");
 let genderElement = document.getElementById("filter-gender");
 let colorElement = document.getElementById("filter-color");
-let modelElement = document.getElementById("filter-model");
 
 let progBrandElement = document.getElementById("progress-brand");
 let progCategoryElement = document.getElementById("progress-category");
@@ -42,8 +41,7 @@ function renderInstructions() {
     instructionElement.innerHTML = "";
     instructionElement.removeAttribute("hidden");
 
-    progBrandElement.classList.remove("progress-done");
-    progBrandElement.classList.remove("progress-next");
+    progBrandElement.classList.remove("progress-done", "progress-next");
     progCategoryElement.classList.remove("progress-done");
     progCategoryElement.classList.remove("progress-next");
     progSubCategoryElement.classList.remove("progress-done");
@@ -165,12 +163,11 @@ function clearMenu() {
     subCategoryElement.innerHTML = "";
     genderElement.innerHTML = "";
     colorElement.innerHTML = "";
-    modelElement.innerHTML = "";
 }
 
 function renderMenu(){
     brands.forEach(element => {
-        let node = createDivWithContent("filter-element", element);
+        let node = createOptionWithContent("filter-element", element);
         if(element == selectedBrand) node.classList.add("selected-filter-element");
         node.addEventListener("click", function(){
             selectedBrand = element;
@@ -187,7 +184,7 @@ function renderMenu(){
     if (!selectedBrand) return;
 
     categories.forEach(element => {
-        let node = createDivWithContent("filter-element", element);
+        let node = createOptionWithContent("filter-element", element);
         if(element == selectedCategory) node.classList.add("selected-filter-element");
         node.addEventListener("click", function(){
             selectedCategory = element;
@@ -203,7 +200,7 @@ function renderMenu(){
     if (!selectedCategory) return;
 
     subCategories.forEach(element => {
-        let node = createDivWithContent("filter-element", element);
+        let node = createOptionWithContent("filter-element", element);
         if(element == selectedSubCategory) node.classList.add("selected-filter-element");
         node.addEventListener("click", function(){
             selectedSubCategory = element;
@@ -218,7 +215,7 @@ function renderMenu(){
     if (!selectedSubCategory) return;
 
     genders.forEach(element => {
-        let node = createDivWithContent("filter-element", element);
+        let node = createOptionWithContent("filter-element", element);
         if(element == selectedGender) node.classList.add("selected-filter-element");
         node.addEventListener("click", function(){
             selectedGender = element;
@@ -232,7 +229,7 @@ function renderMenu(){
     if (!selectedGender) return;
 
     colors.forEach(element => {
-        let node = createDivWithContent("filter-element", element);
+        let node = createOptionWithContent("filter-element", element);
         if(element == selectedColor) node.classList.add("selected-filter-element");
         node.addEventListener("click", function(){
             selectedColor = element;
