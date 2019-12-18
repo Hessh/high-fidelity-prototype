@@ -1,5 +1,12 @@
 <div class="progress-container">
 
+    <div class="progress-row" id="progress-back-container">
+        <div id="circle-back" class="progress-circle">
+            <img src="img/back.png" id="">
+        </div>
+    </div>
+
+
     <div class="progress-row" id="progress-one-container">
         <div class="progress-text" id="progress-one">Finn produkt</div>
         <div id="circle-one" class="progress-circle">

@@ -21,7 +21,6 @@ function createOptionWithContent(itemClass, content) {
 }
 
 
-
 /** PROGRESS BAR*/
 
 function mouseOver(element, circle) {
@@ -36,6 +35,7 @@ function mouseOver(element, circle) {
 }
 
 function styleProgress() {
+    let circleBack = document.getElementById("circle-back");
     let circleOne = document.getElementById("circle-one");
     let circleTwo = document.getElementById("circle-two");
     let circleFour = document.getElementById("circle-four");
@@ -45,6 +45,7 @@ function styleProgress() {
     let finishedColor = "#A1D192";
     let currentColor = "#fa9741";
 
+    let back = document.getElementById("progress-back-container");
     let one = document.getElementById("progress-one-container");
     let two = document.getElementById("progress-two-container");
     let four = document.getElementById("progress-four-container");
@@ -59,10 +60,10 @@ function styleProgress() {
         case "/filter.php":
             document.getElementById("progress-one").style.fontWeight = "bold";
             circleOne.style.backgroundColor = currentColor;
-            one.addEventListener("click", function () {
-                window.location = "/filter.php"
+            back.addEventListener("click", function () {
+                window.location = "/index.php"
             });
-            mouseOver(one, circleOne);
+            mouseOver(back, circleBack);
             break;
         case "/condition.php":
             document.getElementById("progress-two").style.fontWeight = "bold";
@@ -71,11 +72,12 @@ function styleProgress() {
             one.addEventListener("click", function () {
                 window.location = "/filter.php"
             });
-            two.addEventListener("click", function () {
-                window.location = "/condition.php"
+            back.addEventListener("click", function () {
+                window.location = "/filter.php"
             });
             mouseOver(one, circleOne);
-            mouseOver(two, circleTwo);
+            mouseOver(back, circleBack);
+
             break;
         case "/delivery.php":
             document.getElementById("progress-four").style.fontWeight = "bold";
@@ -88,12 +90,13 @@ function styleProgress() {
             two.addEventListener("click", function () {
                 window.location = "/condition.php"
             });
-            four.addEventListener("click", function () {
-                window.location = "/delivery.php"
+            back.addEventListener("click", function () {
+                window.location = "/condition.php"
             });
             mouseOver(one, circleOne);
             mouseOver(two, circleTwo);
-            mouseOver(four, circleFour);
+            mouseOver(back, circleBack);
+
             break;
         case "/done.php":
             document.getElementById("progress-five").style.fontWeight = "bold";
@@ -110,13 +113,14 @@ function styleProgress() {
             four.addEventListener("click", function () {
                 window.location = "/delivery.php"
             });
-            five.addEventListener("click", function () {
-                window.location = "/done.php"
-            })
+            back.addEventListener("click", function () {
+                window.location = "/delivery.php"
+            });
             mouseOver(one, circleOne);
             mouseOver(two, circleTwo);
             mouseOver(four, circleFour);
-            mouseOver(five, circleFive);
+            mouseOver(back, circleBack);
+
             break;
         default:
             console.log("error");
