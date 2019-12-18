@@ -36,27 +36,27 @@
                     <div class="col-2 content-center ">
                         <div class="col content-center column">
                             <div class="radio-buttons">
-                                <label for="first">0-2</label>
                                 <input type="radio" name="age" id="first">
+                                <label for="first">0-2</label>
                             </div>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="second">3-5</label>
                             <input type="radio" name="age" id="second">
+                            <label for="second">3-5</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="third">6-8</label>
                             <input type="radio" name="age" id="third">
+                            <label for="third">6-8</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="fourth">9+</label>
                             <input type="radio" name="age" id="fourth">
+                            <label for="fourth">9+</label>
                         </div>
                     </div>
                     <div class="col-push-2"></div>
@@ -73,28 +73,26 @@
                 <div class="col-push-2"></div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="as-new">Som ny
                             <input type="radio" name="worn" id="as-new">
-                            </label>
-                            
+                            <label for="as-new">Som ny</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="easy-worn">Litt slitt</label>
                             <input type="radio" name="worn" id="easy-worn">
+                            <label for="easy-worn">Litt slitt</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="worn">Slitt</label>
                             <input type="radio" name="worn" id="worn">
+                            <label for="worn">Slitt</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="very-worn">Veldig slitt</label>
                             <input type="radio" name="worn" id="very-worn">
+                            <label for="very-worn">Veldig slitt</label>
                         </div>
                     </div>
                     <div class="col-push-2"></div>
@@ -111,26 +109,26 @@
                 <div class="col-push-2"></div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="S">S</label>
                             <input type="radio" name="size" id="S">
+                            <label for="S">S</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="M">M</label>
                             <input type="radio" name="size" id="M">
+                            <label for="M">M</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="L">L</label>
                             <input type="radio" name="size" id="L">
+                            <label for="L">L</label>
                         </div>
                     </div>
                     <div class="col-2 content-center column">
                         <div class="radio-buttons">
-                            <label for="XL">XL</label>
                             <input type="radio" name="size" id="XL">
+                            <label for="XL">XL</label>
                         </div>
                     </div>
                     <div class="col-push-2"></div>

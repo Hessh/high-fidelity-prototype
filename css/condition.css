@@ -42,16 +42,15 @@
 }
 
 input[type="radio"] {
-   /* visibility: hidden; */
+    visibility: hidden;
 }
 
-input[type="radio"]:checked {
-    background-color: red;
+input[type="radio"]:checked+label{
+    background-color: #A1D192;
 }
 
 .radio-buttons {
     position: relative;
-    margin: auto;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
@@ -59,7 +58,7 @@ input[type="radio"]:checked {
     padding: 1rem 0;
     width: 8rem;
     text-align: center;
-    
+    line-height: 32px;
 }
 
 .radio-buttons label, .radio-buttons input {
