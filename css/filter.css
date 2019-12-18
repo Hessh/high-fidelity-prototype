@@ -20,7 +20,7 @@
 }
 
 .filter-element:hover {
-    color: red;
+    color: #D13A3B;
 }
 
 #instruction-container {
@@ -46,15 +46,15 @@
     padding: 5px 0;
     line-height: 20px;
 
-    border-bottom: 5px solid gray;
+
 }
 
 .progress-done {
-    border-bottom: 5px solid green;
+    border-bottom: 5px solid rgb(231, 243, 245);
 }
 
 .progress-next {
-    border-bottom: 5px solid orange;
+    border-bottom: 5px solid rgb(118, 173, 195);
 }
 
 .filter-drop-down-container {
@@ -75,24 +75,25 @@
 
     display: inline-block;
     width: 150px;
-    height: 75px;
+    height: 60px;
 
-    line-height: 75px;
+    line-height: 60px;
     text-align: center;
 
-    font-weight: 800;
+    font-weight: 600;
     font-size: 20px;
 
-    background-color: #FFFFFF;
+    color: #fff;
+    background: linear-gradient(rgb(27, 154, 177), #168A9E);
     box-shadow: 0 5px 10px -1px rgba(0,0,0,0.1);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    border-radius: 0.5rem;
 
     transition: 0.1s;
 }
 
 .big-filter-element:hover {
-    box-shadow: 0 5px 10px -1px rgba(0,0,0,0.6);
+    background: linear-gradient(rgb(25, 134, 156), #177085);
+    box-shadow: 0 5px 10px -1px rgba(0,0,0,0.2);
 }
 
 /*
@@ -110,6 +111,7 @@
 }
 
 .product-div {
+    position: relative;
     width: 250px;
 
     margin: 10px;
@@ -118,8 +120,8 @@
     text-decoration: none;
     color: #000000;
 
-    border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 10px 10px 0 0;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem 0.5rem 0 0;
 
     background-color: #FFFFFF;
     box-shadow: 0 5px 10px -1px rgba(0,0,0,0.1);
@@ -128,7 +130,27 @@
 }
 
 .product-div:hover {
-    box-shadow: 0 5px 10px -1px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 10px -1px rgba(0,0,0,0.2);
+}
+.product-div:hover > img{
+    filter: blur(3px);
+    opacity: 0.3;
+}
+
+.product-div:hover:after {
+    position: absolute;
+    content: "Velg produkt";
+
+    font-size: 20px;
+
+    top: 10px;
+    width:250px;
+    height:250px;
+    text-align: center;
+    line-height: 250px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
 }
 
 .product-image {
