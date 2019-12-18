@@ -19,3 +19,21 @@ function createOptionWithContent(itemClass, content) {
     option.innerHTML = content;
     return option;
 }
+
+function styleProgress(){
+    currentPage = window.location.pathname;
+    switch(currentPage){
+        case "/filter.php": document.getElementById("progress-one").style.fontWeight = "bold";
+            break;
+        case "/condition.php":  document.getElementById("progress-two").style.fontWeight = "bold";
+            break;
+        case "/delivery.php":  document.getElementById("progress-four").style.fontWeight = "bold";
+            break;
+        case "/done.php":  document.getElementById("progress-five").style.fontWeight = "bold";
+            break;
+
+        default: console.log("error");
+    }
+}
+
+styleProgress();

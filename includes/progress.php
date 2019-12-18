@@ -15,13 +15,6 @@
 
     </div>
     <div class="progress-row">
-        <div class="progress-text" id="progress-three">Få verdiestimat</div>
-        <div id="circle-four" class="progress-circle">
-            <img src="img/estimate.svg" id="estimate">
-        </div>
-
-    </div>
-    <div class="progress-row">
         <div class="progress-text" id="progress-four">Velg leveringsmetode</div>
         <div id="circle-five" class="progress-circle">
             <img src="img/deliver.svg" id="">
