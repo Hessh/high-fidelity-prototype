@@ -1,4 +1,12 @@
 /* INDEX STYLES */
+
+.container {
+
+    max-width: 960px !important; /*endre denne fra 960px*/
+    margin: 2rem auto !important;
+
+}
+
 .container-fluid-index {
     width: 100vw;
     height: unset;
