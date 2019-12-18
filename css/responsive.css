@@ -3,7 +3,7 @@
 .container-fluid {
     position: relative;
     width: 100vw;
-    height: calc(100vh - 30vh);
+    min-height: calc(100vh - 25vh);
 }
 
 .container {
