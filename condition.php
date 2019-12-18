@@ -28,7 +28,7 @@
             <div class="background condition-containers">
                 <div class="row">
                     <div class="col-push-2"></div>
-                    <div class="col-8 center">
+                    <div class="col-8">
                         <h2>Hvor gammelt er plagget?</h2>
                     </div>
                     <div class="col-push-2"></div>
