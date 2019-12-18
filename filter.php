@@ -19,24 +19,24 @@
 <?php include './includes/header.php' ?>
 
 <div class="container-fluid first">
-
+    <div id="filter-progress-bar">
+        <div id="instruction-progress" class="container">
+            <div id="progress-brand" class="col-2 text-container center filter-progress">Merke</div>
+            <div id="progress-category" class="col-2 text-container center filter-progress">Kategori</div>
+            <div id="progress-sub-category" class="col-2 text-container center filter-progress">Underkategori</div>
+            <div id="progress-gender" class="col-2 text-container center filter-progress">Kjønn</div>
+            <div id="progress-color" class="col-2 text-container center filter-progress">Farge</div>
+            <div id="progress-model" class="col-2 text-container center filter-progress">Modell</div>
+        </div>
+        <div class="container filter-drop-down-container">
+            <div id="filter-brand" class="col-2 text-container"></div>
+            <div id="filter-category" class="col-2 text-container"></div>
+            <div id="filter-sub-category" class="col-2 text-container"></div>
+            <div id="filter-gender" class="col-2 text-container"></div>
+            <div id="filter-color" class="col-2 text-container"></div>
+        </div>
+    </div>
     <div id="instruction-text" class="container"></div>
-
-    <div id="instruction-progress" class="container">
-        <div id="progress-brand" class="col-2 text-container center filter-progress">Merke</div>
-        <div id="progress-category" class="col-2 text-container center filter-progress">Kategori</div>
-        <div id="progress-sub-category" class="col-2 text-container center filter-progress">Underkategori</div>
-        <div id="progress-gender" class="col-2 text-container center filter-progress">Kjønn</div>
-        <div id="progress-color" class="col-2 text-container center filter-progress">Farge</div>
-        <div id="progress-model" class="col-2 text-container center filter-progress">Modell</div>
-    </div>
-    <div class="container filter-drop-down-container">
-        <div id="filter-brand" class="col-2 text-container"></div>
-        <div id="filter-category" class="col-2 text-container"></div>
-        <div id="filter-sub-category" class="col-2 text-container"></div>
-        <div id="filter-gender" class="col-2 text-container"></div>
-        <div id="filter-color" class="col-2 text-container"></div>
-    </div>
     <div id="instruction-selector" class="container"></div>
     <div id="products-container" class="container"></div>
 </div>
