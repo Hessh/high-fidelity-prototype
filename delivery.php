@@ -41,11 +41,11 @@
         <div class="row delivery-button">
             <div class="col-push-1"></div>
             <div class="col-4 center">
-                <button class="cta-buttons" onclick="showStores()">Lever i nærmeste butikk</button>
+                <button class="cta-button" onclick="showStores()">Lever i nærmeste butikk</button>
             </div>
             <div class="col-2"></div>
             <div class="col-4 center">
-                <button class="cta-buttons" onclick="showForm()">Få tilsendt pose hjem</button>
+                <button class="cta-button" onclick="showForm()">Få tilsendt pose hjem</button>
             </div>
             <div class="col-push-1"></div>
         </div>

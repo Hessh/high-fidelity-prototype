@@ -180,7 +180,7 @@
                 <div class="col-push-2"></div>
                 <div class="col-8">
                     <div class="text-center" style="font-size: 80px; padding: 2rem">250,-</div>
-                    <h3 class="text-center" style="padding: 0 4rem">avslag ved ditt neste kjøp i butikk hos Helly Hansen</h3>
+                    <h3 class="text-center" style="padding: 0 4rem">avslag ved ditt neste kjøp i butikk</h3>
                     <p class="text-center" style="padding: 0 5rem">Våre eksperter vil verdivurdere plagget så fort vi har mottatt det, og du vil motta et endelig tilbud fra oss så fort dette er gjort.</p>
                 </div>
                 <div class="col-push-2"></div>
