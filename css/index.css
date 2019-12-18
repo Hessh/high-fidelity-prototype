@@ -1,4 +1,8 @@
 /* INDEX STYLES */
+.container-fluid {
+    height: unset !important;
+}
+
 .first-index {
     margin-top: 4rem !important;
     display: flex;
