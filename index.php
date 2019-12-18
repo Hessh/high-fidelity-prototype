@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid-index">
         <div class="container second-container">
             <!-- ICON GROUP 1 -->
             <div class="row">
@@ -86,7 +86,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid blue-index">
+    <div class="container-fluid-index blue-index">
             <!-- TEXTCONTENT 4 -->
             <div class="container">
                 <div class="row text-wrapper">
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </div>
-    <div class="container-fluid">
+    <div class="container-fluid-index">
         <!-- TEXTCONTENT 3 -->
         <div class="container">
             <div class="row text-wrapper">
@@ -121,7 +121,7 @@
         </div>
     </div>
 
-    <div class="container-fluid blue-index">
+    <div class="container-fluid-index blue-index">
             <!-- TEXTCONTENT 2-->
             <div class="container">
                 <div class="row text-wrapper">
@@ -143,7 +143,7 @@
                 </div>
             </div>
         </div>
-    <div class="container-fluid">
+    <div class="container-fluid-index">
         <div class="container">
             <!-- ICON GROUP 2 -->
             <div class="row">
