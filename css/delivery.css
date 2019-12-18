@@ -67,7 +67,11 @@
     color: black;
 }
 
-#progress-five{
+#progress-four{
     font-weight: bold;
 }
 
+
+#estimate svg{
+    fill: red;
+}
