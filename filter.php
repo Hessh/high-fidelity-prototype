@@ -31,12 +31,12 @@
         <div id="progress-model" class="col-2 text-container center filter-progress">Modell</div>
     </div>
     <div class="container filter-drop-down-container">
-            <select id="filter-brand" class="col-2 text-container"></select>
-            <select id="filter-category" class="col-2 text-container"></select>
-            <select id="filter-sub-category" class="col-2 text-container"></select>
-            <select id="filter-gender" class="col-2 text-container"></select>
-            <select id="filter-color" class="col-2 text-container"></select>
-        </div>
+        <div id="filter-brand" class="col-2 text-container"></div>
+        <div id="filter-category" class="col-2 text-container"></div>
+        <div id="filter-sub-category" class="col-2 text-container"></div>
+        <div id="filter-gender" class="col-2 text-container"></div>
+        <div id="filter-color" class="col-2 text-container"></div>
+    </div>
     <div id="instruction-selector" class="container"></div>
     <div id="products-container" class="container"></div>
 </div>

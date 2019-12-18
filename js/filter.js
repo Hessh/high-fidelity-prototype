@@ -33,7 +33,7 @@ function renderFilterPage(){
     clearMenu();
     filter(products)
     renderInstructions();
-    renderMenu();
+    renderMenu2();
     renderProducts(filteredProducts);
 }
 
@@ -163,6 +163,70 @@ function clearMenu() {
     subCategoryElement.innerHTML = "";
     genderElement.innerHTML = "";
     colorElement.innerHTML = "";
+}
+
+function renderMenu2() {
+    if (!selectedBrand) return;
+    let node = createDivWithContent("filter-element", selectedBrand);
+    node.classList.add("selected-filter-element", "center");
+    node.addEventListener("click", function(){
+        selectedBrand = this.value;
+        selectedCategory = null;
+        selectedSubCategory = null;
+        selectedGender = null;
+        selectedModel = null;
+        selectedColor = null;
+        renderFilterPage();
+    });
+    brandElement.appendChild(node);
+
+    if (!selectedCategory) return;
+    node = createDivWithContent("filter-element", selectedCategory);
+    node.classList.add("selected-filter-element", "center");
+    node.addEventListener("click", function(){
+        selectedCategory = this.value;
+        selectedSubCategory = null;
+        selectedGender = null;
+        selectedModel = null;
+        selectedColor = null;
+        renderFilterPage();
+    });
+    categoryElement.appendChild(node);
+
+    if (!selectedSubCategory) return;
+    node = createDivWithContent("filter-element", selectedSubCategory);
+    node.classList.add("selected-filter-element", "center");
+    node.addEventListener("click", function(){
+        selectedCategory = this.value;
+        selectedSubCategory = null;
+        selectedGender = null;
+        selectedModel = null;
+        selectedColor = null;
+        renderFilterPage();
+    });
+    subCategoryElement.appendChild(node);
+
+    if (!selectedGender) return;
+    node = createDivWithContent("filter-element", selectedGender);
+    node.classList.add("selected-filter-element", "center");
+    node.addEventListener("click", function(){
+        selectedGender = this.value;
+        selectedModel = null;
+        selectedColor = null;
+        renderFilterPage();
+    });
+    genderElement.appendChild(node);
+
+    if (!selectedColor) return;
+    node = createDivWithContent("filter-element", selectedColor);
+    node.classList.add("selected-filter-element", "center");
+    node.addEventListener("click", function(){
+        selectedGender = this.value;
+        selectedModel = null;
+        selectedColor = null;
+        renderFilterPage();
+    });
+    colorElement.appendChild(node);
 }
 
 function renderMenu(){
