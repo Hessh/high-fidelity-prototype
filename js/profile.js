@@ -19,7 +19,7 @@ discountButton.addEventListener("click", function () {
         topNavButtons[i].style.fontWeight = "400"
     }
     navButtonStyling(1);
-    hideDiscountsAndOrders();
+    hideOrders();
 
 });
 
@@ -31,7 +31,7 @@ orderButton.addEventListener("click", function () {
     }
 
     navButtonStyling(2);
-    hideDiscountsAndOrders();
+    hideDiscounts();
 });
 
 /** NAVBAR */
@@ -74,7 +74,7 @@ function toDiscounts() {
         topNavButtons[i].style.fontWeight = "400"
     }
     navButtonStyling(1);
-    hideDiscountsAndOrders();
+    hideOrders();
 
 }
 
@@ -86,7 +86,7 @@ function toOrders() {
     }
 
     navButtonStyling(2);
-    hideDiscountsAndOrders();
+    hideDiscounts();
 
 }
 
@@ -95,7 +95,7 @@ function navButtonStyling(index) {
     topNavButtons[index].style.fontWeight = "600";
 }
 
-function hideDiscountsAndOrders() {
+function hideDiscounts() {
 
     discountButton.style.display = "none";
     orderButton.style.display = "none";
@@ -105,6 +105,20 @@ function hideDiscountsAndOrders() {
     }
     for (let i = 0; i < discountCards.length; i++) {
         discountCards[i].style.display = "none"
+
+    }
+}
+
+function hideOrders() {
+
+    discountButton.style.display = "none";
+    orderButton.style.display = "none";
+
+    for (let i = 0; i < orderCards.length; i++) {
+        orderCards[i].style.display = "none"
+    }
+    for (let i = 0; i < discountCards.length; i++) {
+        discountCards[i].style.display = "flex"
 
     }
 }

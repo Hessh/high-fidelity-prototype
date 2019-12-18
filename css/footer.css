@@ -2,10 +2,20 @@
 
 footer {
     background-color: #F8F8F8;
+    box-shadow: 1px 0px 4px #00000030;
 }
 
 footer * {
     color: #555555;
+}
+
+.bigFont {
+    font-size: 30px !important;
+    padding: 5px;
+}
+
+.socialMediaIcons {
+    flex-direction: row;
 }
 
 .footer-container {
@@ -15,9 +25,9 @@ footer * {
 }
 
 .footer-content {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-wrapper{
@@ -25,6 +35,7 @@ footer * {
     flex-direction: column;
     margin: 0;
     padding: 2rem;
+
 }
 
 .footer-wrapper h4 {
