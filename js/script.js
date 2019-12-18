@@ -51,6 +51,9 @@ function styleProgress() {
     let four = document.getElementById("progress-four-container");
     let five = document.getElementById("progress-five-container");
 
+    let imageOne = document.getElementById("product");
+    let imageTwo = document.getElementById("condition");
+    let imageFour = document.getElementById("delivery");
 
     switch (currentPage) {
         case "/filter.php":
@@ -64,23 +67,29 @@ function styleProgress() {
             break;
         case "/condition.php":
             document.getElementById("progress-two").style.fontWeight = "bold";
-            circleOne.style.backgroundColor = finishedColor;
+            circleOne.style.borderColor = finishedColor;
+            imageOne.src ="img/search2.svg";
             circleTwo.style.backgroundColor = currentColor;
+
             one.addEventListener("click", function () {
                 window.location = "/filter.php"
             });
             back.addEventListener("click", function () {
                 window.location = "/filter.php"
             });
+
             mouseOver(one, circleOne);
             mouseOver(back, circleBack);
+
             one.style.cursor = "pointer";
 
             break;
         case "/delivery.php":
             document.getElementById("progress-four").style.fontWeight = "bold";
-            circleOne.style.backgroundColor = finishedColor;
-            circleTwo.style.backgroundColor = finishedColor;
+            circleOne.style.borderColor = finishedColor;
+            circleTwo.style.borderColor = finishedColor;
+            imageOne.src ="img/search2.svg";
+            imageTwo.src ="img/book2.svg";
             circleFour.style.backgroundColor = currentColor;
             one.addEventListener("click", function () {
                 window.location = "/filter.php"
@@ -101,9 +110,13 @@ function styleProgress() {
             break;
         case "/done.php":
             document.getElementById("progress-five").style.fontWeight = "bold";
-            circleOne.style.backgroundColor = finishedColor;
-            circleTwo.style.backgroundColor = finishedColor;
-            circleFour.style.backgroundColor = finishedColor;
+            circleOne.style.borderColor = finishedColor;
+            circleTwo.style.borderColor = finishedColor;
+            circleFour.style.borderColor = finishedColor;
+            imageOne.src ="img/search2.svg";
+            imageTwo.src ="img/book2.svg";
+            imageFour.src="img/deliver2.svg";
+
             circleFive.style.backgroundColor = currentColor;
             one.addEventListener("click", function () {
                 window.location = "/filter.php"
@@ -117,14 +130,15 @@ function styleProgress() {
             back.addEventListener("click", function () {
                 window.location = "/delivery.php"
             });
+
             mouseOver(one, circleOne);
             mouseOver(two, circleTwo);
             mouseOver(four, circleFour);
             mouseOver(back, circleBack);
+
             one.style.cursor = "pointer";
             two.style.cursor = "pointer";
             four.style.cursor = "pointer";
-
             break;
         default:
             console.log("error");

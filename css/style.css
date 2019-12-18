@@ -55,11 +55,9 @@ a {
 .progress-container {
     left: 5%;
     position: fixed;
-    width:20%;
-    top: 20%;
+    width:15%;
+    top: 15%;
     z-index: 10;
-
-
 }
 
 .progress-row{
@@ -72,8 +70,9 @@ a {
 
 }
 .progress-text{
-    word-wrap: break-word;
-    width: 50%;
+    word-wrap: break-word !important;
+    width: 70%;
+    text-align: right !important;
 }
 
 .progress-circle{
