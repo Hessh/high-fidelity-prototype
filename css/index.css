@@ -1,8 +1,17 @@
 /* INDEX STYLES */
+.first-index {
+    margin-top: 4rem !important;
+}
 
 .blue-index {
     background-color: #E7F3F5;
 }
+
+.index-container {
+    height: 250px !important;
+    margin-bottom: 0 !important;
+}
+
 
 .container {
     padding: 2rem !important;
@@ -10,7 +19,13 @@
 }
 
 .img-container img {
-    width: 90%;
+    width: 100%;
+    
+}
+.hero {
+    background-image: url(../img/clothing.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 
 
@@ -56,4 +71,5 @@
     background-color: #A1D192;
     color: black;
 }
+
 
