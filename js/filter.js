@@ -168,75 +168,75 @@ function clearMenu() {
 function renderMenu(){
     brands.forEach(element => {
         let node = createOptionWithContent("filter-element", element);
-        if(element == selectedBrand) node.classList.add("selected-filter-element");
-        node.addEventListener("click", function(){
-            selectedBrand = element;
-            selectedCategory = null;
-            selectedSubCategory = null;
-            selectedGender = null;
-            selectedModel = null;
-            selectedColor = null;
-
-            renderFilterPage();
-        });
+        if(element == selectedBrand) node.setAttribute("selected", null);
         brandElement.appendChild(node);
+    });
+    brandElement.addEventListener("change", function(){
+        selectedBrand = this.value;
+        selectedCategory = null;
+        selectedSubCategory = null;
+        selectedGender = null;
+        selectedModel = null;
+        selectedColor = null;
+
+        renderFilterPage();
     });
     if (!selectedBrand) return;
 
     categories.forEach(element => {
         let node = createOptionWithContent("filter-element", element);
-        if(element == selectedCategory) node.classList.add("selected-filter-element");
-        node.addEventListener("click", function(){
-            selectedCategory = element;
-            selectedSubCategory = null;
-            selectedGender = null;
-            selectedModel = null;
-            selectedColor = null;
-
-            renderFilterPage();
-        });
+        if(element == selectedCategory) node.setAttribute("selected", null);
         categoryElement.appendChild(node);
+    });
+    categoryElement.addEventListener("change", function(){
+        selectedCategory = this.value;
+        selectedSubCategory = null;
+        selectedGender = null;
+        selectedModel = null;
+        selectedColor = null;
+
+        renderFilterPage();
     });
     if (!selectedCategory) return;
 
     subCategories.forEach(element => {
         let node = createOptionWithContent("filter-element", element);
-        if(element == selectedSubCategory) node.classList.add("selected-filter-element");
-        node.addEventListener("click", function(){
-            selectedSubCategory = element;
-            selectedGender = null;
-            selectedModel = null;
-            selectedColor = null;
-
-            renderFilterPage();
-        });
+        if(element == selectedSubCategory) node.setAttribute("selected", null);
         subCategoryElement.appendChild(node);
+    });
+    subCategoryElement.addEventListener("change", function(){
+        selectedSubCategory = this.value;
+        selectedGender = null;
+        selectedModel = null;
+        selectedColor = null;
+
+        renderFilterPage();
     });
     if (!selectedSubCategory) return;
 
     genders.forEach(element => {
         let node = createOptionWithContent("filter-element", element);
-        if(element == selectedGender) node.classList.add("selected-filter-element");
-        node.addEventListener("click", function(){
-            selectedGender = element;
-            selectedModel = null;
-            selectedColor = null;
-
-            renderFilterPage();
-        });
+        if(element == selectedGender) node.setAttribute("selected", null);
         genderElement.appendChild(node);
+    });
+    genderElement.addEventListener("change", function(){
+        selectedGender = this.value;
+        selectedModel = null;
+        selectedColor = null;
+
+        renderFilterPage();
     });
     if (!selectedGender) return;
 
     colors.forEach(element => {
         let node = createOptionWithContent("filter-element", element);
-        if(element == selectedColor) node.classList.add("selected-filter-element");
-        node.addEventListener("click", function(){
-            selectedColor = element;
-
-            renderFilterPage();
-        });
+        if(element == selectedColor) node.setAttribute("selected", null);
         colorElement.appendChild(node);
+    });
+    colorElement.addEventListener("change", function(){
+        selectedColor = this.value;
+
+        renderFilterPage();
     });
 }
 
