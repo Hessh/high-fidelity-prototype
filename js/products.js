@@ -43,6 +43,9 @@ function renderProduct(container, product) {
 }
 
 let products = [];
+//Helly hansen
+///Jakke
+////Seilerjakke
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Skagen Offshore Jacket", "Red", "https://www.hellyhansen.com/media/catalog/product/3/3/33907_222-2-main.jpg"));
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Skagen Offshore Jacket", "Blue", "https://www.hellyhansen.com/media/catalog/product/3/3/33907_597-2-main.jpg"));
 
@@ -57,13 +60,37 @@ products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W S
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W Salt Flag Jacket", "Blue", "https://www.hellyhansen.com/media/catalog/product/3/3/33923_994-2-main4.jpg"));
 
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Crew Midlayer Jacket", "White", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_001-2-main.jpg"));
-products.push(new Product("Helly Hansen", "Bukse", "Seilerjakke", "Male", "Crew Midlayer Jacket", "Black", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_990-2-main.jpg"));
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Male", "Crew Midlayer Jacket", "Red", "https://www.hellyhansen.com/media/catalog/product/3/0/30253_222-2-main.jpg"));
 
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W Crew Midlayer Jacket", "Red", "https://www.hellyhansen.com/media/catalog/product/3/0/30317_222-2-main.jpg"));
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W Crew Midlayer Jacket", "Pink", "https://www.hellyhansen.com/media/catalog/product/3/0/30317_039-2-main.jpg"));
 products.push(new Product("Helly Hansen", "Jakke", "Seilerjakke", "Female", "W Crew Midlayer Jacket", "Black", "https://www.hellyhansen.com/media/catalog/product/3/0/30317_990-2-main.jpg"));
 
+////Skijakke
+products.push(new Product("Helly Hansen", "Jakke", "Skijakke", "Male", "ALPHA LIFALOFT JACKET", "Blue", "https://www.hellyhansen.com/media/catalog/product/6/5/65667_598-2-main3.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"));
+products.push(new Product("Helly Hansen", "Jakke", "Skijakke", "Male", "ALPHA SHELL JACKET", "Red", "https://www.hellyhansen.com/media/catalog/product/6/5/65596_222-2-main.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"));
+products.push(new Product("Helly Hansen", "Jakke", "Skijakke", "Female", "W WHITEWALL LIFALOFT JACKET", "Blue", "https://www.hellyhansen.com/media/catalog/product/6/5/65684_628-1-hero.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"));
+products.push(new Product("Helly Hansen", "Jakke", "Skijakke", "Female", "W POWCHASER LIFALOFT JACKET", "Yellow", "https://www.hellyhansen.com/media/catalog/product/6/5/65701_181-2-main.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"));
+
+
+////Vest
+products.push(new Product("Helly Hansen", "Jakke", "Vest", "Male", "SPEED VEST", "Blue", "https://www.hellyhansen.com/media/catalog/product/4/8/48772_535.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"));
+products.push(new Product("Helly Hansen", "Jakke", "Vest", "Female", "W LIFALOFT INSULATOR VEST", "Teal", "https://www.hellyhansen.com/media/catalog/product/6/5/65628_109-2-main.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"));
+
+
+///Bukse
+
+////Ski-pants
+products.push(new Product("Helly Hansen", "Bukse", "Ski-pants", "Male", "ODIN MOUNTAIN 3L SHELL BIB PANT", "Green", "https://www.hellyhansen.com/media/catalog/product/6/2/62902_402-2-main.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"));
+products.push(new Product("Helly Hansen", "Bukse", "Ski-pants", "Male", "SOGN CARGO PANT", "Orange", "https://www.hellyhansen.com/media/catalog/product/6/5/65673_226-2-main.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"));
+
+///Genser
+products.push(new Product("Helly Hansen", "Genser", "Hoodie", "Male", "HP OCEAN FZ HOODIE", "Grey", "https://www.hellyhansen.com/media/catalog/product/3/4/34044_949-2-main.jpg?quality=75&bg-color=255,255,255&fit=bounds&height=560&width=700&canvas=700:560"));
+
+
+
+
+//Norrønna
 products.push(new Product("Norrøna", "Bukse", "Gore-tex", "Male", "Lofoten ACE Gore-Tex Pro", "Mercury", "https://res.cloudinary.com/norrona/image/upload/b_rgb:F5F5F5,c_pad,d_imgmissing.jpg,f_auto,fl_progressive.lossy,w_1000,h_1000,q_auto/1009178915.jpg"));
 products.push(new Product("Norrøna", "Bukse", "Gore-tex", "Male", "Lofoten ACE Gore-Tex Pro", "Black", "https://res.cloudinary.com/norrona/image/upload/b_rgb:F5F5F5,c_pad,d_imgmissing.jpg,f_auto,fl_progressive.lossy,w_1000,h_1000,q_auto/1002197718.jpg"));
 products.push(new Product("Norrøna", "Bukse", "Gore-tex", "Male", "Lofoten Gore-Tex Pro Light", "Green", "https://res.cloudinary.com/norrona/image/upload/b_rgb:F5F5F5,c_pad,d_imgmissing.jpg,f_auto,fl_progressive.lossy,w_1000,h_1000,q_auto/1022173440.jpg"));
