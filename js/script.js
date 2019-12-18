@@ -20,6 +20,10 @@ function createOptionWithContent(itemClass, content) {
     return option;
 }
 
+
+
+/** PROGRESS BAR*/
+
 function mouseOver(element, circle) {
     element.onmouseover = function () {
         this.style.fontWeight = "bold";
@@ -31,13 +35,15 @@ function mouseOver(element, circle) {
     };
 }
 
-/** PROGRESS BAR*/
-function clickableProgress() {
-
+function styleProgress() {
     let circleOne = document.getElementById("circle-one");
     let circleTwo = document.getElementById("circle-two");
     let circleFour = document.getElementById("circle-four");
     let circleFive = document.getElementById("circle-five");
+    let currentPage = window.location.pathname;
+
+    let finishedColor = "#A1D192";
+    let currentColor = "#fa9741";
 
     let one = document.getElementById("progress-one-container");
     let two = document.getElementById("progress-two-container");
@@ -49,27 +55,6 @@ function clickableProgress() {
     four.style.cursor = "pointer";
     five.style.cursor = "pointer";
 
-    mouseOver(one, circleOne);
-    mouseOver(two, circleTwo);
-    mouseOver(four, circleFour);
-    mouseOver(five, circleFive);
-}
-
-
-function styleProgress() {
-    let circleOne = document.getElementById("circle-one");
-    let circleTwo = document.getElementById("circle-two");
-    let circleFour = document.getElementById("circle-four");
-    let circleFive = document.getElementById("circle-five");
-    let currentPage = window.location.pathname;
-    let finishedColor = "#A1D192";
-    let currentColor = "#fa9741";
-
-    let one = document.getElementById("progress-one-container");
-    let two = document.getElementById("progress-two-container");
-    let four = document.getElementById("progress-four-container");
-    let five = document.getElementById("progress-five-container");
-
     switch (currentPage) {
         case "/filter.php":
             document.getElementById("progress-one").style.fontWeight = "bold";
@@ -77,6 +62,7 @@ function styleProgress() {
             one.addEventListener("click", function () {
                 window.location = "/filter.php"
             });
+            mouseOver(one, circleOne);
             break;
         case "/condition.php":
             document.getElementById("progress-two").style.fontWeight = "bold";
@@ -88,6 +74,8 @@ function styleProgress() {
             two.addEventListener("click", function () {
                 window.location = "/condition.php"
             });
+            mouseOver(one, circleOne);
+            mouseOver(two, circleTwo);
             break;
         case "/delivery.php":
             document.getElementById("progress-four").style.fontWeight = "bold";
@@ -103,6 +91,9 @@ function styleProgress() {
             four.addEventListener("click", function () {
                 window.location = "/delivery.php"
             });
+            mouseOver(one, circleOne);
+            mouseOver(two, circleTwo);
+            mouseOver(four, circleFour);
             break;
         case "/done.php":
             document.getElementById("progress-five").style.fontWeight = "bold";
@@ -121,7 +112,11 @@ function styleProgress() {
             });
             five.addEventListener("click", function () {
                 window.location = "/done.php"
-            });
+            })
+            mouseOver(one, circleOne);
+            mouseOver(two, circleTwo);
+            mouseOver(four, circleFour);
+            mouseOver(five, circleFive);
             break;
         default:
             console.log("error");
@@ -130,4 +125,3 @@ function styleProgress() {
 }
 
 styleProgress();
-clickableProgress();

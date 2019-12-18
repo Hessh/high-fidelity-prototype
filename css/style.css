@@ -78,6 +78,8 @@ a {
     width: 60px;
     height: 60px;
     border: solid black 1px;
+    box-shadow: inset 0 0 2px 0;
+    background-color: white;
 }
 
 .progress-circle img {
