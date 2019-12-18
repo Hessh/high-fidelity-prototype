@@ -26,9 +26,8 @@
                 <div id="circle-two" class="progress-circle">
                     <img src="img/search.svg" id="">
                 </div>
-
-
             </div>
+
             <div class="progress-row">
                 <div class="progress-text" id="progress-two">Tilstandvurdering</div>
                 <div id="circle-three" class="progress-circle">

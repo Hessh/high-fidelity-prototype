@@ -52,27 +52,9 @@ a {
 
 /* PROGRESS BAR */
 .progress-container {
-    left: 80px;
+    left: 5%;
     position: fixed;
     width:250px;
-}
-
-.progress-circle{
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    justify-content: center;
-    border: solid black 1px;
-}
-
-
-.progress-circle img {
-    height: 100%;
-}
-
-.progress-text{
-    margin-left: 10px;
-    width: 50%;
 }
 
 .progress-row{
@@ -83,3 +65,20 @@ a {
     margin-bottom: 30px;
     height: 80px;
 }
+
+.progress-text{
+}
+
+.progress-circle{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: solid black 1px;
+}
+
+.progress-circle img {
+    height: 100%;
+}
+
+
+
