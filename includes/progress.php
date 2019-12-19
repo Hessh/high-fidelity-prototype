@@ -25,7 +25,7 @@
 
     </div>
     <div class="progress-row" id="progress-four-container">
-        <div class="progress-text" id="progress-four">3.Velg leveringsmetode</div>
+        <div class="progress-text" id="progress-four">3. Velg leveringsmetode</div>
         <div id="circle-four" class="progress-circle">
             <img src="img/deliver.svg" id="delivery">
         </div>
